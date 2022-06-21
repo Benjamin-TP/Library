@@ -1,5 +1,3 @@
-
-
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
 <LIBRARY xsi:noNamespaceSchemaLocation="schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -14,141 +12,124 @@
       <RELEASEDATE>1977-12-13</RELEASEDATE>
       <PURCHASEDATE>2007-09-02</PURCHASEDATE>
       <BOOKAUTHORS>
-        <BOOKAUTHOR idAuthorRef="-3617"/>
-        <BOOKAUTHOR idAuthorRef="-2675"/>
+        <BOOKAUTHOR idAuthorRef="1234"/>
+        <BOOKAUTHOR idAuthorRef="5678"/>
       </BOOKAUTHORS>
-      <BOOKSER idBSRef="4397"/>
-      <BORROWEDBY idBorrowerRef="-705"/>
+      <COMICBOOKSER idCBSRef="-705"/>
+      <BORROWINFO>
+        <BORROWEDBY idBorrowerRef="-4253"/>
+        <BORROWDATE>1980-01-14</BORROWDATE>
+        <RETURNDATE>1980-01-14</RETURNDATE>
+      </BORROWINFO>
+      <NROFBORROWS>350</NROFBORROWS>
+    </BOOK>
+    <BOOK>
+      <TITLE>string</TITLE>
+      <DESCRIPTION>string</DESCRIPTION>
+      <BOOKFORMAT>Book</BOOKFORMAT>
+      <THEME>History</THEME>
+      <TARGETREADER>0-3</TARGETREADER>
+      <EDITOR>Aire libre</EDITOR>
+      <RELEASEDATE>1980-01-14</RELEASEDATE>
+      <PURCHASEDATE>1992-05-14</PURCHASEDATE>
+      <BOOKAUTHORS>
+        <BOOKAUTHOR idAuthorRef="9123"/>
+      </BOOKAUTHORS>
+      <BOOKSER idBSRef="-2037"/>
+      <BORROWINFO>
+        <BORROWEDBY idBorrowerRef="1235"/>
+        <BORROWDATE>1980-01-14</BORROWDATE>
+        <RETURNDATE>1980-01-14</RETURNDATE>
+      </BORROWINFO>
+      <NROFBORROWS>0</NROFBORROWS>
     </BOOK>
     <BOOK>
       <TITLE>string</TITLE>
       <DESCRIPTION>string</DESCRIPTION>
       <BOOKFORMAT>Comic</BOOKFORMAT>
-      <THEME>Politics</THEME>
-      <TARGETREADER>4-6</TARGETREADER>
-      <EDITOR>Fleurus Presse</EDITOR>
-      <RELEASEDATE>2016-10-09</RELEASEDATE>
-      <PURCHASEDATE>1973-06-21</PURCHASEDATE>
+      <THEME>History</THEME>
+      <TARGETREADER>Adult</TARGETREADER>
+      <EDITOR>Grasset</EDITOR>
+      <RELEASEDATE>1994-09-25</RELEASEDATE>
+      <PURCHASEDATE>1996-07-04</PURCHASEDATE>
       <BOOKAUTHORS />
-      <COMICBOOKSER idCBSRef="4681"/>
+      <NEWSPAPERSER idNWSRef="-4234"/> 
+      <BORROWINFO>
+        <BORROWEDBY idBorrowerRef="1235"/>
+        <BORROWDATE>1980-01-14</BORROWDATE>
+        <RETURNDATE>1980-01-14</RETURNDATE>
+      </BORROWINFO>
     </BOOK>
     <BOOK>
       <TITLE>string</TITLE>
       <DESCRIPTION>string</DESCRIPTION>
       <BOOKFORMAT>Newspaper</BOOKFORMAT>
       <THEME>Politics</THEME>
-      <TARGETREADER>Adult</TARGETREADER>
-      <EDITOR>Aire libre</EDITOR>
-      <RELEASEDATE>1981-09-22</RELEASEDATE>
-      <PURCHASEDATE>1990-10-14</PURCHASEDATE>
-      <BOOKAUTHORS />
-      <NEWSPAPERSER idNWSRef="-2655"/>
-    </BOOK>
-    <BOOK>
-      <TITLE>string</TITLE>
-      <DESCRIPTION>string</DESCRIPTION>
-      <BOOKFORMAT>Comic</BOOKFORMAT>
-      <THEME>Novel</THEME>
       <TARGETREADER>0-3</TARGETREADER>
-      <EDITOR>Futuropolis</EDITOR>
-      <RELEASEDATE>1979-09-28</RELEASEDATE>
-      <PURCHASEDATE>1979-06-05</PURCHASEDATE>
+      <EDITOR>Bayard Presse</EDITOR>
+      <RELEASEDATE>1988-06-01</RELEASEDATE>
+      <PURCHASEDATE>1973-12-04</PURCHASEDATE>
       <BOOKAUTHORS />
+      <NROFBORROWS>0</NROFBORROWS>
     </BOOK>
   </BOOKS>
   <BORROWERS>
-    <BORROWER idBorrower="-3897">
+    <BORROWER idBorrower="-4253">
       <FirstName>string</FirstName>
       <LastName>string</LastName>
-      <BirthDate>1978-08-17</BirthDate>
-      <NrOfBooks>-1898</NrOfBooks>
+      <BirthDate>2016-03-20</BirthDate>
+      <NrOfBooks>447</NrOfBooks>
     </BORROWER>
-    <BORROWER idBorrower="2909">
+    <BORROWER idBorrower="1235">
       <FirstName>string</FirstName>
       <LastName>string</LastName>
-      <BirthDate>1993-11-26</BirthDate>
-      <NrOfBooks>2030</NrOfBooks>
-    </BORROWER>
-    <BORROWER idBorrower="359">
-      <FirstName>string</FirstName>
-      <LastName>string</LastName>
-      <BirthDate>1978-01-19</BirthDate>
-      <NrOfBooks>-15</NrOfBooks>
-    </BORROWER>
-    <BORROWER idBorrower="-705">
-      <FirstName>string</FirstName>
-      <LastName>string</LastName>
-      <BirthDate>1987-10-14</BirthDate>
-      <NrOfBooks>-1471</NrOfBooks>
+      <BirthDate>2016-03-20</BirthDate>
+      <NrOfBooks>447</NrOfBooks>
     </BORROWER>
   </BORROWERS>
   <BOOKSERIES>
-    <BOOKSERIE idBS="-941">
-      <SerieName>string</SerieName>
-      <Description>string</Description>
-      <NrOfVolumes>4027</NrOfVolumes>
-    </BOOKSERIE>
-    <BOOKSERIE idBS="635">
-      <SerieName>string</SerieName>
-      <Description>string</Description>
-      <NrOfVolumes>656</NrOfVolumes>
-    </BOOKSERIE>
     <BOOKSERIE idBS="-2037">
       <SerieName>string</SerieName>
       <Description>string</Description>
       <NrOfVolumes>4331</NrOfVolumes>
     </BOOKSERIE>
-    <BOOKSERIE idBS="4397">
-      <SerieName>string</SerieName>
-      <Description>string</Description>
-      <NrOfVolumes>-1102</NrOfVolumes>
-    </BOOKSERIE>
   </BOOKSERIES>
   <COMICBOOKSERIES>
-    <COMICBOOKSERIE idCBS="4681">
+    <COMICBOOKSERIE idCBS="-705">
       <SerieName>string</SerieName>
       <Description>string</Description>
-      <NrOfVolumes>118</NrOfVolumes>
+      <NrOfVolumes>-1545</NrOfVolumes>
     </COMICBOOKSERIE>
-    <COMICBOOKSERIE idCBS="366">
+    <COMICBOOKSERIE idCBS="3023">
       <SerieName>string</SerieName>
       <Description>string</Description>
-      <NrOfVolumes>2366</NrOfVolumes>
+      <NrOfVolumes>-3365</NrOfVolumes>
     </COMICBOOKSERIE>
   </COMICBOOKSERIES>
   <NEWSPAPERSERIES>
-    <NEWSPAPERSERIE idNWS="-2655">
+    <NEWSPAPERSERIE idNWS="-4234">
       <ISSN>string</ISSN>
       <SerieName>string</SerieName>
       <Description>string</Description>
-      <NrOfVolumes>-3176</NrOfVolumes>
-    </NEWSPAPERSERIE>
-    <NEWSPAPERSERIE idNWS="1468">
-      <ISSN>string</ISSN>
-      <SerieName>string</SerieName>
-      <Description>string</Description>
-      <NrOfVolumes>1868</NrOfVolumes>
+      <NrOfVolumes>-2220</NrOfVolumes>
     </NEWSPAPERSERIE>
   </NEWSPAPERSERIES>
-  <AUTHOR idAuthor="-2675">
-    <FirstName>string</FirstName>
-    <LastName>string</LastName>
-    <BirthDate>1973-07-22</BirthDate>
-  </AUTHOR>
-  <AUTHOR idAuthor="-3617">
-    <FirstName>string</FirstName>
-    <LastName>string</LastName>
-    <BirthDate>1973-07-01</BirthDate>
-  </AUTHOR>
-  <AUTHOR idAuthor="-3447">
-    <FirstName>string</FirstName>
-    <LastName>string</LastName>
-    <BirthDate>1992-09-14</BirthDate>
-  </AUTHOR>
-  <AUTHOR idAuthor="688">
-    <FirstName>string</FirstName>
-    <LastName>string</LastName>
-    <BirthDate>2012-10-15</BirthDate>
-  </AUTHOR>
+  <AUTHORS>
+    <AUTHOR idAuthor="9123">
+      <FirstName>string</FirstName>
+      <LastName>string</LastName>
+      <BirthDate>2016-01-25</BirthDate>
+    </AUTHOR>
+    <AUTHOR idAuthor="1234">
+      <FirstName>string</FirstName>
+      <LastName>string</LastName>
+      <BirthDate>2016-01-25</BirthDate>
+    </AUTHOR>
+    <AUTHOR idAuthor="5678">
+      <FirstName>string</FirstName>
+      <LastName>string</LastName>
+      <BirthDate>2016-01-25</BirthDate>
+    </AUTHOR>
+  </AUTHORS>
 </LIBRARY>
 

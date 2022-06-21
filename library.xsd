@@ -3,12 +3,27 @@
  <!--
 I used https://www.liquid-technologies.com/online-xsd-to-xml-converter to generate a sample XML
 To validate: https://www.freeformatter.com/xml-validator-xsd.html
+
+  - AUTHOR in AUTHORS for a sake of readiness
+  - borrow info: where? In the books, to keep consistency with the way its done
+
   TODO
-  - Namespace
   - add simpletype for restrictions on size of string elements
+  - check integer elements as well
   - date: create a type for comparison
+  - minOccurs, maxOccurs on the elements
 
   - Element +  ref vs element in the sequence only and that's it
+
+
+  - by default, an attribute is optional, hence use="required" added if necessary
+  - check if <xs:all> can be useful (each element appears 0 or 1 time, in any order)
+
+  - Namespace
+  - to review the keyref paths if necessary
+
+  -nb: sequence - 22.06.21 - it appears that the order is important
+  -an integer element cannot be empty (I faced that when adding NROFBORROWS)
 -->
   <!--LIBRARY
       This element contains the whole database (it is its root node - "schema element")
@@ -23,7 +38,7 @@ To validate: https://www.freeformatter.com/xml-validator-xsd.html
 
     <!--key of author / reffering key on BOOK/BOOKAUTHORS/BOOKAUTHOR-->
     <xs:key name="authorKey">
-			<xs:selector xpath="AUTHOR"/>
+			<xs:selector xpath="AUTHORS/AUTHOR"/>
 			<xs:field xpath="@idAuthor"/>
 		</xs:key>
     <xs:keyref name="bookToAuthor" refer="authorKey">
@@ -67,7 +82,7 @@ To validate: https://www.freeformatter.com/xml-validator-xsd.html
 			<xs:field xpath="@idBorrower"/>
 		</xs:key>
     <xs:keyref name="borrowedByToBorrower" refer="borrowerKey">
-			<xs:selector xpath="BOOKS/BOOK/BORROWEDBY"/>
+			<xs:selector xpath="BOOKS/BOOK/BORROWINFO/BORROWEDBY"/>
 			<xs:field xpath="@idBorrowerRef"/>
 		</xs:keyref>
 
@@ -111,7 +126,7 @@ To validate: https://www.freeformatter.com/xml-validator-xsd.html
       22.06.17 changed: list removed (used in the BOOKS element instead)
       replaced with AUTHOR one by one instead
       -->
-			<xs:element name="AUTHOR" type="authorType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="AUTHORS" type="authorsType"/>
 
 		</xs:sequence>
 	</xs:complexType>
@@ -125,12 +140,11 @@ To validate: https://www.freeformatter.com/xml-validator-xsd.html
 	</xs:complexType>
 
   <!--TODO: to check if we use it or not (for the moment we dont)-->
-  <!--
   <xs:complexType name="authorsType">
 		<xs:sequence>
 			<xs:element name="AUTHOR" type="authorType" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
-	</xs:complexType>-->
+	</xs:complexType>
 
   <xs:complexType name="borrowersType">
 		<xs:sequence>
@@ -179,12 +193,15 @@ To validate: https://www.freeformatter.com/xml-validator-xsd.html
         <xs:element name="NEWSPAPERSER" type="newspaperSerType"/>
       </xs:choice>
 
-      <!--TODO:
-      - borrowed by
-      - borrowdate
-      - expected return date
-      - number of borrows-->
-      <xs:element name="BORROWEDBY" type = "borrowedByType" minOccurs="0"/>
+      <!--BORROWINFO contains the information related to the borrow of the book-->
+      <xs:element name="BORROWINFO" type="borrowInfoType" minOccurs="0"/>
+
+      <!--Number of borrows
+      Outside the BORROWINFO element because it is not the same level
+      - BORROWINFO is for the current borrow status
+      - NROFBORROWS is for the history of the borrowals
+      -->
+      <xs:element name="NROFBORROWS" type="xs:integer" minOccurs="0"/>
 
 		</xs:sequence>
 
@@ -203,6 +220,18 @@ To validate: https://www.freeformatter.com/xml-validator-xsd.html
   <!--BookAuthor: one attribute for the reference to Author-->
   <xs:complexType name="bookAuthorType">
 		<xs:attribute name='idAuthorRef' type='xs:integer'/>
+	</xs:complexType>
+
+  <!--BORROWINFO contains the information related to the borrow of the book
+  I separated it because of the dependency: we have all of them or we dont have any one
+  No need for minOccurs/maxOccurs here
+  -->
+  <xs:complexType name="borrowInfoType">
+		<xs:sequence>
+      <xs:element name="BORROWEDBY" type="borrowedByType"/>
+      <xs:element name="BORROWDATE" type="xs:date"/>
+      <xs:element name="RETURNDATE" type="xs:date"/>
+    </xs:sequence>
 	</xs:complexType>
 
 
@@ -227,7 +256,6 @@ To validate: https://www.freeformatter.com/xml-validator-xsd.html
   -->
   <xs:simpleType name="bookFormatType">
     <xs:restriction base="xs:string">
-      <!--<xs:pattern value="Book|Comic|Newspaper|"/>-->
         <xs:enumeration value="Book"/>
         <xs:enumeration value="Comic"/>
         <xs:enumeration value="Newspaper"/>
