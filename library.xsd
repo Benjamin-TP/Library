@@ -18,10 +18,13 @@ Comments for the report
 TODO
   - Frequency for the newspapers
   - NROFBOOKS in the BORROWER or not?
+  - boolean for BOOK: borrowable or not
+  - No difference between bookseries and comicbookseries: merge them? A priori: no (useful in a real library)
   - date: create a type for comparison, with regex
   - minOccurs, maxOccurs on the elements
   - Element +  ref vs element in the sequence only and that's it
   - keys and keyref paths edited like I did for BOOKAUTHOR?
+  - control on the max number of books? Per book type?
 
   - add simpletype for restrictions on size of string elements
   - check integer elements as well
@@ -340,7 +343,7 @@ TODO
 		<xs:sequence>
       <xs:element name="TITLE" type="xs:string"/>
       <xs:element name="DESCRIPTION" type="xs:string"/>
-      <xs:element name="NrOfVolumes" type="xs:integer"/>
+      <xs:element name="NROFVOLUMES" type="xs:integer"/>
 		</xs:sequence>
     <xs:attribute name="idBS" type="xs:integer" use="required"/>
 	</xs:complexType>
@@ -358,7 +361,7 @@ TODO
 		<xs:sequence>
       <xs:element name="TITLE" type="xs:string"/>
       <xs:element name="DESCRIPTION" type="xs:string"/>
-      <xs:element name="NrOfVolumes" type="xs:integer"/>
+      <xs:element name="NROFVOLUMES" type="xs:integer"/>
 		</xs:sequence>
     <xs:attribute name="idCBS" type="xs:integer" use="required"/>
 	</xs:complexType>
@@ -376,7 +379,7 @@ TODO
       <xs:element name="ISSN" type="xs:string"/>
       <xs:element name="TITLE" type="xs:string"/>
       <xs:element name="DESCRIPTION" type="xs:string"/>
-      <xs:element name="NrOfVolumes" type="xs:integer"/>
+      <xs:element name="NROFVOLUMES" type="xs:integer"/>
 		</xs:sequence>
     <xs:attribute name="idNWS" type="xs:integer" use="required"/>
 	</xs:complexType>
