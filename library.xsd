@@ -11,10 +11,13 @@ Comments for the report
   - all the refkeys are under the book node
   - Books then series outside. info repeated (editor, etc) but can change authors (e.g. with Largo Winch)
   - minOccurs, maxOccurs always specified, for sake of readiness
+  - BOOKAUTHOR / ROLE: on BOOK, not AUTHOR level because an AUTHOR can switch roles (e.g. morris, goscinny, uderzo)
   - BOOKAUTHOR / ROLE - choice made: several ROLE may be used for the same author (usual for the comics)
   - BOOKAUTHOR / ROLE: minOccurs = 0 because it is useless for novels, for example
 
 TODO
+  - Frequency for the newspapers
+  - NROFBOOKS in the BORROWER or not?
   - date: create a type for comparison, with regex
   - minOccurs, maxOccurs on the elements
   - Element +  ref vs element in the sequence only and that's it
@@ -303,19 +306,19 @@ TODO
   <!--Author id-->
   <xs:complexType name="authorType">
 		<xs:sequence>
-      <xs:element name="FirstName" type="xs:string"/>
-      <xs:element name="LastName" type="xs:string"/>
-      <xs:element name="BirthDate" type="xs:date"/>
+      <xs:element name="FIRSTNAME" type="xs:string"/>
+      <xs:element name="LASTNAME" type="xs:string"/>
+      <xs:element name="BIRTHDATE" type="xs:date"/>
 		</xs:sequence>
     <xs:attribute name="idAuthor" type="xs:integer" use="required"/>
 	</xs:complexType>
 
   <xs:complexType name="borrowerType">
 		<xs:sequence>
-      <xs:element name="FirstName" type="xs:string"/>
-      <xs:element name="LastName" type="xs:string"/>
-      <xs:element name="BirthDate" type="xs:date"/>
-      <xs:element name="NrOfBooks" type="xs:integer"/>
+      <xs:element name="FIRSTNAME" type="xs:string"/>
+      <xs:element name="LASTNAME" type="xs:string"/>
+      <xs:element name="BIRTHDATE" type="xs:date"/>
+      <xs:element name="NROFBOOKS" type="xs:integer"/>
 		</xs:sequence>
     <xs:attribute name="idBorrower" type="xs:integer" use="required"/>
 	</xs:complexType>

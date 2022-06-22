@@ -78,16 +78,16 @@
   </BOOKS>
   <BORROWERS>
     <BORROWER idBorrower="-4253">
-      <FirstName>string</FirstName>
-      <LastName>string</LastName>
-      <BirthDate>2016-03-20</BirthDate>
-      <NrOfBooks>447</NrOfBooks>
+      <FIRSTNAME>string</FIRSTNAME>
+      <LASTNAME>string</LASTNAME>
+      <BIRTHDATE>2016-03-20</BIRTHDATE>
+      <NROFBOOKS>447</NROFBOOKS>
     </BORROWER>
     <BORROWER idBorrower="1235">
-      <FirstName>string</FirstName>
-      <LastName>string</LastName>
-      <BirthDate>2016-03-20</BirthDate>
-      <NrOfBooks>447</NrOfBooks>
+      <FIRSTNAME>string</FIRSTNAME>
+      <LASTNAME>string</LASTNAME>
+      <BIRTHDATE>2016-03-20</BIRTHDATE>
+      <NROFBOOKS>447</NROFBOOKS>
     </BORROWER>
   </BORROWERS>
   <BOOKSERIES>
@@ -119,19 +119,19 @@
   </NEWSPAPERSERIES>
   <AUTHORS>
     <AUTHOR idAuthor="9123">
-      <FirstName>string</FirstName>
-      <LastName>string</LastName>
-      <BirthDate>2016-01-25</BirthDate>
+      <FIRSTNAME>string</FIRSTNAME>
+      <LASTNAME>string</LASTNAME>
+      <BIRTHDATE>2016-01-25</BIRTHDATE>
     </AUTHOR>
     <AUTHOR idAuthor="1234">
-      <FirstName>string</FirstName>
-      <LastName>string</LastName>
-      <BirthDate>2016-01-25</BirthDate>
+      <FIRSTNAME>string</FIRSTNAME>
+      <LASTNAME>string</LASTNAME>
+      <BIRTHDATE>2016-01-25</BIRTHDATE>
     </AUTHOR>
     <AUTHOR idAuthor="5678">
-      <FirstName>string</FirstName>
-      <LastName>string</LastName>
-      <BirthDate>2016-01-25</BirthDate>
+      <FIRSTNAME>string</FIRSTNAME>
+      <LASTNAME>string</LASTNAME>
+      <BIRTHDATE>2016-01-25</BIRTHDATE>
     </AUTHOR>
   </AUTHORS>
 </LIBRARY>
