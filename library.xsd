@@ -4,23 +4,30 @@
 I used https://www.liquid-technologies.com/online-xsd-to-xml-converter to generate a sample XML
 To validate: https://www.freeformatter.com/xml-validator-xsd.html
 
+Comments for the report
   - AUTHOR in AUTHORS for a sake of readiness
   - borrow info: where? In the books, to keep consistency with the way its done
+  - borrow info: a dedicated element; may or may not be available
+  - all the refkeys are under the book node
+  - Books then series outside. info repeated (editor, etc) but can change authors (e.g. with Largo Winch)
+  - minOccurs, maxOccurs always specified, for sake of readiness
 
-  TODO
+TODO
+  - date: create a type for comparison, with regex
+  - minOccurs, maxOccurs on the elements
+  - Element +  ref vs element in the sequence only and that's it
+  - keys and keyref paths edited like I did for BOOKAUTHOR?
+
   - add simpletype for restrictions on size of string elements
   - check integer elements as well
-  - date: create a type for comparison
-  - minOccurs, maxOccurs on the elements
+  - to create ISBN type
 
-  - Element +  ref vs element in the sequence only and that's it
-
+  - to complete editor and theme lists
 
   - by default, an attribute is optional, hence use="required" added if necessary
-  - check if <xs:all> can be useful (each element appears 0 or 1 time, in any order)
+  - check if <xs:all> can be useful (each element appears 0 or 1 time, in any order) -> no.
 
   - Namespace
-  - to review the keyref paths if necessary
 
   -nb: sequence - 22.06.21 - it appears that the order is important
   -an integer element cannot be empty (I faced that when adding NROFBORROWS)
@@ -29,12 +36,6 @@ To validate: https://www.freeformatter.com/xml-validator-xsd.html
       This element contains the whole database (it is its root node - "schema element")
   -->
  	<xs:element name="LIBRARY" type="libraryType">
-    <!--TODO: keys and keyrefs definition-->
-		<!--<xs:key name="bookKey">
-			<xs:selector xpath="BOOK"/>
-			<xs:field xpath="@id"/>
-		</xs:key>-->
-
 
     <!--key of author / reffering key on BOOK/BOOKAUTHORS/BOOKAUTHOR-->
     <xs:key name="authorKey">
@@ -42,7 +43,8 @@ To validate: https://www.freeformatter.com/xml-validator-xsd.html
 			<xs:field xpath="@idAuthor"/>
 		</xs:key>
     <xs:keyref name="bookToAuthor" refer="authorKey">
-			<xs:selector xpath="BOOKS/BOOK/BOOKAUTHORS/BOOKAUTHOR"/>
+			<!--<xs:selector xpath="BOOKS/BOOK/BOOKAUTHORS/BOOKAUTHOR"/>-->
+      <xs:selector xpath=".//BOOKAUTHOR"/>
 			<xs:field xpath="@idAuthorRef"/>
 		</xs:keyref>
 
@@ -131,7 +133,6 @@ To validate: https://www.freeformatter.com/xml-validator-xsd.html
 		</xs:sequence>
 	</xs:complexType>
 
-  <!--TODO: to check if we can avoid creating this "list" element-->
   <xs:complexType name="booksType">
 		<xs:sequence>
 			<xs:element name="BOOK" type="bookType" minOccurs="0" maxOccurs="unbounded"/>
@@ -139,7 +140,6 @@ To validate: https://www.freeformatter.com/xml-validator-xsd.html
 		</xs:sequence>
 	</xs:complexType>
 
-  <!--TODO: to check if we use it or not (for the moment we dont)-->
   <xs:complexType name="authorsType">
 		<xs:sequence>
 			<xs:element name="AUTHOR" type="authorType" minOccurs="0" maxOccurs="unbounded"/>
@@ -162,10 +162,6 @@ To validate: https://www.freeformatter.com/xml-validator-xsd.html
       Editor/
       BookType/editor
       -->
-      <!--TODO: 
-      - to restrict size of string elements by creating simpleType with restrictions
-      - to create ISBN type
-      -->
       <xs:element name="TITLE" type="xs:string"/>
       <xs:element name="DESCRIPTION" type="xs:string"/>
       <xs:element name="ISBN" type="xs:string" minOccurs="0"/> <!--Not mandatory for newspapers-->
@@ -176,8 +172,6 @@ To validate: https://www.freeformatter.com/xml-validator-xsd.html
       <xs:element name="TARGETREADER" type="targetReaderType"/>
       <xs:element name="EDITOR" type="editorType"/>
 
-
-      <!--TODO: to review the date type-->
       <xs:element name="RELEASEDATE" type="xs:date"/>
       <xs:element name="PURCHASEDATE" type="xs:date"/>
 
@@ -261,9 +255,7 @@ To validate: https://www.freeformatter.com/xml-validator-xsd.html
         <xs:enumeration value="Newspaper"/>
     </xs:restriction>
   </xs:simpleType>
-  <!--
-    TODO: to complete theme  list
-    -->
+
   <xs:simpleType name="themeType">
     <xs:restriction base="xs:string">
       <xs:enumeration value="History"/>
@@ -278,9 +270,6 @@ To validate: https://www.freeformatter.com/xml-validator-xsd.html
     </xs:restriction>
   </xs:simpleType>
 
-  <!--
-    TODO: to complete editor list
-    -->
   <xs:simpleType name="editorType">
     <xs:restriction base="xs:string">
       <xs:enumeration value="Bayard Presse"/>
