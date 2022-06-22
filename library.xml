@@ -12,7 +12,10 @@
       <RELEASEDATE>1977-12-13</RELEASEDATE>
       <PURCHASEDATE>2007-09-02</PURCHASEDATE>
       <BOOKAUTHORS>
-        <BOOKAUTHOR idAuthorRef="1234"/>
+        <BOOKAUTHOR idAuthorRef="1234">
+          <ROLE>Scriptwriter</ROLE>
+          <ROLE>Illustrator</ROLE>
+        </BOOKAUTHOR>
         <BOOKAUTHOR idAuthorRef="5678"/>
       </BOOKAUTHORS>
       <COMICBOOKSER idCBSRef="-705"/>
@@ -89,28 +92,28 @@
   </BORROWERS>
   <BOOKSERIES>
     <BOOKSERIE idBS="-2037">
-      <SerieName>string</SerieName>
-      <Description>string</Description>
+      <TITLE>string</TITLE>
+      <DESCRIPTION>string</DESCRIPTION>
       <NrOfVolumes>4331</NrOfVolumes>
     </BOOKSERIE>
   </BOOKSERIES>
   <COMICBOOKSERIES>
     <COMICBOOKSERIE idCBS="-705">
-      <SerieName>string</SerieName>
-      <Description>string</Description>
+      <TITLE>string</TITLE>
+      <DESCRIPTION>string</DESCRIPTION>
       <NrOfVolumes>-1545</NrOfVolumes>
     </COMICBOOKSERIE>
     <COMICBOOKSERIE idCBS="3023">
-      <SerieName>string</SerieName>
-      <Description>string</Description>
+      <TITLE>string</TITLE>
+      <DESCRIPTION>string</DESCRIPTION>
       <NrOfVolumes>-3365</NrOfVolumes>
     </COMICBOOKSERIE>
   </COMICBOOKSERIES>
   <NEWSPAPERSERIES>
     <NEWSPAPERSERIE idNWS="-4234">
       <ISSN>string</ISSN>
-      <SerieName>string</SerieName>
-      <Description>string</Description>
+      <TITLE>string</TITLE>
+      <DESCRIPTION>string</DESCRIPTION>
       <NrOfVolumes>-2220</NrOfVolumes>
     </NEWSPAPERSERIE>
   </NEWSPAPERSERIES>

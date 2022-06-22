@@ -11,6 +11,8 @@ Comments for the report
   - all the refkeys are under the book node
   - Books then series outside. info repeated (editor, etc) but can change authors (e.g. with Largo Winch)
   - minOccurs, maxOccurs always specified, for sake of readiness
+  - BOOKAUTHOR / ROLE - choice made: several ROLE may be used for the same author (usual for the comics)
+  - BOOKAUTHOR / ROLE: minOccurs = 0 because it is useless for novels, for example
 
 TODO
   - date: create a type for comparison, with regex
@@ -23,6 +25,7 @@ TODO
   - to create ISBN type
 
   - to complete editor and theme lists
+  - to create a big XML
 
   - by default, an attribute is optional, hence use="required" added if necessary
   - check if <xs:all> can be useful (each element appears 0 or 1 time, in any order) -> no.
@@ -211,10 +214,26 @@ TODO
 		</xs:sequence>
 	</xs:complexType>
 
-  <!--BookAuthor: one attribute for the reference to Author-->
+  <!--BookAuthor: 
+  - one ROLE element for the role in the creation (writer, illustrator...)
+  - one attribute for the reference to Author-->
   <xs:complexType name="bookAuthorType">
+    <xs:sequence>
+      <xs:element name="ROLE" type="roleType" minOccurs="0" maxOccurs="3"/>
+    </xs:sequence>
 		<xs:attribute name='idAuthorRef' type='xs:integer'/>
 	</xs:complexType>
+
+  <!--roleType used by bookAuthorType-->
+  <xs:simpleType name="roleType">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="Novelist"/><!--Romancier-->
+        <xs:enumeration value="Writer"/><!--Ecrivain - more "generalist"-->
+        <xs:enumeration value="Scriptwriter"/><!--Scenariste-->
+        <xs:enumeration value="Illustrator"/><!--Dessins-->
+        <xs:enumeration value="Colourist"/><!--Coloriste-->
+    </xs:restriction>
+  </xs:simpleType>
 
   <!--BORROWINFO contains the information related to the borrow of the book
   I separated it because of the dependency: we have all of them or we dont have any one
@@ -316,8 +335,8 @@ TODO
   <!--BookSerie contained in the BookSeries list-->
   <xs:complexType name="bookSerieType">
 		<xs:sequence>
-      <xs:element name="SerieName" type="xs:string"/>
-      <xs:element name="Description" type="xs:string"/>
+      <xs:element name="TITLE" type="xs:string"/>
+      <xs:element name="DESCRIPTION" type="xs:string"/>
       <xs:element name="NrOfVolumes" type="xs:integer"/>
 		</xs:sequence>
     <xs:attribute name="idBS" type="xs:integer" use="required"/>
@@ -334,8 +353,8 @@ TODO
   <!--ComicBookSerie contained in the ComicBookSeries list-->
   <xs:complexType name="comicBookSerieType">
 		<xs:sequence>
-      <xs:element name="SerieName" type="xs:string"/>
-      <xs:element name="Description" type="xs:string"/>
+      <xs:element name="TITLE" type="xs:string"/>
+      <xs:element name="DESCRIPTION" type="xs:string"/>
       <xs:element name="NrOfVolumes" type="xs:integer"/>
 		</xs:sequence>
     <xs:attribute name="idCBS" type="xs:integer" use="required"/>
@@ -352,8 +371,8 @@ TODO
   <xs:complexType name="newspaperSerieType">
 		<xs:sequence>
       <xs:element name="ISSN" type="xs:string"/>
-      <xs:element name="SerieName" type="xs:string"/>
-      <xs:element name="Description" type="xs:string"/>
+      <xs:element name="TITLE" type="xs:string"/>
+      <xs:element name="DESCRIPTION" type="xs:string"/>
       <xs:element name="NrOfVolumes" type="xs:integer"/>
 		</xs:sequence>
     <xs:attribute name="idNWS" type="xs:integer" use="required"/>
