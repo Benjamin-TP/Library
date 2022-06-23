@@ -24,11 +24,12 @@ Comments related to the informations about the borrowings (NB: "BORROWABLE" is a
   NROFBOOKS removed from the BOORROWER info: it can be deducted from the above list
   - BORROWINFO removed from the BOOK; only two columns remain under BOOK: BORROWDATE and RETURNDATE
 
-  - 
 
 TODO
+  - BORROWINFO removed from the BOOK; only two columns remain under BOOK: BORROWDATE and RETURNDATE
   - No difference between bookseries and comicbookseries: merge them? A priori: no (useful in a real library)
   - date: create a type for comparison, with regex
+  - date: set it nullable. I had to make BORROWDATE and RETURNDATE as string; see https://stackoverflow.com/questions/7360906/having-an-empty-xsdate-element-being-validated-ok-by-the-xsd
   - minOccurs, maxOccurs on the elements
   - Element +  ref vs element in the sequence only and that's it
   - keys and keyref paths edited like I did for BOOKAUTHOR?
@@ -51,8 +52,8 @@ TODO
 
 To-do xslt
 - Books per borrower
-- Book per author
-- Book lately 
+- Book per author (XML?)
+- Books not yet returned
 
 -->
   <!--LIBRARY
@@ -228,9 +229,11 @@ To-do xslt
       -->
       <xs:element name="BORROWABLE" type="xs:boolean"/>
 
-      <!--BORROWINFO contains the information related to the borrow of the book-->
-      <xs:element name="BORROWINFO" type="borrowInfoType" minOccurs="0"/>
-
+      <!--BORROWINFO contains the information related to the borrow of the book
+      <xs:element name="BORROWINFO" type="borrowInfoType" minOccurs="0"/>-->
+      <!--The below dates can be null in case the book is not currently borrowed-->
+      <xs:element name="BORROWDATE" type="xs:string"/>
+      <xs:element name="RETURNDATE" type="xs:string"/>
       
       <!--Number of borrows
       Outside the BORROWINFO element because it is not the same level
@@ -279,13 +282,14 @@ To-do xslt
   I separated it because of the dependency: we have all of them or we dont have any one
   No need for minOccurs/maxOccurs here
   -->
+  <!--
   <xs:complexType name="borrowInfoType">
 		<xs:sequence>
       <xs:element name="BORROWEDBY" type="borrowedByType"/>
       <xs:element name="BORROWDATE" type="xs:date"/>
       <xs:element name="RETURNDATE" type="xs:date"/>
     </xs:sequence>
-	</xs:complexType>
+	</xs:complexType>-->
 
 
   <!--Complex types for the link between book and the series-->
@@ -372,10 +376,10 @@ To-do xslt
 		<xs:attribute name='idBookRef' type='xs:integer'/>
 	</xs:complexType>
 
-  <!--BORROWEDBY contained in the book-->
+  <!--BORROWEDBY contained in the book
   <xs:complexType name="borrowedByType">
 		<xs:attribute name='idBorrowerRef' type='xs:integer'/>
-	</xs:complexType>
+	</xs:complexType>-->
  
   <!--The BookSeries list containt BookSerie elements-->
   <xs:complexType name="bookSeriesType">
