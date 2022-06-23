@@ -2,7 +2,7 @@
 <!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
 <LIBRARY xsi:noNamespaceSchemaLocation="schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <BOOKS>
-    <BOOK>
+    <BOOK idBook="1">
       <TITLE>string</TITLE>
       <DESCRIPTION>string</DESCRIPTION>
       <BOOKFORMAT>Comic</BOOKFORMAT>
@@ -27,7 +27,7 @@
       </BORROWINFO>
       <NROFBORROWS>350</NROFBORROWS>
     </BOOK>
-    <BOOK>
+    <BOOK idBook="2">
       <TITLE>string</TITLE>
       <DESCRIPTION>string</DESCRIPTION>
       <BOOKFORMAT>Book</BOOKFORMAT>
@@ -48,7 +48,7 @@
       </BORROWINFO>
       <NROFBORROWS>0</NROFBORROWS>
     </BOOK>
-    <BOOK>
+    <BOOK idBook="3">
       <TITLE>string</TITLE>
       <DESCRIPTION>string</DESCRIPTION>
       <BOOKFORMAT>Comic</BOOKFORMAT>
@@ -66,7 +66,7 @@
         <RETURNDATE>1980-01-14</RETURNDATE>
       </BORROWINFO>
     </BOOK>
-    <BOOK>
+    <BOOK idBook="4">
       <TITLE>string</TITLE>
       <DESCRIPTION>string</DESCRIPTION>
       <BOOKFORMAT>Newspaper</BOOKFORMAT>
@@ -85,13 +85,25 @@
       <FIRSTNAME>string</FIRSTNAME>
       <LASTNAME>string</LASTNAME>
       <BIRTHDATE>2016-03-20</BIRTHDATE>
-      <NROFBOOKS>447</NROFBOOKS>
+      <BORROWINGS>
+        <BORROWING idBookRef="1"/>
+        <BORROWING idBookRef="2"/>
+        <BORROWING idBookRef="3"/>
+      </BORROWINGS>
     </BORROWER>
     <BORROWER idBorrower="1235">
       <FIRSTNAME>string</FIRSTNAME>
       <LASTNAME>string</LASTNAME>
       <BIRTHDATE>2016-03-20</BIRTHDATE>
-      <NROFBOOKS>447</NROFBOOKS>
+      <BORROWINGS>
+        <BORROWING idBookRef="4"/>
+      </BORROWINGS>
+    </BORROWER>
+    <BORROWER idBorrower="3456">
+      <FIRSTNAME>string</FIRSTNAME>
+      <LASTNAME>string</LASTNAME>
+      <BIRTHDATE>2016-03-20</BIRTHDATE>
+      <BORROWINGS/>
     </BORROWER>
   </BORROWERS>
   <BOOKSERIES>

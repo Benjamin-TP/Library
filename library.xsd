@@ -14,14 +14,19 @@ Comments for the report
   - BOOKAUTHOR / ROLE: on BOOK, not AUTHOR level because an AUTHOR can switch roles (e.g. morris, goscinny, uderzo)
   - BOOKAUTHOR / ROLE - choice made: several ROLE may be used for the same author (usual for the comics)
   - BOOKAUTHOR / ROLE: minOccurs = 0 because it is useless for novels, for example
-  - BORROWABLE: there is still room to enhance it, e.g. two fields (one for "already borrowed", another one for "not borrowable yet")
+
+Comments related to the informations about the borrowings (NB: "BORROWABLE" is a neologism)
+  - BORROWABLE: a boolean attached to the BOOK there is still room to enhance it, e.g. two fields (one for "already borrowed", another one for "not borrowable yet")
   - We could also add a field "Reserved" + position in the list
+  - BORROWER contains a list of a borrows/refkey to the BOOK; idBook created for that purpose.
+  I cannot use xs:assert with XSD 1.0, hence I didnt find any perfect solution.
+  MAX number of books: in the BORROWER info (limitation on the list) rather than from the book
+  NROFBOOKS removed from the BOORROWER info: it can be deducted from the above list
+  - BORROWINFO removed from the BOOK; only two columns remain under BOOK: BORROWDATE and RETURNDATE
+
+  - 
 
 TODO
-  - Max number of borrows: in the borrower vs control from the book (more complicated)
-  - Borrowable: how to do?
-  - NROFBOOKS in the BORROWER or not?
-  - boolean for BOOK: borrowable or not
   - No difference between bookseries and comicbookseries: merge them? A priori: no (useful in a real library)
   - date: create a type for comparison, with regex
   - minOccurs, maxOccurs on the elements
@@ -31,7 +36,7 @@ TODO
 
   - add simpletype for restrictions on size of string elements
   - check integer elements as well
-  - to create ISBN type
+  - to create ISBN and ISSN types
 
   - to complete editor and theme lists
   - to create a big XML
@@ -54,6 +59,17 @@ To-do xslt
       This element contains the whole database (it is its root node - "schema element")
   -->
  	<xs:element name="LIBRARY" type="libraryType">
+
+
+    <!--key of BOOK / reffering key on BORROWERS/BORROWER/BORROWINGS/BORROWING-->
+    <xs:key name="bookKey">
+			<xs:selector xpath=".//BOOK"/>
+			<xs:field xpath="@idBook"/>
+		</xs:key>
+    <xs:keyref name="borrowingToBook" refer="bookKey">
+      <xs:selector xpath=".//BORROWING"/>
+			<xs:field xpath="@idBookRef"/>
+		</xs:keyref>
 
     <!--key of author / reffering key on BOOK/BOOKAUTHORS/BOOKAUTHOR-->
     <xs:key name="authorKey">
@@ -225,6 +241,7 @@ To-do xslt
 
 		</xs:sequence>
 
+    <xs:attribute name="idBook" type="xs:integer" use="required"/>
 	</xs:complexType>
 
   <!--BookAuthors
@@ -244,7 +261,7 @@ To-do xslt
     <xs:sequence>
       <xs:element name="ROLE" type="roleType" minOccurs="0" maxOccurs="3"/>
     </xs:sequence>
-		<xs:attribute name='idAuthorRef' type='xs:integer'/>
+		<xs:attribute name='idAuthorRef' type='xs:integer' use="required"/>
 	</xs:complexType>
 
   <!--roleType used by bookAuthorType-->
@@ -288,7 +305,7 @@ To-do xslt
 	</xs:complexType>
 
   <!--Theme type with restriction / pattern (or restriction / enumeration)
-  Same for TargetReader, Editor, BookType
+  Same for TargetReader, Editor, BookFormat
   -->
   <xs:simpleType name="bookFormatType">
     <xs:restriction base="xs:string">
@@ -338,9 +355,21 @@ To-do xslt
       <xs:element name="FIRSTNAME" type="xs:string"/>
       <xs:element name="LASTNAME" type="xs:string"/>
       <xs:element name="BIRTHDATE" type="xs:date"/>
-      <xs:element name="NROFBOOKS" type="xs:integer"/>
+      <!--<xs:element name="NROFBOOKS" type="xs:integer"/>-->
+      <xs:element name="BORROWINGS" type="borrowingsType"/>
 		</xs:sequence>
     <xs:attribute name="idBorrower" type="xs:integer" use="required"/>
+	</xs:complexType>
+
+  <xs:complexType name="borrowingsType">
+		<xs:sequence>
+      <!--Max number of borrowings with maxOccurs-->
+      <xs:element name="BORROWING" type="borrowingType" minOccurs="0" maxOccurs="10"/>
+		</xs:sequence>
+	</xs:complexType>
+
+  <xs:complexType name="borrowingType">
+		<xs:attribute name='idBookRef' type='xs:integer'/>
 	</xs:complexType>
 
   <!--BORROWEDBY contained in the book-->
