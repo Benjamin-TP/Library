@@ -16,6 +16,8 @@ Comments for the report
   - BOOKAUTHOR / ROLE: minOccurs = 0 because it is useless for novels, for example
 
 TODO
+  - Max number of borrows: in the borrower vs control from the book (more complicated)
+  - Borrowable: how to do?
   - Frequency for the newspapers
   - NROFBOOKS in the BORROWER or not?
   - boolean for BOOK: borrowable or not
@@ -40,6 +42,12 @@ TODO
 
   -nb: sequence - 22.06.21 - it appears that the order is important
   -an integer element cannot be empty (I faced that when adding NROFBORROWS)
+
+To-do xslt
+- Books per borrower
+- Book per author
+- Book lately 
+
 -->
   <!--LIBRARY
       This element contains the whole database (it is its root node - "schema element")
@@ -380,8 +388,22 @@ TODO
       <xs:element name="TITLE" type="xs:string"/>
       <xs:element name="DESCRIPTION" type="xs:string"/>
       <xs:element name="NROFVOLUMES" type="xs:integer"/>
+      <xs:element name="FREQUENCY" type="frequencyType"/>
 		</xs:sequence>
     <xs:attribute name="idNWS" type="xs:integer" use="required"/>
 	</xs:complexType>
+
+  <!--Frequency types list for the newspaper-->
+  <xs:simpleType name="frequencyType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Daily"/>
+      <xs:enumeration value="Weekly"/>
+      <xs:enumeration value="Fortnightly"/>
+      <xs:enumeration value="Monthly"/>
+      <xs:enumeration value="Bimonthly"/>
+      <xs:enumeration value="Biannual"/>
+      <xs:enumeration value="Annual"/>
+    </xs:restriction>
+  </xs:simpleType>
 
 </xs:schema>
