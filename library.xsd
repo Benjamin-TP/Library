@@ -14,11 +14,12 @@ Comments for the report
   - BOOKAUTHOR / ROLE: on BOOK, not AUTHOR level because an AUTHOR can switch roles (e.g. morris, goscinny, uderzo)
   - BOOKAUTHOR / ROLE - choice made: several ROLE may be used for the same author (usual for the comics)
   - BOOKAUTHOR / ROLE: minOccurs = 0 because it is useless for novels, for example
+  - BORROWABLE: there is still room to enhance it, e.g. two fields (one for "already borrowed", another one for "not borrowable yet")
+  - We could also add a field "Reserved" + position in the list
 
 TODO
   - Max number of borrows: in the borrower vs control from the book (more complicated)
   - Borrowable: how to do?
-  - Frequency for the newspapers
   - NROFBOOKS in the BORROWER or not?
   - boolean for BOOK: borrowable or not
   - No difference between bookseries and comicbookseries: merge them? A priori: no (useful in a real library)
@@ -204,9 +205,17 @@ To-do xslt
         <xs:element name="NEWSPAPERSER" type="newspaperSerType"/>
       </xs:choice>
 
+      <!--BORROWABLE
+      not borrowable for two reasons
+      - for read-here only (e.g. for newspapers released recently)
+      - already borrowed by someone
+      -->
+      <xs:element name="BORROWABLE" type="xs:boolean"/>
+
       <!--BORROWINFO contains the information related to the borrow of the book-->
       <xs:element name="BORROWINFO" type="borrowInfoType" minOccurs="0"/>
 
+      
       <!--Number of borrows
       Outside the BORROWINFO element because it is not the same level
       - BORROWINFO is for the current borrow status
