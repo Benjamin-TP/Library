@@ -28,11 +28,10 @@ Comments related to the informations about the borrowings (NB: "BORROWABLE" is a
   - BORROWINFO removed from the BOOK; only two columns remain under BOOK: BORROWDATE and RETURNDATE
   Still not the perfect solution, but the other was: BORROWINFO shared by BOOK and BORROWER; 
   - bookseries and comicbookseries not merged despite they are very similar: still useful in a real library; the other option would be to flag them using the book format 
-
+  - regex for date: \d{4}-\d{2}-\d{2} customDateType: similar to what we saw in the course, but with yyyy-mm-dd instead
+Still to transfomr to integer for comparison in the xslt (1.0)
 
 TODO
-  - date: create a type for comparison, with regex
-  - regex for date: \d{4}-\d{2}-\d{2} - it will have to be changed during the xslt transfo.
   - date: set it nullable. I had to make BORROWDATE and RETURNDATE as string; see https://stackoverflow.com/questions/7360906/having-an-empty-xsdate-element-being-validated-ok-by-the-xsd
   - minOccurs, maxOccurs on the elements
   - Element +  ref vs element in the sequence only and that's it
@@ -216,8 +215,8 @@ To-do xslt
       <xs:element name="TARGETREADER" type="targetReaderType"/>
       <xs:element name="EDITOR" type="editorType"/>
 
-      <xs:element name="RELEASEDATE" type="xs:date"/>
-      <xs:element name="PURCHASEDATE" type="xs:date"/>
+      <xs:element name="RELEASEDATE" type="customDateType"/>
+      <xs:element name="PURCHASEDATE" type="customDateType"/>
 
       <!--BookAuthors-->
       <xs:element name="BOOKAUTHORS" type="bookAuthorsType"/>
@@ -241,8 +240,8 @@ To-do xslt
       <!--BORROWINFO contains the information related to the borrow of the book
       <xs:element name="BORROWINFO" type="borrowInfoType" minOccurs="0"/>-->
       <!--The below dates can be null in case the book is not currently borrowed-->
-      <xs:element name="BORROWDATE" type="xs:string"/>
-      <xs:element name="RETURNDATE" type="xs:string"/>
+      <xs:element name="BORROWDATE" type="customDateType"/>
+      <xs:element name="RETURNDATE" type="customDateType"/>
       
       <!--Number of borrows
       Outside the BORROWINFO element because it is not the same level
@@ -295,8 +294,8 @@ To-do xslt
   <xs:complexType name="borrowInfoType">
 		<xs:sequence>
       <xs:element name="BORROWEDBY" type="borrowedByType"/>
-      <xs:element name="BORROWDATE" type="xs:date"/>
-      <xs:element name="RETURNDATE" type="xs:date"/>
+      <xs:element name="BORROWDATE" type="customDateType"/>
+      <xs:element name="RETURNDATE" type="customDateType"/>
     </xs:sequence>
 	</xs:complexType>-->
 
@@ -361,7 +360,7 @@ To-do xslt
 		<xs:sequence>
       <xs:element name="FIRSTNAME" type="xs:string"/>
       <xs:element name="LASTNAME" type="xs:string"/>
-      <xs:element name="BIRTHDATE" type="xs:date"/>
+      <xs:element name="BIRTHDATE" type="customDateType"/>
 		</xs:sequence>
     <xs:attribute name="idAuthor" type="xs:integer" use="required"/>
 	</xs:complexType>
@@ -370,7 +369,7 @@ To-do xslt
 		<xs:sequence>
       <xs:element name="FIRSTNAME" type="xs:string"/>
       <xs:element name="LASTNAME" type="xs:string"/>
-      <xs:element name="BIRTHDATE" type="xs:date"/>
+      <xs:element name="BIRTHDATE" type="customDateType"/>
       <xs:element name="BORROWINGS" type="borrowingsType"/>
 		</xs:sequence>
     <xs:attribute name="idBorrower" type="xs:integer" use="required"/>
@@ -458,5 +457,18 @@ To-do xslt
       <xs:enumeration value="Annual"/>
     </xs:restriction>
   </xs:simpleType>
+
+
+  <!--simpleType with restrictions for dates, ISBN and ISSN-->
+  <!--customDateType: similar to what we saw in the course, but with yyyy-mm-dd instead
+  It is be better for sorting by date in xslt transformation
+  The pattern accepts empty dates
+  -->
+  <xs:simpleType name="customDateType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="(\d{4}-\d{2}-\d{2}|)"/>
+    </xs:restriction>
+  </xs:simpleType>
+
 
 </xs:schema>
