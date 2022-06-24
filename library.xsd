@@ -15,7 +15,7 @@ Comments for the report
   - BOOKAUTHOR / ROLE: on BOOK, not AUTHOR level because an AUTHOR can switch roles (e.g. morris, goscinny, uderzo)
   - BOOKAUTHOR / ROLE - choice made: several ROLE may be used for the same author (usual for the comics)
   - BOOKAUTHOR / ROLE: minOccurs = 0 because it is useless for novels, for example
-
+  - attribute: by default: optional, hence required for all attributes used for key and keyref
 
 Comments related to the informations about the borrowings (NB: "BORROWABLE" is a neologism)
   - BORROWABLE: a boolean attached to the BOOK.
@@ -49,7 +49,6 @@ TODO
   - to complete editor and theme lists
   - to create a big XML
 
-  - by default, an attribute is optional, hence use="required" added if necessary
   - check if <xs:all> can be useful (each element appears 0 or 1 time, in any order) -> no.
 
   - Namespace
@@ -308,13 +307,13 @@ To-do xslt
   newspaperSerType refers to a newspaperSerieType (idNWSref to idNWS)
   -->
   <xs:complexType name="bookSerType">
-		<xs:attribute name='idBSRef' type='xs:integer'/>
+		<xs:attribute name='idBSRef' type="xs:integer" use="required"/>
 	</xs:complexType>
   <xs:complexType name="comicBookSerType">
-		<xs:attribute name='idCBSRef' type='xs:integer'/>
+		<xs:attribute name='idCBSRef' type="xs:integer" use="required"/>
 	</xs:complexType>
   <xs:complexType name="newspaperSerType">
-		<xs:attribute name='idNWSRef' type='xs:integer'/>
+		<xs:attribute name='idNWSRef' type="xs:integer" use="required"/>
 	</xs:complexType>
 
   <!--Theme type with restriction / pattern (or restriction / enumeration)
@@ -384,12 +383,12 @@ To-do xslt
 	</xs:complexType>
 
   <xs:complexType name="borrowingType">
-		<xs:attribute name='idBookRef' type='xs:integer'/>
+		<xs:attribute name="idBookRef" type="xs:integer" use="required"/>
 	</xs:complexType>
 
   <!--BORROWEDBY contained in the book
   <xs:complexType name="borrowedByType">
-		<xs:attribute name='idBorrowerRef' type='xs:integer'/>
+		<xs:attribute name="idBorrowerRef" type="xs:integer" use="required"/>
 	</xs:complexType>-->
  
   <!--The BookSeries list containt BookSerie elements-->
