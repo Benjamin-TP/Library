@@ -36,9 +36,12 @@ Still to transfomr to integer for comparison in the xslt (1.0)
    regex for ISBN: (\d{3}-|)\d{1}-\d{2}-\d{6}-\d{1} (works for ISBN-10 and ISBN-13)
   - ISSN : in NEWSPAPERSERIE (I understood that it is linked to the serie itself)
   regex for ISSN: ISSN \d{4}-\d{3}(\d|X) (with ISSN inside!)
+  - Newspaper: period start date and end date within NEWSPAPERSER, in order to avoid having it in all BOOK.
+  Enhancement: ref to a NEWSPAPERSERIE (requires a complextype) or dedicated NEWSPAPER at the same level as BOOK
 
 TODO
-   - minOccurs, maxOccurs on the elements
+  - newspaper: period start and end date
+  - minOccurs, maxOccurs on the elements
   - Element +  ref vs element in the sequence only and that's it
   - keys and keyref paths edited like I did for BOOKAUTHOR?
   - control on the max number of books? Per book type?
@@ -49,8 +52,7 @@ TODO
   - to complete editor and theme lists
   - to create a big XML
 
-  - check if <xs:all> can be useful (each element appears 0 or 1 time, in any order) -> no.
-
+  - review of the NEWSPAPER start and end dates
   - Namespace
 
   -nb: sequence - 22.06.21 - it appears that the order is important
@@ -248,7 +250,7 @@ To-do xslt
       - BORROWINFO is for the current borrow status
       - NROFBORROWS is for the history of the borrowals
       -->
-      <xs:element name="NROFBORROWS" type="xs:integer" minOccurs="0"/>
+      <xs:element name="NROFBORROWS" type="xs:integer"/>
 
 		</xs:sequence>
 
@@ -313,6 +315,10 @@ To-do xslt
 		<xs:attribute name='idCBSRef' type="xs:integer" use="required"/>
 	</xs:complexType>
   <xs:complexType name="newspaperSerType">
+    <xs:sequence>
+      <xs:element name="PERIODSTARTDATE" type="customDateType"/>
+      <xs:element name="PERIODENDDATE" type="customDateType"/>
+    </xs:sequence>
 		<xs:attribute name='idNWSRef' type="xs:integer" use="required"/>
 	</xs:complexType>
 
