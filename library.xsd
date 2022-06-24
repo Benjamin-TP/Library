@@ -16,6 +16,7 @@ Comments for the report
   - BOOKAUTHOR / ROLE - choice made: several ROLE may be used for the same author (usual for the comics)
   - BOOKAUTHOR / ROLE: minOccurs = 0 because it is useless for novels, for example
 
+
 Comments related to the informations about the borrowings (NB: "BORROWABLE" is a neologism)
   - BORROWABLE: a boolean attached to the BOOK.
   there is still room to enhance it, e.g. two fields 
@@ -30,20 +31,20 @@ Comments related to the informations about the borrowings (NB: "BORROWABLE" is a
   - bookseries and comicbookseries not merged despite they are very similar: still useful in a real library; the other option would be to flag them using the book format 
   - regex for date: \d{4}-\d{2}-\d{2} customDateType: similar to what we saw in the course, but with yyyy-mm-dd instead
 Still to transfomr to integer for comparison in the xslt (1.0)
+  - ISBN - in BOOK but will always be useless for the newspaper
+  Disadvantage of having all elements in BOOK
+   regex for ISBN: (\d{3}-|)\d{1}-\d{2}-\d{6}-\d{1} (works for ISBN-10 and ISBN-13)
+  - ISSN : in NEWSPAPERSERIE (I understood that it is linked to the serie itself)
+  regex for ISSN: ISSN \d{4}-\d{3}(\d|X) (with ISSN inside!)
 
 TODO
-  - date: set it nullable. I had to make BORROWDATE and RETURNDATE as string; see https://stackoverflow.com/questions/7360906/having-an-empty-xsdate-element-being-validated-ok-by-the-xsd
-  - minOccurs, maxOccurs on the elements
+   - minOccurs, maxOccurs on the elements
   - Element +  ref vs element in the sequence only and that's it
   - keys and keyref paths edited like I did for BOOKAUTHOR?
   - control on the max number of books? Per book type?
 
   - add simpletype for restrictions on size of string elements
-  - check integer elements as well
-  - to create ISBN and ISSN types
-  - regex for ISBN: (\d{3}-|)\d{1}-\d{2}-\d{6}-\d{1}
-  - regex for ISSN: ISSN \d{4}-\d{3}(\d|X)
-  
+  - check integer elements as well  
 
   - to complete editor and theme lists
   - to create a big XML
@@ -207,7 +208,7 @@ To-do xslt
       -->
       <xs:element name="TITLE" type="xs:string"/>
       <xs:element name="DESCRIPTION" type="xs:string"/>
-      <xs:element name="ISBN" type="xs:string" minOccurs="0"/> <!--Not mandatory for newspapers-->
+      <xs:element name="ISBN" type="ISBNType" minOccurs="0"/> <!--Not mandatory for newspapers-->
 
       <!--Book parameters-->
       <xs:element name="BOOKFORMAT" type="bookFormatType"/>
@@ -436,7 +437,7 @@ To-do xslt
 
   <xs:complexType name="newspaperSerieType">
 		<xs:sequence>
-      <xs:element name="ISSN" type="xs:string"/>
+      <xs:element name="ISSN" type="ISSNType"/>
       <xs:element name="TITLE" type="xs:string"/>
       <xs:element name="DESCRIPTION" type="xs:string"/>
       <xs:element name="NROFVOLUMES" type="xs:integer"/>
@@ -470,5 +471,20 @@ To-do xslt
     </xs:restriction>
   </xs:simpleType>
 
+  <!--ISBN for the BOOK
+  The pattern accepts empty ISBN (it is mandatory for a bookshop, but not for a library)-->
+  <xs:simpleType name="ISBNType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="((\d{3}-|)\d{1}-\d{2}-\d{6}-\d{1}|)"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!--ISSN for NEWSPAPERSERIE
+  I chose to force filling the ISSN, since a newspaper always have one-->
+  <xs:simpleType name="ISSNType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="ISSN \d{4}-\d{3}(\d|X)"/>
+    </xs:restriction>
+  </xs:simpleType>
 
 </xs:schema>
