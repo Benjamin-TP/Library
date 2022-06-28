@@ -17,7 +17,7 @@ Comments for the report
   - BOOKAUTHOR / ROLE: minOccurs = 0 because it is useless for novels, for example
   - BOOKAUTHOR / ROLE: at most 3 elements (for a comic book: Scriptwriter, Illustrator and Colourist
   - attribute: by default: optional, hence required for all attributes used for key and keyref
-
+  - key and keyref: I used the ".//" notation for the selector; no need to describe the full path.
 
 Comments related to the informations about the borrowings (NB: "BORROWABLE" is a neologism)
   - BORROWABLE: a boolean attached to the BOOK.
@@ -32,22 +32,25 @@ Comments related to the informations about the borrowings (NB: "BORROWABLE" is a
   Still not the perfect solution, but the other was: 
   BORROWINFO shared by BOOK and BORROWER: harder to achieve max number of borrowings without duplicating the info.
   - BORROWDATE and RETURNDATE could also be in the BORROWING element
+
+
   - bookseries and comicbookseries not merged despite they are very similar: still useful in a real library; the other option would be to flag them using the book format 
-  - regex for date: \d{4}-\d{2}-\d{2} customDateType: similar to what we saw in the course, but with yyyy-mm-dd instead
+
+  Dates: regex for date: \d{4}-\d{2}-\d{2} customDateType: similar to what we saw in the course, but with yyyy-mm-dd instead
 Still to transfomr to integer for comparison in the xslt (1.0)
   - ISBN - in BOOK but will always be useless for the newspaper
   Disadvantage of having all elements in BOOK
    regex for ISBN: (\d{3}-|)\d{1}-\d{2}-\d{6}-\d{1} (works for ISBN-10 and ISBN-13)
   - ISSN : in NEWSPAPERSERIE (I understood that it is linked to the serie itself)
   regex for ISSN: ISSN \d{4}-\d{3}(\d|X) (with ISSN inside!)
+
   - Newspaper: period start date and end date within NEWSPAPERSER, in order to avoid having it in all BOOK.
   Enhancement: ref to a NEWSPAPERSERIE (requires a complextype) or dedicated NEWSPAPER at the same level as BOOK
 
-TODO
-  - Element +  ref vs element in the sequence only and that's it
-  - keys and keyref paths edited like I did for BOOKAUTHOR?
-  - control on the max number of books? Per book type?
+  Enhancement: type NEWSPAPER vs BOOK, in order to control the max number of borrowings per book type
 
+
+TODO
   - BORROWINFO and BORROWEDBY to delete definitely? /
   - add simpletype for restrictions on size of string elements
   - check integer elements as well  
@@ -58,6 +61,9 @@ TODO
   - review of the NEWSPAPERSER start and end dates
   - Namespace
 
+  Not mandatory:
+  - Element +  ref vs element in the sequence only and that's it
+Notes:
   -nb: sequence - 22.06.21 - it appears that the order is important
   -an integer element cannot be empty (I faced that when adding NROFBORROWS)
 
@@ -80,7 +86,7 @@ To-do xslt
     -The keys
   -->
  	<xs:element name="LIBRARY">
-    <xs:complexType ><!--name="libraryType"-->
+    <xs:complexType>
       <xs:sequence>
         <!--By default, minOccurs and maxOccurs equal to 1, hence not specified
         minOccurs="1" maxOccurs="unbounded"
@@ -105,7 +111,7 @@ To-do xslt
       </xs:sequence>
     </xs:complexType>
 
-    <!--key of BOOK / reffering key on BORROWERS/BORROWER/BORROWINGS/BORROWING-->
+    <!--key of BOOK / reffering key on BORROWING-->
     <xs:key name="bookKey">
 			<xs:selector xpath=".//BOOK"/>
 			<xs:field xpath="@idBook"/>
@@ -115,58 +121,45 @@ To-do xslt
 			<xs:field xpath="@idBookRef"/>
 		</xs:keyref>
 
-    <!--key of author / reffering key on BOOK/BOOKAUTHORS/BOOKAUTHOR-->
+    <!--key of author / reffering key on BOOKAUTHOR-->
     <xs:key name="authorKey">
-			<xs:selector xpath="AUTHORS/AUTHOR"/>
+			<xs:selector xpath=".//AUTHOR"/>
 			<xs:field xpath="@idAuthor"/>
 		</xs:key>
     <xs:keyref name="bookToAuthor" refer="authorKey">
-			<!--<xs:selector xpath="BOOKS/BOOK/BOOKAUTHORS/BOOKAUTHOR"/>-->
       <xs:selector xpath=".//BOOKAUTHOR"/>
 			<xs:field xpath="@idAuthorRef"/>
 		</xs:keyref>
 
     <!--key of BOOKSERIE / refkey on BOOKSER-->
     <xs:key name="bookSerieKey">
-			<xs:selector xpath="BOOKSERIES/BOOKSERIE"/>
+			<xs:selector xpath=".//BOOKSERIE"/>
 			<xs:field xpath="@idBS"/>
 		</xs:key>
     <xs:keyref name="bookSerToBookSerie" refer="bookSerieKey">
-			<xs:selector xpath="BOOKS/BOOK/BOOKSER"/>
+			<xs:selector xpath=".//BOOKSER"/>
 			<xs:field xpath="@idBSRef"/>
 		</xs:keyref>
 
     <!--key of COMICBOOKSERIE / refkey on COMICBOOKSER-->
     <xs:key name="comicBookSerieKey">
-			<xs:selector xpath="COMICBOOKSERIES/COMICBOOKSERIE"/>
+			<xs:selector xpath=".//COMICBOOKSERIE"/>
 			<xs:field xpath="@idCBS"/>
 		</xs:key>
     <xs:keyref name="comicBookSerToComicBookSerie" refer="comicBookSerieKey">
-			<xs:selector xpath="BOOKS/BOOK/COMICBOOKSER"/>
+			<xs:selector xpath=".//COMICBOOKSER"/>
 			<xs:field xpath="@idCBSRef"/>
 		</xs:keyref>
 
     <!--key of NEWSPAPERSERIE / refkey on NEWSPAPERSER-->
     <xs:key name="newspaperSerieKey">
-			<xs:selector xpath="NEWSPAPERSERIES/NEWSPAPERSERIE"/>
+			<xs:selector xpath=".//NEWSPAPERSERIE"/>
 			<xs:field xpath="@idNWS"/>
 		</xs:key>
     <xs:keyref name="newspaperSerToNewspaperSerie" refer="newspaperSerieKey">
-			<xs:selector xpath="BOOKS/BOOK/NEWSPAPERSER"/>
+			<xs:selector xpath=".//NEWSPAPERSER"/>
 			<xs:field xpath="@idNWSRef"/>
 		</xs:keyref>
-
-    <!--key of BORROWER / refkey on BORROWEDBY-->
-    <!-- BORROWEDBY deactivated
-    <xs:key name="borrowerKey">
-			<xs:selector xpath="BORROWERS/BORROWER"/>
-			<xs:field xpath="@idBorrower"/>
-		</xs:key>
-    <xs:keyref name="borrowedByToBorrower" refer="borrowerKey">
-			<xs:selector xpath="BOOKS/BOOK/BORROWINFO/BORROWEDBY"/>
-			<xs:field xpath="@idBorrowerRef"/>
-		</xs:keyref>
-    -->
 
   </xs:element>
 
@@ -193,7 +186,6 @@ To-do xslt
 
   <xs:complexType name="bookType">
 		<xs:sequence>
-      <!--minOccurs and maxOccurs at 1 by default, hence no need to specify them-->
       <!--For the book parameters: simpleType defined (with restriction on the values)
       Theme/ThemeID
       TargetReader/
@@ -235,8 +227,7 @@ To-do xslt
       <xs:element name="BORROWDATE" type="customDateType"/>
       <xs:element name="RETURNDATE" type="customDateType"/>
       
-      <!--Number of borrows - for statistics
-      -->
+      <!--Number of borrows - for statistics-->
       <xs:element name="NROFBORROWS" type="xs:integer"/>
 
 		</xs:sequence>
@@ -256,11 +247,11 @@ To-do xslt
 
   <!--BookAuthor: 
   - one ROLE element for the role in the creation (writer, illustrator...)
-  - one attribute for the reference to Author
-  - at most 3 elements (for a comic book: Scriptwriter, Illustrator and Colourist)-->
+  - At most 5 roles per BOOKAUTHOR (there are only five choices)
+  - one attribute for the reference to Author-->
   <xs:complexType name="bookAuthorType">
     <xs:sequence>
-      <xs:element name="ROLE" type="roleType" minOccurs="0" maxOccurs="3"/>
+      <xs:element name="ROLE" type="roleType" minOccurs="0" maxOccurs="5"/>
     </xs:sequence>
 		<xs:attribute name='idAuthorRef' type='xs:integer' use="required"/>
 	</xs:complexType>
@@ -276,28 +267,6 @@ To-do xslt
     </xs:restriction>
   </xs:simpleType>
 
-  <!--BORROWINFO contains the information related to the borrow of the book
-  I separated it because of the dependency: we have all of them or we dont have any one
-  No need for minOccurs/maxOccurs here
-  -->
-  <!--
-  <xs:complexType name="borrowInfoType">
-		<xs:sequence>
-      <xs:element name="BORROWEDBY" type="borrowedByType"/>
-      <xs:element name="BORROWDATE" type="customDateType"/>
-      <xs:element name="RETURNDATE" type="customDateType"/>
-    </xs:sequence>
-    <xs:attribute name='idBookRef' type="xs:integer" use="required"/>
-	</xs:complexType>
-  -->
-
-  <!--BORROWEDBY contained in the book-->
-  <!--
-  <xs:complexType name="borrowedByType">
-		<xs:attribute name="idBorrowerRef" type="xs:integer" use="required"/>
-	</xs:complexType>
-  -->
-
 
   <!--Complex types for the link between book and the series-->
   <!--The three following elements are in an BOOK element
@@ -308,9 +277,11 @@ To-do xslt
   <xs:complexType name="bookSerType">
 		<xs:attribute name='idBSRef' type="xs:integer" use="required"/>
 	</xs:complexType>
+
   <xs:complexType name="comicBookSerType">
 		<xs:attribute name='idCBSRef' type="xs:integer" use="required"/>
 	</xs:complexType>
+
   <xs:complexType name="newspaperSerType">
     <!--The NEWSPAPERSER element contains period info-->
     <xs:sequence>
@@ -336,6 +307,7 @@ To-do xslt
       <xs:enumeration value="History"/>
       <xs:enumeration value="Politics"/>
       <xs:enumeration value="Novel"/>
+      <xs:enumeration value="Science"/>
     </xs:restriction>
   </xs:simpleType>
 
@@ -359,7 +331,6 @@ To-do xslt
     </xs:restriction>
   </xs:simpleType>
 
-  <!--Author id-->
   <xs:complexType name="authorType">
 		<xs:sequence>
       <xs:element name="FIRSTNAME" type="xs:string"/>
