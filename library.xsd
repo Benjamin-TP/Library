@@ -15,7 +15,9 @@ Comments for the report
   - BOOKAUTHOR / ROLE: on BOOK, not AUTHOR level because an AUTHOR can switch roles (e.g. morris, goscinny, uderzo)
   - BOOKAUTHOR / ROLE - choice made: several ROLE may be used for the same author (usual for the comics)
   - BOOKAUTHOR / ROLE: minOccurs = 0 because it is useless for novels, for example
+  - BOOKAUTHOR / ROLE: at most 3 elements (for a comic book: Scriptwriter, Illustrator and Colourist
   - attribute: by default: optional, hence required for all attributes used for key and keyref
+
 
 Comments related to the informations about the borrowings (NB: "BORROWABLE" is a neologism)
   - BORROWABLE: a boolean attached to the BOOK.
@@ -27,7 +29,9 @@ Comments related to the informations about the borrowings (NB: "BORROWABLE" is a
   MAX number of books: in the BORROWER info (limitation on the list) rather than from the book
   NROFBOOKS removed from the BOORROWER info: it can be deducted from the above list
   - BORROWINFO removed from the BOOK; only two columns remain under BOOK: BORROWDATE and RETURNDATE
-  Still not the perfect solution, but the other was: BORROWINFO shared by BOOK and BORROWER; 
+  Still not the perfect solution, but the other was: 
+  BORROWINFO shared by BOOK and BORROWER: harder to achieve max number of borrowings without duplicating the info.
+  - BORROWDATE and RETURNDATE could also be in the BORROWING element
   - bookseries and comicbookseries not merged despite they are very similar: still useful in a real library; the other option would be to flag them using the book format 
   - regex for date: \d{4}-\d{2}-\d{2} customDateType: similar to what we saw in the course, but with yyyy-mm-dd instead
 Still to transfomr to integer for comparison in the xslt (1.0)
@@ -40,19 +44,18 @@ Still to transfomr to integer for comparison in the xslt (1.0)
   Enhancement: ref to a NEWSPAPERSERIE (requires a complextype) or dedicated NEWSPAPER at the same level as BOOK
 
 TODO
-  - newspaper: period start and end date
-  - minOccurs, maxOccurs on the elements
   - Element +  ref vs element in the sequence only and that's it
   - keys and keyref paths edited like I did for BOOKAUTHOR?
   - control on the max number of books? Per book type?
 
+  - BORROWINFO and BORROWEDBY to delete definitely? /
   - add simpletype for restrictions on size of string elements
   - check integer elements as well  
 
   - to complete editor and theme lists
   - to create a big XML
 
-  - review of the NEWSPAPER start and end dates
+  - review of the NEWSPAPERSER start and end dates
   - Namespace
 
   -nb: sequence - 22.06.21 - it appears that the order is important
@@ -65,10 +68,42 @@ To-do xslt
 
 -->
   <!--LIBRARY
-      This element contains the whole database (it is its root node - "schema element")
-  -->
- 	<xs:element name="LIBRARY" type="libraryType">
+    This element contains the whole database (it is its root node - "schema element")
 
+    - List of books: it contains all the books (book, comic, newspaper)
+    - List of authors
+    - List of borrowers
+    - List of series of books
+    - list of series of comics
+    - list of series of newspapers
+
+    -The keys
+  -->
+ 	<xs:element name="LIBRARY">
+    <xs:complexType ><!--name="libraryType"-->
+      <xs:sequence>
+        <!--By default, minOccurs and maxOccurs equal to 1, hence not specified
+        minOccurs="1" maxOccurs="unbounded"
+        -->
+        <!--List of Books, comic, newspaper-->
+        <xs:element name="BOOKS" type="booksType"/>
+
+        <!--List of borrowers-->
+        <xs:element name="BORROWERS" type="borrowersType"/>
+
+        <!--Series elements-->
+        <xs:element name="BOOKSERIES" type="bookSeriesType"/>
+        <xs:element name="COMICBOOKSERIES" type="comicBookSeriesType"/>
+        <xs:element name="NEWSPAPERSERIES" type="newspaperSeriesType"/>
+
+        <!--List of authors
+        22.06.17 changed: list removed (used in the BOOKS element instead)
+        replaced with AUTHOR one by one instead
+        -->
+        <xs:element name="AUTHORS" type="authorsType"/>
+
+      </xs:sequence>
+    </xs:complexType>
 
     <!--key of BOOK / reffering key on BORROWERS/BORROWER/BORROWINGS/BORROWING-->
     <xs:key name="bookKey">
@@ -135,48 +170,6 @@ To-do xslt
 
   </xs:element>
 
-  <!--
-    LIBRARY: Contains
-    - List of books: it contains all the books (book, comic, newspaper)
-    - List of authors
-    - List of borrowers
-
-    Elements which contain lists:
-    - BD series
-    - book series
-    - newspaper series
-
-    To be confirmed:
-    - (Newspapers) List of frequencies
-    - List of editors
-    - List of themes
-    - List of book types (BD, books, newspapers)
-    - List of target readers
-  -->
-  <xs:complexType name="libraryType">
-		<xs:sequence>
-      <!--By default, minOccurs and maxOccurs equal to 1, hence not specified
-       minOccurs="1" maxOccurs="unbounded"
-      -->
-      <!--List of Books, comic, newspaper-->
-			<xs:element name="BOOKS" type="booksType"/>
-
-      <!--List of borrowers-->
-      <xs:element name="BORROWERS" type="borrowersType"/>
-
-      <!--Series elements-->
-      <xs:element name="BOOKSERIES" type="bookSeriesType"/>
-      <xs:element name="COMICBOOKSERIES" type="comicBookSeriesType"/>
-      <xs:element name="NEWSPAPERSERIES" type="newspaperSeriesType"/>
-
-      <!--List of authors
-      22.06.17 changed: list removed (used in the BOOKS element instead)
-      replaced with AUTHOR one by one instead
-      -->
-			<xs:element name="AUTHORS" type="authorsType"/>
-
-		</xs:sequence>
-	</xs:complexType>
 
   <xs:complexType name="booksType">
 		<xs:sequence>
@@ -239,16 +232,10 @@ To-do xslt
       -->
       <xs:element name="BORROWABLE" type="xs:boolean"/>
 
-      <!--BORROWINFO contains the information related to the borrow of the book
-      <xs:element name="BORROWINFO" type="borrowInfoType" minOccurs="0"/>-->
-      <!--The below dates can be null in case the book is not currently borrowed-->
       <xs:element name="BORROWDATE" type="customDateType"/>
       <xs:element name="RETURNDATE" type="customDateType"/>
       
-      <!--Number of borrows
-      Outside the BORROWINFO element because it is not the same level
-      - BORROWINFO is for the current borrow status
-      - NROFBORROWS is for the history of the borrowals
+      <!--Number of borrows - for statistics
       -->
       <xs:element name="NROFBORROWS" type="xs:integer"/>
 
@@ -269,7 +256,8 @@ To-do xslt
 
   <!--BookAuthor: 
   - one ROLE element for the role in the creation (writer, illustrator...)
-  - one attribute for the reference to Author-->
+  - one attribute for the reference to Author
+  - at most 3 elements (for a comic book: Scriptwriter, Illustrator and Colourist)-->
   <xs:complexType name="bookAuthorType">
     <xs:sequence>
       <xs:element name="ROLE" type="roleType" minOccurs="0" maxOccurs="3"/>
@@ -299,7 +287,16 @@ To-do xslt
       <xs:element name="BORROWDATE" type="customDateType"/>
       <xs:element name="RETURNDATE" type="customDateType"/>
     </xs:sequence>
-	</xs:complexType>-->
+    <xs:attribute name='idBookRef' type="xs:integer" use="required"/>
+	</xs:complexType>
+  -->
+
+  <!--BORROWEDBY contained in the book-->
+  <!--
+  <xs:complexType name="borrowedByType">
+		<xs:attribute name="idBorrowerRef" type="xs:integer" use="required"/>
+	</xs:complexType>
+  -->
 
 
   <!--Complex types for the link between book and the series-->
@@ -315,6 +312,7 @@ To-do xslt
 		<xs:attribute name='idCBSRef' type="xs:integer" use="required"/>
 	</xs:complexType>
   <xs:complexType name="newspaperSerType">
+    <!--The NEWSPAPERSER element contains period info-->
     <xs:sequence>
       <xs:element name="PERIODSTARTDATE" type="customDateType"/>
       <xs:element name="PERIODENDDATE" type="customDateType"/>
@@ -391,11 +389,6 @@ To-do xslt
   <xs:complexType name="borrowingType">
 		<xs:attribute name="idBookRef" type="xs:integer" use="required"/>
 	</xs:complexType>
-
-  <!--BORROWEDBY contained in the book
-  <xs:complexType name="borrowedByType">
-		<xs:attribute name="idBorrowerRef" type="xs:integer" use="required"/>
-	</xs:complexType>-->
  
   <!--The BookSeries list containt BookSerie elements-->
   <xs:complexType name="bookSeriesType">
