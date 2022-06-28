@@ -51,21 +51,13 @@ Still to transfomr to integer for comparison in the xslt (1.0)
 
 
 TODO
-  - BORROWINFO and BORROWEDBY to delete definitely? /
-  - add simpletype for restrictions on size of string elements
-  - check integer elements as well  
 
-  - to complete editor and theme lists
   - to create a big XML
-
-  - review of the NEWSPAPERSER start and end dates
   - Namespace
 
   Not mandatory:
   - Element +  ref vs element in the sequence only and that's it
-Notes:
-  -nb: sequence - 22.06.21 - it appears that the order is important
-  -an integer element cannot be empty (I faced that when adding NROFBORROWS)
+  - add simpletype for restrictions on size of string elements
 
 To-do xslt
 - Books per borrower
@@ -232,7 +224,7 @@ To-do xslt
 
 		</xs:sequence>
 
-    <xs:attribute name="idBook" type="xs:integer" use="required"/>
+    <xs:attribute name="idBook" type="idBookT" use="required"/>
 	</xs:complexType>
 
   <!--BookAuthors
@@ -253,7 +245,7 @@ To-do xslt
     <xs:sequence>
       <xs:element name="ROLE" type="roleType" minOccurs="0" maxOccurs="5"/>
     </xs:sequence>
-		<xs:attribute name='idAuthorRef' type='xs:integer' use="required"/>
+		<xs:attribute name="idAuthorRef" type="idAuthorT" use="required"/>
 	</xs:complexType>
 
   <!--roleType used by bookAuthorType-->
@@ -275,11 +267,11 @@ To-do xslt
   newspaperSerType refers to a newspaperSerieType (idNWSref to idNWS)
   -->
   <xs:complexType name="bookSerType">
-		<xs:attribute name='idBSRef' type="xs:integer" use="required"/>
+		<xs:attribute name="idBSRef" type="idBST" use="required"/>
 	</xs:complexType>
 
   <xs:complexType name="comicBookSerType">
-		<xs:attribute name='idCBSRef' type="xs:integer" use="required"/>
+		<xs:attribute name="idCBSRef" type="idCBST" use="required"/>
 	</xs:complexType>
 
   <xs:complexType name="newspaperSerType">
@@ -288,7 +280,7 @@ To-do xslt
       <xs:element name="PERIODSTARTDATE" type="customDateType"/>
       <xs:element name="PERIODENDDATE" type="customDateType"/>
     </xs:sequence>
-		<xs:attribute name='idNWSRef' type="xs:integer" use="required"/>
+		<xs:attribute name="idNWSRef" type="idNWST" use="required"/>
 	</xs:complexType>
 
   <!--Theme type with restriction / pattern (or restriction / enumeration)
@@ -308,6 +300,13 @@ To-do xslt
       <xs:enumeration value="Politics"/>
       <xs:enumeration value="Novel"/>
       <xs:enumeration value="Science"/>
+      <xs:enumeration value="Nature"/>
+      <xs:enumeration value="Animals"/>
+      <xs:enumeration value="Painting"/>
+      <xs:enumeration value="Arts"/>
+      <xs:enumeration value="Tales"/>
+      <xs:enumeration value="Economics"/>
+      <xs:enumeration value="Finance"/>
     </xs:restriction>
   </xs:simpleType>
 
@@ -328,6 +327,12 @@ To-do xslt
       <xs:enumeration value="Fayard"/>
       <xs:enumeration value="Dargaud"/>
       <xs:enumeration value="Glénat"/>
+      <xs:enumeration value="Casterman"/>
+      <xs:enumeration value="Plon"/>
+      <xs:enumeration value="Perrin"/>
+      <xs:enumeration value="JCLattès"/>
+      <xs:enumeration value="Flammarion"/>
+      <xs:enumeration value="Albin Michel"/>
     </xs:restriction>
   </xs:simpleType>
 
@@ -337,7 +342,7 @@ To-do xslt
       <xs:element name="LASTNAME" type="xs:string"/>
       <xs:element name="BIRTHDATE" type="customDateType"/>
 		</xs:sequence>
-    <xs:attribute name="idAuthor" type="xs:integer" use="required"/>
+    <xs:attribute name="idAuthor" type="idAuthorT" use="required"/>
 	</xs:complexType>
 
   <xs:complexType name="borrowerType">
@@ -347,7 +352,7 @@ To-do xslt
       <xs:element name="BIRTHDATE" type="customDateType"/>
       <xs:element name="BORROWINGS" type="borrowingsType"/>
 		</xs:sequence>
-    <xs:attribute name="idBorrower" type="xs:integer" use="required"/>
+    <xs:attribute name="idBorrower" type="idBorrowerT" use="required"/>
 	</xs:complexType>
 
   <xs:complexType name="borrowingsType">
@@ -358,7 +363,7 @@ To-do xslt
 	</xs:complexType>
 
   <xs:complexType name="borrowingType">
-		<xs:attribute name="idBookRef" type="xs:integer" use="required"/>
+		<xs:attribute name="idBookRef" type="idBookT" use="required"/>
 	</xs:complexType>
  
   <!--The BookSeries list containt BookSerie elements-->
@@ -375,7 +380,7 @@ To-do xslt
       <xs:element name="DESCRIPTION" type="xs:string"/>
       <xs:element name="NROFVOLUMES" type="xs:integer"/>
 		</xs:sequence>
-    <xs:attribute name="idBS" type="xs:integer" use="required"/>
+    <xs:attribute name="idBS" type="idBST" use="required"/>
 	</xs:complexType>
 
 
@@ -393,7 +398,7 @@ To-do xslt
       <xs:element name="DESCRIPTION" type="xs:string"/>
       <xs:element name="NROFVOLUMES" type="xs:integer"/>
 		</xs:sequence>
-    <xs:attribute name="idCBS" type="xs:integer" use="required"/>
+    <xs:attribute name="idCBS" type="idCBST" use="required"/>
 	</xs:complexType>
 
 
@@ -412,7 +417,7 @@ To-do xslt
       <xs:element name="NROFVOLUMES" type="xs:integer"/>
       <xs:element name="FREQUENCY" type="frequencyType"/>
 		</xs:sequence>
-    <xs:attribute name="idNWS" type="xs:integer" use="required"/>
+    <xs:attribute name="idNWS" type="idNWST" use="required"/>
 	</xs:complexType>
 
   <!--Frequency types list for the newspaper-->
@@ -453,6 +458,48 @@ To-do xslt
   <xs:simpleType name="ISSNType">
     <xs:restriction base="xs:string">
       <xs:pattern value="ISSN \d{4}-\d{3}(\d|X)"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+
+  <!--6 below simpleType for the 6 key / keyref pairs (actually, for the attributes) we have
+  In order to have "strutured" attribute ids
+  The 2nd part of the pattern is arbitrarily limited to 7 digits, for limiting the system
+  7 digits means: at most 10 millions - 1 books/authors, etc.
+  -->
+  <xs:simpleType name="idBookT">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="b\d{1,7}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="idAuthorT">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="a\d{1,7}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="idBST">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="bs\d{1,7}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="idCBST">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="cbs\d{1,7}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="idNWST">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="nws\d{1,7}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="idBorrowerT">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="bo\d{1,7}"/>
     </xs:restriction>
   </xs:simpleType>
 

@@ -2,7 +2,7 @@
 <!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
 <LIBRARY xsi:noNamespaceSchemaLocation="schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <BOOKS>
-    <BOOK idBook="1">
+    <BOOK idBook="b1">
       <TITLE>string</TITLE>
       <DESCRIPTION>string</DESCRIPTION>
       <ISBN>123-1-12-123456-1</ISBN>
@@ -13,19 +13,19 @@
       <RELEASEDATE>1977-12-13</RELEASEDATE>
       <PURCHASEDATE>2007-09-02</PURCHASEDATE>
       <BOOKAUTHORS>
-        <BOOKAUTHOR idAuthorRef="1234">
+        <BOOKAUTHOR idAuthorRef="a1234">
           <ROLE>Scriptwriter</ROLE>
           <ROLE>Illustrator</ROLE>
         </BOOKAUTHOR>
-        <BOOKAUTHOR idAuthorRef="5678"/>
+        <BOOKAUTHOR idAuthorRef="a5678"/>
       </BOOKAUTHORS>
-      <COMICBOOKSER idCBSRef="-705"/>
+      <COMICBOOKSER idCBSRef="cbs705"/>
       <BORROWABLE>true</BORROWABLE>
       <BORROWDATE>1980-01-14</BORROWDATE>
       <RETURNDATE>1980-01-14</RETURNDATE>
       <NROFBORROWS>350</NROFBORROWS>
     </BOOK>
-    <BOOK idBook="2">
+    <BOOK idBook="b2">
       <TITLE>string</TITLE>
       <DESCRIPTION>string</DESCRIPTION>
       <BOOKFORMAT>Book</BOOKFORMAT>
@@ -35,15 +35,15 @@
       <RELEASEDATE>1980-01-14</RELEASEDATE>
       <PURCHASEDATE>1992-05-14</PURCHASEDATE>
       <BOOKAUTHORS>
-        <BOOKAUTHOR idAuthorRef="9123"/>
+        <BOOKAUTHOR idAuthorRef="a9123"/>
       </BOOKAUTHORS>
-      <BOOKSER idBSRef="-2037"/>
+      <BOOKSER idBSRef="bs2037"/>
       <BORROWABLE>false</BORROWABLE>
       <BORROWDATE>1980-01-14</BORROWDATE>
       <RETURNDATE>1980-01-14</RETURNDATE>
       <NROFBORROWS>0</NROFBORROWS>
     </BOOK>
-    <BOOK idBook="3">
+    <BOOK idBook="b3">
       <TITLE>string</TITLE>
       <DESCRIPTION>string</DESCRIPTION>
       <BOOKFORMAT>Comic</BOOKFORMAT>
@@ -53,7 +53,7 @@
       <RELEASEDATE>1994-09-25</RELEASEDATE>
       <PURCHASEDATE>1996-07-04</PURCHASEDATE>
       <BOOKAUTHORS />
-      <NEWSPAPERSER idNWSRef="-4234">
+      <NEWSPAPERSER idNWSRef="nws4234">
         <PERIODSTARTDATE>2021-06-01</PERIODSTARTDATE>
         <PERIODENDDATE>2021-06-15</PERIODENDDATE>
       </NEWSPAPERSER>      
@@ -62,7 +62,7 @@
       <RETURNDATE>1980-01-14</RETURNDATE>
       <NROFBORROWS>0</NROFBORROWS>
     </BOOK>
-    <BOOK idBook="4">
+    <BOOK idBook="b4">
       <TITLE>string</TITLE>
       <DESCRIPTION>string</DESCRIPTION>
       <BOOKFORMAT>Newspaper</BOOKFORMAT>
@@ -72,7 +72,7 @@
       <RELEASEDATE>1988-06-01</RELEASEDATE>
       <PURCHASEDATE>1973-12-04</PURCHASEDATE>
       <BOOKAUTHORS />
-      <NEWSPAPERSER idNWSRef="1234">
+      <NEWSPAPERSER idNWSRef="nws1234">
         <PERIODSTARTDATE>2021-06-01</PERIODSTARTDATE>
         <PERIODENDDATE>2021-06-01</PERIODENDDATE>
       </NEWSPAPERSER>
@@ -83,25 +83,25 @@
     </BOOK>
   </BOOKS>
   <BORROWERS>
-    <BORROWER idBorrower="-4253">
+    <BORROWER idBorrower="bo4253">
       <FIRSTNAME>string</FIRSTNAME>
       <LASTNAME>string</LASTNAME>
       <BIRTHDATE>2016-03-20</BIRTHDATE>
       <BORROWINGS>
-        <BORROWING idBookRef="1"/>
-        <BORROWING idBookRef="2"/>
-        <BORROWING idBookRef="3"/>
+        <BORROWING idBookRef="b1"/>
+        <BORROWING idBookRef="b2"/>
+        <BORROWING idBookRef="b3"/>
       </BORROWINGS>
     </BORROWER>
-    <BORROWER idBorrower="1235">
+    <BORROWER idBorrower="bo1235">
       <FIRSTNAME>string</FIRSTNAME>
       <LASTNAME>string</LASTNAME>
       <BIRTHDATE>2016-03-20</BIRTHDATE>
       <BORROWINGS>
-        <BORROWING idBookRef="4"/>
+        <BORROWING idBookRef="b4"/>
       </BORROWINGS>
     </BORROWER>
-    <BORROWER idBorrower="3456">
+    <BORROWER idBorrower="bo3456">
       <FIRSTNAME>string</FIRSTNAME>
       <LASTNAME>string</LASTNAME>
       <BIRTHDATE>2016-03-20</BIRTHDATE>
@@ -109,33 +109,33 @@
     </BORROWER>
   </BORROWERS>
   <BOOKSERIES>
-    <BOOKSERIE idBS="-2037">
+    <BOOKSERIE idBS="bs2037">
       <TITLE>string</TITLE>
       <DESCRIPTION>string</DESCRIPTION>
       <NROFVOLUMES>4331</NROFVOLUMES>
     </BOOKSERIE>
   </BOOKSERIES>
   <COMICBOOKSERIES>
-    <COMICBOOKSERIE idCBS="-705">
+    <COMICBOOKSERIE idCBS="cbs705">
       <TITLE>string</TITLE>
       <DESCRIPTION>string</DESCRIPTION>
       <NROFVOLUMES>-1545</NROFVOLUMES>
     </COMICBOOKSERIE>
-    <COMICBOOKSERIE idCBS="3023">
+    <COMICBOOKSERIE idCBS="cbs3023">
       <TITLE>string</TITLE>
       <DESCRIPTION>string</DESCRIPTION>
       <NROFVOLUMES>-3365</NROFVOLUMES>
     </COMICBOOKSERIE>
   </COMICBOOKSERIES>
   <NEWSPAPERSERIES>
-    <NEWSPAPERSERIE idNWS="-4234">
+    <NEWSPAPERSERIE idNWS="nws4234">
       <ISSN>ISSN 1234-567X</ISSN>
       <TITLE>string</TITLE>
       <DESCRIPTION>string</DESCRIPTION>
       <NROFVOLUMES>-2220</NROFVOLUMES>
       <FREQUENCY>Fortnightly</FREQUENCY>
     </NEWSPAPERSERIE>
-    <NEWSPAPERSERIE idNWS="1234">
+    <NEWSPAPERSERIE idNWS="nws1234">
       <ISSN>ISSN 9876-5432</ISSN>
       <TITLE>string</TITLE>
       <DESCRIPTION>string</DESCRIPTION>
@@ -144,17 +144,17 @@
     </NEWSPAPERSERIE>
   </NEWSPAPERSERIES>
   <AUTHORS>
-    <AUTHOR idAuthor="9123">
+    <AUTHOR idAuthor="a9123">
       <FIRSTNAME>string</FIRSTNAME>
       <LASTNAME>string</LASTNAME>
       <BIRTHDATE>2016-01-25</BIRTHDATE>
     </AUTHOR>
-    <AUTHOR idAuthor="1234">
+    <AUTHOR idAuthor="a1234">
       <FIRSTNAME>string</FIRSTNAME>
       <LASTNAME>string</LASTNAME>
       <BIRTHDATE>2016-01-25</BIRTHDATE>
     </AUTHOR>
-    <AUTHOR idAuthor="5678">
+    <AUTHOR idAuthor="a5678">
       <FIRSTNAME>string</FIRSTNAME>
       <LASTNAME>string</LASTNAME>
       <BIRTHDATE>2016-01-25</BIRTHDATE>
