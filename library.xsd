@@ -16,7 +16,7 @@ Comments for the report
   - BOOKAUTHOR / ROLE: on BOOK, not AUTHOR level because an AUTHOR can switch roles (e.g. morris, goscinny, uderzo)
   - BOOKAUTHOR / ROLE - choice made: several ROLE may be used for the same author (usual for the comics)
   - BOOKAUTHOR / ROLE: minOccurs = 0 because it is useless for novels, for example
-  - BOOKAUTHOR / ROLE: at most 3 elements (for a comic book: Scriptwriter, Illustrator and Colourist
+  - BOOKAUTHOR / ROLE: at most 3 elements (for a comic book: Scriptwriter, Illustrator and Colourist)
   - attribute: by default: optional, hence required for all attributes used for key and keyref
   - key and keyref: I used the ".//" notation for the selector; no need to describe the full path.
 
@@ -98,8 +98,9 @@ To-do xslt
         <!--List of authors
         22.06.17 changed: list removed (used in the BOOKS element instead)
         replaced with AUTHOR one by one instead
+        minOccurs="0" because for some books we dont have the author(s) (newspapers, "le roman de renart"...)
         -->
-        <xs:element name="AUTHORS" type="authorsType"/>
+        <xs:element name="AUTHORS" type="authorsType" minOccurs="0"/>
 
       </xs:sequence>
     </xs:complexType>
@@ -186,7 +187,7 @@ To-do xslt
       BookType/editor
       -->
       <xs:element name="TITLE" type="xs:string"/>
-      <xs:element name="DESCRIPTION" type="xs:string"/>
+      <xs:element name="DESCRIPTION" type="xs:string" minOccurs="0"/> <!--Not mandatory for newspapers-->
       <xs:element name="ISBN" type="ISBNType" minOccurs="0"/> <!--Not mandatory for newspapers-->
 
       <!--Book parameters-->
@@ -309,7 +310,12 @@ To-do xslt
       <xs:enumeration value="Economics"/>
       <xs:enumeration value="Finance"/>
       <xs:enumeration value="Action"/>
+      <xs:enumeration value="Adventure"/>
       <xs:enumeration value="Sport"/>
+      <xs:enumeration value="Society"/>
+      <xs:enumeration value="Philosophy"/>
+      <xs:enumeration value="Religion"/>
+      <xs:enumeration value="General"/>
     </xs:restriction>
   </xs:simpleType>
 
@@ -336,6 +342,14 @@ To-do xslt
       <xs:enumeration value="JCLattès"/>
       <xs:enumeration value="Flammarion"/>
       <xs:enumeration value="Albin Michel"/>
+      <xs:enumeration value="La Découverte"/>
+      <xs:enumeration value="Bréal"/>
+      <xs:enumeration value="Desclée De Brouwer"/>
+      <xs:enumeration value="Denoël"/>
+      <xs:enumeration value="HongFei"/>
+      <xs:enumeration value="Milan"/>
+      <xs:enumeration value="BIBLI O"/>
+      <xs:enumeration value="J'ai lu"/>
     </xs:restriction>
   </xs:simpleType>
 
