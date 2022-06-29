@@ -327,7 +327,7 @@ To-do xslt
 
   <xs:simpleType name="editorType">
     <xs:restriction base="xs:string">
-      <xs:enumeration value="Bayard Presse"/>
+      <xs:enumeration value="Bayard"/>
       <xs:enumeration value="Fleurus Presse"/>
       <xs:enumeration value="Grasset"/>
       <xs:enumeration value="Futuropolis"/>
@@ -350,6 +350,11 @@ To-do xslt
       <xs:enumeration value="Milan"/>
       <xs:enumeration value="BIBLI O"/>
       <xs:enumeration value="J'ai lu"/>
+      <xs:enumeration value="Michel Lafon"/>
+      <xs:enumeration value="Librio"/>
+      <xs:enumeration value="First"/>
+      <xs:enumeration value="Nathan"/>
+      <xs:enumeration value="Nord-Sud"/>
     </xs:restriction>
   </xs:simpleType>
 
