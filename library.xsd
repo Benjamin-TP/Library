@@ -53,7 +53,6 @@ Still to transfomr to integer for comparison in the xslt (1.0)
 
 TODO
 
-  - to create a big XML
   - Namespace
 
   Not mandatory:
@@ -65,6 +64,33 @@ To-do xslt
 - Book per author (XML?)
 - Books not yet returned (Borrowed book, with red color on the late ones)
 
+
+books borrowed
+        <BORROWING idBookRef="b1"/>
+        <BORROWING idBookRef="b12"/>
+        <BORROWING idBookRef="b15"/>
+		
+		<BORROWING idBookRef="b45"/>
+		
+		
+		<BORROWING idBookRef="b10"/>
+        <BORROWING idBookRef="b23"/>
+        <BORROWING idBookRef="b32"/>
+        <BORROWING idBookRef="b46"/>
+        <BORROWING idBookRef="b65"/>
+        <BORROWING idBookRef="b68"/>
+		
+		<BORROWING idBookRef="b4"/>
+        <BORROWING idBookRef="b7"/>
+        <BORROWING idBookRef="b28"/>
+        <BORROWING idBookRef="b33"/>
+        <BORROWING idBookRef="b54"/>
+	
+		
+		<BORROWING idBookRef="b6"/>
+        <BORROWING idBookRef="b13"/>
+        <BORROWING idBookRef="b24"/>
+        <BORROWING idBookRef="b31"/>
 -->
   <!--LIBRARY
     This element contains the whole database (it is its root node - "schema element")
