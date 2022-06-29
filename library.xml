@@ -2,10 +2,617 @@
 <!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
 <LIBRARY xsi:noNamespaceSchemaLocation="schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <BOOKS>
-    <BOOK idBook="b1">
+	<BOOK idBook="b1">
+		<TITLE>L'Héritier</TITLE>
+		<DESCRIPTION>Injustement arrêté à Istanbul, Largo est expédié dans la pire prison de Turquie. Au milieu de brutes qui, prisonniers comme gardiens, ne connaissent que le langage de la violence. Largo parvient à s'évader, en compagnie de Simon Ovronnaz, un sympathique voleur suisse piégé, comme lui, dans cet enfer. Ils trouvent refuge chez le consul de Grande-Bretagne, dont la ravissante fille, Charity, et une tout aussi jolie copine vont s'occuper, à leur manière, de leur faire oublier leurs malheurs. Mais entre-temps, des politiciens turcs ont compris</DESCRIPTION>
+		<ISBN>2-8001-1791-5</ISBN>
+		<BOOKFORMAT>Comic</BOOKFORMAT>
+		<THEME>Action</THEME>
+		<TARGETREADER>Adult</TARGETREADER>
+		<EDITOR>Dupuis</EDITOR>
+		<RELEASEDATE>1990-11-01</RELEASEDATE>
+		<PURCHASEDATE>2005-02-01</PURCHASEDATE>
+		<BOOKAUTHORS>
+			<BOOKAUTHOR idAuthorRef="a1">
+				<ROLE>Scriptwriter</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a2">
+				<ROLE>Illustrator</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a3">
+				<ROLE>Colourist</ROLE>
+			</BOOKAUTHOR>
+		</BOOKAUTHORS>
+		<BORROWABLE>true</BORROWABLE>
+		<BORROWDATE/>
+		<RETURNDATE/>
+		<NROFBORROWS>38</NROFBORROWS>
+	</BOOK>
+	<BOOK idBook="b2">
+		<TITLE>Le groupe W</TITLE>
+		<DESCRIPTION>Sauvé de justesse (voir "L'Héritier"), Largo Winczlav devient Largo Winch. Et il découvre qu'il y a peut-être pire enfer que celui des prisons turques: celui de la haute finance. Et des requins qui l'entourent au Conseil d'Administration du Groupe W, dont certains attendent le moindre faux pas de sa part pour commencer la curée. L'un d'entre eux, particulièrement. Celui qui l'a fait emprisonner. Qui n'a pas hésité à tuer pour cela. Et dont Largo sait qu'il est prêt à tout pour s'emparer du pouvoir. Prêt à tuer, encore et encore.</DESCRIPTION>
+		<ISBN>2-8001-1832-6</ISBN>
+		<BOOKFORMAT>Comic</BOOKFORMAT>
+		<THEME>Action</THEME>
+		<TARGETREADER>Adult</TARGETREADER>
+		<EDITOR>Dupuis</EDITOR>
+		<RELEASEDATE>1991-09-01</RELEASEDATE>
+		<PURCHASEDATE>2005-02-02</PURCHASEDATE>
+		<BOOKAUTHORS>
+			<BOOKAUTHOR idAuthorRef="a1">
+				<ROLE>Scriptwriter</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a2">
+				<ROLE>Illustrator</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a3">
+				<ROLE>Colourist</ROLE>
+			</BOOKAUTHOR>
+		</BOOKAUTHORS>
+		<BORROWABLE>true</BORROWABLE>
+		<BORROWDATE/>
+		<RETURNDATE/>
+		<NROFBORROWS>96</NROFBORROWS>
+	</BOOK>
+	<BOOK idBook="b3">
+		<TITLE>O.P.A</TITLE>
+		<DESCRIPTION>Une véritable guerre secrète pour le pouvoir se déroule dans les coulisses des grands groupes financiers. Une des techniques d'assaut les plus utilisées est l'Offre publique d'achat: un amateur se propose d'acquérir à un prix déterminé toutes les actions disponibles d'un concurrent pour arriver à le contrôler. Le Groupe W, attaqué par la FENICO, un conglomérat d'entreprises dirigé par Gus Fenimore, un sympathique vieux renard de l'acrobatie financière, réplique par une O.P.A. sur sa société.</DESCRIPTION>
+		<ISBN>2-8001-1947-0</ISBN>
+		<BOOKFORMAT>Comic</BOOKFORMAT>
+		<THEME>Action</THEME>
+		<TARGETREADER>Adult</TARGETREADER>
+		<EDITOR>Dupuis</EDITOR>
+		<RELEASEDATE>1992-11-01</RELEASEDATE>
+		<PURCHASEDATE>2005-02-03</PURCHASEDATE>
+		<BOOKAUTHORS>
+			<BOOKAUTHOR idAuthorRef="a1">
+				<ROLE>Scriptwriter</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a2">
+				<ROLE>Illustrator</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a3">
+				<ROLE>Colourist</ROLE>
+			</BOOKAUTHOR>
+		</BOOKAUTHORS>
+		<BORROWABLE>true</BORROWABLE>
+		<BORROWDATE/>
+		<RETURNDATE/>
+		<NROFBORROWS>31</NROFBORROWS>
+	</BOOK>
+	<BOOK idBook="b4">
+		<TITLE>Business Blues</TITLE>
+		<DESCRIPTION>Sans famille ni attaches, contestataire, coureur, vagabond, iconoclaste et bagarreur, il se retrouve, à vingt-six ans, à la tête d'un empire de dix milliards de dollars... Découvrez Largo Winch, le milliardaire en blue jeans. Et attachez vos ceintures !</DESCRIPTION>
+		<ISBN>2-8001-2046-0</ISBN>
+		<BOOKFORMAT>Comic</BOOKFORMAT>
+		<THEME>Action</THEME>
+		<TARGETREADER>Adult</TARGETREADER>
+		<EDITOR>Dupuis</EDITOR>
+		<RELEASEDATE>1993-10-01</RELEASEDATE>
+		<PURCHASEDATE>2005-02-04</PURCHASEDATE>
+		<BOOKAUTHORS>
+			<BOOKAUTHOR idAuthorRef="a1">
+				<ROLE>Scriptwriter</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a2">
+				<ROLE>Illustrator</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a3">
+				<ROLE>Colourist</ROLE>
+			</BOOKAUTHOR>
+		</BOOKAUTHORS>
+		<BORROWABLE>true</BORROWABLE>
+		<BORROWDATE/>
+		<RETURNDATE/>
+		<NROFBORROWS>53</NROFBORROWS>
+	</BOOK>
+	<BOOK idBook="b5">
+		<TITLE>H</TITLE>
+		<DESCRIPTION>Alors qu'au cours d'un cocktail mondain Largo Winch annonce la création d'une fondation pour venir en aide aux enfants de la guerre, un maître d'hôtel lui apporte sur un plateau la "surprise du chef": la tête d'un de ses collaborateurs, assassiné par les trafiquants de drogue qu'il tentait de démasquer. Ce n'est que le début d'une odieuse machination qui va, en quelques heures, faire complètement basculer la vie de l'homme d'affaires.</DESCRIPTION>
+		<ISBN>2-8001-2127-0</ISBN>
+		<BOOKFORMAT>Comic</BOOKFORMAT>
+		<THEME>Action</THEME>
+		<TARGETREADER>Adult</TARGETREADER>
+		<EDITOR>Dupuis</EDITOR>
+		<RELEASEDATE>1994-01-09</RELEASEDATE>
+		<PURCHASEDATE>2005-02-05</PURCHASEDATE>
+		<BOOKAUTHORS>
+			<BOOKAUTHOR idAuthorRef="a1">
+				<ROLE>Scriptwriter</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a2">
+				<ROLE>Illustrator</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a3">
+				<ROLE>Colourist</ROLE>
+			</BOOKAUTHOR>
+		</BOOKAUTHORS>
+		<BORROWABLE>true</BORROWABLE>
+		<BORROWDATE/>
+		<RETURNDATE/>
+		<NROFBORROWS>27</NROFBORROWS>
+	</BOOK>
+	<BOOK idBook="b6">
+		<TITLE>Dutch Connection</TITLE>
+		<DESCRIPTION>Deux inspecteurs de la police judiciaire qui emmènent Largo Winch (voir "H") sont abattus devant ses yeux et c'est lui qu'on accuse du meurtre; la DEA, la brigade américaine des stupéfiants, l'accuse d'être mouillé jusqu'aux sourcils dans un vaste réseau de trafic d'héroïne. Le traquenard est admirablement monté! Réfugié sous les ponts de Paris au milieu des clochards, sans argent, Largo Winch n'a aucune chance d'échapper au sort qui l'attend: les travaux forcés à perpétuité...</DESCRIPTION>
+		<ISBN>2-8001-2201-3</ISBN>
+		<BOOKFORMAT>Comic</BOOKFORMAT>
+		<THEME>Action</THEME>
+		<TARGETREADER>Adult</TARGETREADER>
+		<EDITOR>Dupuis</EDITOR>
+		<RELEASEDATE>1995-06-01</RELEASEDATE>
+		<PURCHASEDATE>2005-02-06</PURCHASEDATE>
+		<BOOKAUTHORS>
+			<BOOKAUTHOR idAuthorRef="a1">
+				<ROLE>Scriptwriter</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a2">
+				<ROLE>Illustrator</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a3">
+				<ROLE>Colourist</ROLE>
+			</BOOKAUTHOR>
+		</BOOKAUTHORS>
+		<BORROWABLE>true</BORROWABLE>
+		<BORROWDATE/>
+		<RETURNDATE/>
+		<NROFBORROWS>57</NROFBORROWS>
+	</BOOK>
+	<BOOK idBook="b7">
+		<TITLE>La Forteresse de Makiling</TITLE>
+		<DESCRIPTION>Etre le meilleur ami de Largo Winch ne présente pas toujours que des avantages ! Repérés par les services secrets de l'Union de Myanmar (ex-république de Birmanie), Simon Ovronnaz et sa nouvelle conquête, l'inspecteur Marjan Texel, sont abusivement capturés et emprisonnés, accusés de meurtre. A la suite d'une parodie de procès, Simon est condamné à mort et conduit dans l'imprenable forteresse de Maliking...Inconscient du sort de son ami, Largo joue les jolis cœurs sur le toit du monde alors que se tend autour de lui une nouvelle </DESCRIPTION>
+		<ISBN>2-8001-2307-9</ISBN>
+		<BOOKFORMAT>Comic</BOOKFORMAT>
+		<THEME>Action</THEME>
+		<TARGETREADER>Adult</TARGETREADER>
+		<EDITOR>Dupuis</EDITOR>
+		<RELEASEDATE>1996-06-01</RELEASEDATE>
+		<PURCHASEDATE>2005-02-07</PURCHASEDATE>
+		<BOOKAUTHORS>
+			<BOOKAUTHOR idAuthorRef="a1">
+				<ROLE>Scriptwriter</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a2">
+				<ROLE>Illustrator</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a3">
+				<ROLE>Colourist</ROLE>
+			</BOOKAUTHOR>
+		</BOOKAUTHORS>
+		<BORROWABLE>true</BORROWABLE>
+		<BORROWDATE/>
+		<RETURNDATE/>
+		<NROFBORROWS>18</NROFBORROWS>
+	</BOOK>
+	<BOOK idBook="b8">
+		<TITLE>L'Heure du Tigre</TITLE>
+		<DESCRIPTION>Condamné à mort pour un meurtre qu'il n'a pas commis, Simon Ovronnaz, l'ami de Largo Winch, est transféré à la forteresse de Makiling, en Birmanie. Au moment où Largo, accompagné de Kadjang, un des chefs de la rebellion chan contre la dictature de Rangoon, arrive dans la capitale birmane, Simon n'a plus que seize heures à vivre. Attaquer la fortresse ? C'est mission impossible. Largo a un plan audacieux et risqué, mais il n'a pas le choix. Une véritable course contre la mort s'engage...</DESCRIPTION>
+		<ISBN>2-8001-2444-X</ISBN>
+		<BOOKFORMAT>Comic</BOOKFORMAT>
+		<THEME>Action</THEME>
+		<TARGETREADER>Adult</TARGETREADER>
+		<EDITOR>Dupuis</EDITOR>
+		<RELEASEDATE>1997-06-01</RELEASEDATE>
+		<PURCHASEDATE>2005-02-08</PURCHASEDATE>
+		<BOOKAUTHORS>
+			<BOOKAUTHOR idAuthorRef="a1">
+				<ROLE>Scriptwriter</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a2">
+				<ROLE>Illustrator</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a3">
+				<ROLE>Colourist</ROLE>
+			</BOOKAUTHOR>
+		</BOOKAUTHORS>
+		<BORROWABLE>true</BORROWABLE>
+		<BORROWDATE/>
+		<RETURNDATE/>
+		<NROFBORROWS>19</NROFBORROWS>
+	</BOOK>
+	<BOOK idBook="b9">
+		<TITLE>Voir Venise…</TITLE>
+		<DESCRIPTION>Dimanche 13 septembre, trois heures du matin... Dans une ruelle de Venise, un homme court à perdre haleine. À ses basques, trois malfrats armés jusqu'aux dents. L'homme réussit à échapper à ses poursuivants. Juste le temps de briser la vitrine d'une agence de voyages. Juste le temps de gribouiller quelques mots sur une feuille de papier et d'engager la feuille dans un fax. Deux secondes plus tard, l'homme meurt, criblé de balles. Mais le fax est bel et bien envoyé. Il y est écrit : "Largo Winch, prenez garde au doge et à...". Le bal peut commencer.</DESCRIPTION>
+		<ISBN>2-8001-2628-0</ISBN>
+		<BOOKFORMAT>Comic</BOOKFORMAT>
+		<THEME>Action</THEME>
+		<TARGETREADER>Adult</TARGETREADER>
+		<EDITOR>Dupuis</EDITOR>
+		<RELEASEDATE>1997-06-01</RELEASEDATE>
+		<PURCHASEDATE>2005-02-09</PURCHASEDATE>
+		<BOOKAUTHORS>
+			<BOOKAUTHOR idAuthorRef="a1">
+				<ROLE>Scriptwriter</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a2">
+				<ROLE>Illustrator</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a3">
+				<ROLE>Colourist</ROLE>
+			</BOOKAUTHOR>
+		</BOOKAUTHORS>
+		<BORROWABLE>true</BORROWABLE>
+		<BORROWDATE/>
+		<RETURNDATE/>
+		<NROFBORROWS>49</NROFBORROWS>
+	</BOOK>
+	<BOOK idBook="b10">
+		<TITLE>...Et mourir</TITLE>
+		<DESCRIPTION>Un comédien amateur engagé pour une mystérieuse mission, un homme criblé de balles juste après avoir envoyé un fax, un certain Marchini prêt à tout pour que le fax ne parvienne pas à son destinataire, le même Marchini abattu par le majordome de Largo, et Charity, l'amie du même Largo, enlevée à bord d'un hélicoptère, en pleine place Saint-Marc, à Venise : le bal des hommes masqués ne fait que commencer. Mais c'est Winch, désormais, qui mène la danse...</DESCRIPTION>
+		<ISBN>2-8001-2849-6</ISBN>
+		<BOOKFORMAT>Comic</BOOKFORMAT>
+		<THEME>Action</THEME>
+		<TARGETREADER>Adult</TARGETREADER>
+		<EDITOR>Dupuis</EDITOR>
+		<RELEASEDATE>1998-09-01</RELEASEDATE>
+		<PURCHASEDATE>2005-02-10</PURCHASEDATE>
+		<BOOKAUTHORS>
+			<BOOKAUTHOR idAuthorRef="a1">
+				<ROLE>Scriptwriter</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a2">
+				<ROLE>Illustrator</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a3">
+				<ROLE>Colourist</ROLE>
+			</BOOKAUTHOR>
+		</BOOKAUTHORS>
+		<BORROWABLE>true</BORROWABLE>
+		<BORROWDATE/>
+		<RETURNDATE/>
+		<NROFBORROWS>23</NROFBORROWS>
+	</BOOK>
+	<BOOK idBook="b11">
+		<TITLE>Golden Gate</TITLE>
+		<DESCRIPTION>Moteur ? Action ! Simon Ovronnaz, l'ami de Largo, vedette d'un feuilleton télé ! Sa photo à la une des magazines "people" ! Pour l'intéressé, il y a de quoi bomber le torse et se pavaner. Pour Largo, il y a de quoi se poser des questions. Un scénario insipide, un casting douteux, un budget hors norme et un financement plus que louche, ce feuilleton sent l'arnaque à plein nez. Direction San Francisco, lieu du tournage. Sous les sunlights, Simon fait la roue. Dans les coulisses, Largo mène l'enquête. Action !</DESCRIPTION>
+		<ISBN>2-8001-2981-6</ISBN>
+		<BOOKFORMAT>Comic</BOOKFORMAT>
+		<THEME>Action</THEME>
+		<TARGETREADER>Adult</TARGETREADER>
+		<EDITOR>Dupuis</EDITOR>
+		<RELEASEDATE>1999-09-01</RELEASEDATE>
+		<PURCHASEDATE>2005-02-11</PURCHASEDATE>
+		<BOOKAUTHORS>
+			<BOOKAUTHOR idAuthorRef="a1">
+				<ROLE>Scriptwriter</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a2">
+				<ROLE>Illustrator</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a3">
+				<ROLE>Colourist</ROLE>
+			</BOOKAUTHOR>
+		</BOOKAUTHORS>
+		<BORROWABLE>true</BORROWABLE>
+		<BORROWDATE/>
+		<RETURNDATE/>
+		<NROFBORROWS>89</NROFBORROWS>
+	</BOOK>
+	<BOOK idBook="b12">
+		<TITLE>Shadow</TITLE>
+		<DESCRIPTION>Les affaires vont mal pour le groupe "W". Largo est en prison, accusé d'un viol qu'il n'a pas commis. Il a pour compagnon de cellule le numéro 2 du groupe, Cochrane, piégé par l'I. R. S. pour fraude. Alors que Sarah Washington, de la division "Networks", est torturée dans une cave envahie par les rats ! Et dire que tout cela a débuté par un feuilleton télé, Shadow, avec Simon Ovronnaz dans le rôle principal...</DESCRIPTION>
+		<ISBN>2-8001-3123-3</ISBN>
+		<BOOKFORMAT>Comic</BOOKFORMAT>
+		<THEME>Action</THEME>
+		<TARGETREADER>Adult</TARGETREADER>
+		<EDITOR>Dupuis</EDITOR>
+		<RELEASEDATE>2002-06-01</RELEASEDATE>
+		<PURCHASEDATE>2005-02-12</PURCHASEDATE>
+		<BOOKAUTHORS>
+			<BOOKAUTHOR idAuthorRef="a1">
+				<ROLE>Scriptwriter</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a2">
+				<ROLE>Illustrator</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a3">
+				<ROLE>Colourist</ROLE>
+			</BOOKAUTHOR>
+		</BOOKAUTHORS>
+		<BORROWABLE>true</BORROWABLE>
+		<BORROWDATE/>
+		<RETURNDATE/>
+		<NROFBORROWS>3</NROFBORROWS>
+	</BOOK>
+	<BOOK idBook="b13">
+		<TITLE>Le Prix de l'argent</TITLE>
+		<DESCRIPTION>Largo Winch est l'invité de la célèbre émission télévisée "Le Prix de l'argent". Les journalistes l'interrogent sur la mondialisation, les rachats et autres fusions d'entreprises. Après des considérations générales, ils en viennent à un cas précis : Speed One, racheté depuis peu par le Groupe W, vient d'annoncer le licenciement de deux mille cinq cents travailleurs. Surpris d'être entraîné sur ce terrain, Largo marque le coup. L'un des journalistes fait alors entrer sur le plateau Dennis Tarrant, le directeur de l'un des quatre sites de production de Speed One. Et c'est le drame. En direct, devant des millions de téléspectateurs, Tarrant se loge une balle dans la tête. Largo est aussitôt accusé d'être le responsable de la mort du désespéré par une partie de la presse comme de l'opinion. Et par June, la fille de Tarrant. Pour le bel aventurier milliardaire, les (gros) ennuis ne font que commencer...</DESCRIPTION>
+		<ISBN>2-8001-3387-2</ISBN>
+		<BOOKFORMAT>Comic</BOOKFORMAT>
+		<THEME>Action</THEME>
+		<TARGETREADER>Adult</TARGETREADER>
+		<EDITOR>Dupuis</EDITOR>
+		<RELEASEDATE>2004-06-01</RELEASEDATE>
+		<PURCHASEDATE>2005-02-13</PURCHASEDATE>
+		<BOOKAUTHORS>
+			<BOOKAUTHOR idAuthorRef="a1">
+				<ROLE>Scriptwriter</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a2">
+				<ROLE>Illustrator</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a3">
+				<ROLE>Colourist</ROLE>
+			</BOOKAUTHOR>
+		</BOOKAUTHORS>
+		<BORROWABLE>true</BORROWABLE>
+		<BORROWDATE/>
+		<RETURNDATE/>
+		<NROFBORROWS>98</NROFBORROWS>
+	</BOOK>
+	<BOOK idBook="b14">
+		<TITLE>La Loi du dollar</TITLE>
+		<DESCRIPTION>Au nom du pèze, du fric et du saint dollar. Speed One, une société américaine d'équipement sportif détenue majoritairement par le Groupe W, a dû délocaliser quatre sites de production pour enrayer la chute du cours de ses actions en bourse. Si le bilan financier est remarquable, le bilan humain est lourd : deux mille cinq cents travailleurs licenciés, un directeur mettant fin à ses jours et une comptable assassinée... Pour la presse, pour l'opinion publique et bien sûr pour la justice, le responsable (le coupable oe) est tout désigné : Largo Winch... </DESCRIPTION>
+		<ISBN>2-8001-3536-0</ISBN>
+		<BOOKFORMAT>Comic</BOOKFORMAT>
+		<THEME>Action</THEME>
+		<TARGETREADER>Adult</TARGETREADER>
+		<EDITOR>Dupuis</EDITOR>
+		<RELEASEDATE>2005-11-01</RELEASEDATE>
+		<PURCHASEDATE>2005-02-14</PURCHASEDATE>
+		<BOOKAUTHORS>
+			<BOOKAUTHOR idAuthorRef="a1">
+				<ROLE>Scriptwriter</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a2">
+				<ROLE>Illustrator</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a3">
+				<ROLE>Colourist</ROLE>
+			</BOOKAUTHOR>
+		</BOOKAUTHORS>
+		<BORROWABLE>true</BORROWABLE>
+		<BORROWDATE/>
+		<RETURNDATE/>
+		<NROFBORROWS>78</NROFBORROWS>
+	</BOOK>
+	<BOOK idBook="b15">
+		<TITLE>Les Trois Yeux des gardiens du Tao</TITLE>
+		<DESCRIPTION>Une dette est une dette Pékin. Ministère de l'Administration générale de l'aviation civile. La division aéronautique du Groupe W, représentée par André Bellecourt, est sur le point de conclure une joint venture avec la Tsai Industries. Cette alliance permettrait à la division, en difficulté depuis plusieurs années, d'appréhender plus sereinement son avenir. Mais il reste un caprice de M. Tsai Huang à satisfaire pour entériner l'accord : inviter Largo Winch en personne à signer les documents. Le hic, c'est que Largo est injoignable. Notre héros s'est provisoirement déchargé de ses obligations et vit coupé du monde dans un lieu tenu secret. Seul Simon sait comment le contacter. Dwight Cochrane le somme d'avertir son patron que l'avenir du groupe est en jeu et qu'il doit impérativement se trouver à Hong-Kong dans moins de dix jours. Largo acceptera-t-il de retourner en Chine, là même où quelques années plus tôt, il a connu les pires déboires ? Une vieille dette contractée en Birmanie et qui se rappelle à son mauvais souvenir ne lui permet plus d'hésiter. Une toile s'est tissée dans laquelle Largo n'a d'autre choix que de se précipiter...</DESCRIPTION>
+		<ISBN>978-2-8001-3861-9</ISBN>
+		<BOOKFORMAT>Comic</BOOKFORMAT>
+		<THEME>Action</THEME>
+		<TARGETREADER>Adult</TARGETREADER>
+		<EDITOR>Dupuis</EDITOR>
+		<RELEASEDATE>2007-03-01</RELEASEDATE>
+		<PURCHASEDATE>2005-02-15</PURCHASEDATE>
+		<BOOKAUTHORS>
+			<BOOKAUTHOR idAuthorRef="a1">
+				<ROLE>Scriptwriter</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a2">
+				<ROLE>Illustrator</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a4">
+				<ROLE>Colourist</ROLE>
+			</BOOKAUTHOR>
+		</BOOKAUTHORS>
+		<BORROWABLE>true</BORROWABLE>
+		<BORROWDATE/>
+		<RETURNDATE/>
+		<NROFBORROWS>33</NROFBORROWS>
+	</BOOK>
+	<BOOK idBook="b16">
+		<TITLE>La Voie et la Vertu</TITLE>
+		<DESCRIPTION>Faux-semblants Hong Kong. La division aéronautique du groupe W, représentée par André Bellecourt, conclut l'accord de joint venture avec la Tsai Industries Corp. Les Chinois avaient émis le souhait que Largo Winch en personne signe les contrats. Mais le jeune milliardaire n'ayant plus donné signe de vie depuis qu'il a quitté l'île de Tsai Huang, ils ont fait leur deuil de ce caprice. Pour les cadres du groupe W, Largo a probablement été victime d'un naufrage ou d'un enlèvement par des pirates. Pour son fidèle ami Simon, dont l'instinct de truand... </DESCRIPTION>
+		<ISBN>978-2-8001-4070-4</ISBN>
+		<BOOKFORMAT>Comic</BOOKFORMAT>
+		<THEME>Action</THEME>
+		<TARGETREADER>Adult</TARGETREADER>
+		<EDITOR>Dupuis</EDITOR>
+		<RELEASEDATE>2008-11-01</RELEASEDATE>
+		<PURCHASEDATE>2005-02-16</PURCHASEDATE>
+		<BOOKAUTHORS>
+			<BOOKAUTHOR idAuthorRef="a1">
+				<ROLE>Scriptwriter</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a2">
+				<ROLE>Illustrator</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a4">
+				<ROLE>Colourist</ROLE>
+			</BOOKAUTHOR>
+		</BOOKAUTHORS>
+		<BORROWABLE>true</BORROWABLE>
+		<BORROWDATE/>
+		<RETURNDATE/>
+		<NROFBORROWS>86</NROFBORROWS>
+	</BOOK>
+	<BOOK idBook="b17">
+		<TITLE>Mer Noire</TITLE>
+		<DESCRIPTION>Largo Winch est impliqué malgré lui dans une affaire de trafic d'armes et de terrorisme international. Cible d'adversaires très organisés, Largo se retrouve avec le FBI aux trousses. Pour comprendre ce qui se passe, il n'a pas le choix : direction les ports de la mer noire, où les eaux sont manifestement des plus troubles... résente-t-on encore Largo Winch, l'aventurier milliardaire le plus populaire de la BD franco-belge ? En ce vingtième anniversaire de la création de la série plébiscitée par des millions de lecteurs, on a pu redécouvrir l'ensemble...</DESCRIPTION>
+		<ISBN>978-2-8001-4757-4</ISBN>
+		<BOOKFORMAT>Comic</BOOKFORMAT>
+		<THEME>Action</THEME>
+		<TARGETREADER>Adult</TARGETREADER>
+		<EDITOR>Dupuis</EDITOR>
+		<RELEASEDATE>2010-11-01</RELEASEDATE>
+		<PURCHASEDATE>2005-02-17</PURCHASEDATE>
+		<BOOKAUTHORS>
+			<BOOKAUTHOR idAuthorRef="a1">
+				<ROLE>Scriptwriter</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a2">
+				<ROLE>Illustrator</ROLE>
+				<ROLE>Colourist</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a4">
+				<ROLE>Colourist</ROLE>
+			</BOOKAUTHOR>
+		</BOOKAUTHORS>
+		<BORROWABLE>true</BORROWABLE>
+		<BORROWDATE/>
+		<RETURNDATE/>
+		<NROFBORROWS>21</NROFBORROWS>
+	</BOOK>
+	<BOOK idBook="b18">
+		<TITLE>Colère rouge</TITLE>
+		<DESCRIPTION>Faux héritier ou véritable enfant caché? Largo Winch face à la vengeance d'une femme. Impliqué malgré lui dans une affaire de trafic d'armes et de terrorisme international, Largo winch n'a pas d'autre choix que de fausser compagnie aux agents du FBI lancés à ses trousses. Ce qui l'attend, dans les eaux troubles de la mer Noire, offre un visage inattendu: celui d'une femme déterminée à se venger. Et au prix fort, de préférence.</DESCRIPTION>
+		<ISBN>978-2-8001-5360-5</ISBN>
+		<BOOKFORMAT>Comic</BOOKFORMAT>
+		<THEME>Action</THEME>
+		<TARGETREADER>Adult</TARGETREADER>
+		<EDITOR>Dupuis</EDITOR>
+		<RELEASEDATE>2012-10-19</RELEASEDATE>
+		<PURCHASEDATE>2005-02-18</PURCHASEDATE>
+		<BOOKAUTHORS>
+			<BOOKAUTHOR idAuthorRef="a1">
+				<ROLE>Scriptwriter</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a2">
+				<ROLE>Illustrator</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a5">
+				<ROLE>Colourist</ROLE>
+			</BOOKAUTHOR>
+		</BOOKAUTHORS>
+		<BORROWABLE>true</BORROWABLE>
+		<BORROWDATE/>
+		<RETURNDATE/>
+		<NROFBORROWS>2</NROFBORROWS>
+	</BOOK>
+	<BOOK idBook="b19">
+		<TITLE>Chassé-croisé</TITLE>
+		<DESCRIPTION>Accompagné de Dwight Cochrane, de Miss Pennywinkle et de Silky, Largo Winch se rend à Londres pour présider le Big Board du groupe W, à l'occasion duquel il espère bien convaincre Laurent Draillac, avionneur français, de conclure un joint venture avec la branche aéronautique de son groupe. Au programme : réunions de travail et détente. Mais rapidement, la situation se corse. Tandis qu'un vent de folie souffle sur Cochrane et Pennywinkle, des menaces bien réelles pèsent sur la destinée de Largo, devenu l'enjeu d'une terrible partie de poker </DESCRIPTION>
+		<ISBN>978-2-8001-5931-7</ISBN>
+		<BOOKFORMAT>Comic</BOOKFORMAT>
+		<THEME>Action</THEME>
+		<TARGETREADER>Adult</TARGETREADER>
+		<EDITOR>Dupuis</EDITOR>
+		<RELEASEDATE>2014-11-14</RELEASEDATE>
+		<PURCHASEDATE>2005-02-19</PURCHASEDATE>
+		<BOOKAUTHORS>
+			<BOOKAUTHOR idAuthorRef="a1">
+				<ROLE>Scriptwriter</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a2">
+				<ROLE>Illustrator</ROLE>
+				<ROLE>Colourist</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a5">
+				<ROLE>Colourist</ROLE>
+			</BOOKAUTHOR>
+		</BOOKAUTHORS>
+		<BORROWABLE>true</BORROWABLE>
+		<BORROWDATE/>
+		<RETURNDATE/>
+		<NROFBORROWS>49</NROFBORROWS>
+	</BOOK>
+	<BOOK idBook="b20">
+		<TITLE>Vingt secondes</TITLE>
+		<DESCRIPTION>Chassé-Croisé</DESCRIPTION>
+		<ISBN>978-2-8001-6551-6</ISBN>
+		<BOOKFORMAT>Comic</BOOKFORMAT>
+		<THEME>Action</THEME>
+		<TARGETREADER>Adult</TARGETREADER>
+		<EDITOR>Dupuis</EDITOR>
+		<RELEASEDATE>2015-11-20</RELEASEDATE>
+		<PURCHASEDATE>2005-02-20</PURCHASEDATE>
+		<BOOKAUTHORS>
+			<BOOKAUTHOR idAuthorRef="a1">
+				<ROLE>Scriptwriter</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a2">
+				<ROLE>Illustrator</ROLE>
+				<ROLE>Colourist</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a5">
+				<ROLE>Colourist</ROLE>
+			</BOOKAUTHOR>
+		</BOOKAUTHORS>
+		<BORROWABLE>true</BORROWABLE>
+		<BORROWDATE/>
+		<RETURNDATE/>
+		<NROFBORROWS>1</NROFBORROWS>
+	</BOOK>
+	<BOOK idBook="b21">
+		<TITLE>L'Étoile du matin</TITLE>
+		<DESCRIPTION>Les valeurs du Dow Jones chutent de manière spectaculaire. Le groupe Winch est accusé d’avoir manipulé les cours. Qui se cache derrière cette machination ? Qui sont les véritables maitres de la finance ?</DESCRIPTION>
+		<ISBN>978-2-8001-6861-6</ISBN>
+		<BOOKFORMAT>Comic</BOOKFORMAT>
+		<THEME>Action</THEME>
+		<TARGETREADER>Adult</TARGETREADER>
+		<EDITOR>Dupuis</EDITOR>
+		<RELEASEDATE>2017-10-06</RELEASEDATE>
+		<PURCHASEDATE>2005-02-21</PURCHASEDATE>
+		<BOOKAUTHORS>
+			<BOOKAUTHOR idAuthorRef="a6">
+				<ROLE>Scriptwriter</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a2">
+				<ROLE>Illustrator</ROLE>
+				<ROLE>Colourist</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a7">
+				<ROLE>Colourist</ROLE>
+			</BOOKAUTHOR>
+		</BOOKAUTHORS>
+		<BORROWABLE>true</BORROWABLE>
+		<BORROWDATE/>
+		<RETURNDATE/>
+		<NROFBORROWS>44</NROFBORROWS>
+	</BOOK>
+	<BOOK idBook="b22">
+		<TITLE>Les Voiles écarlates</TITLE>
+		<DESCRIPTION>Le super-ordinateur Jonas, responsable des opérations qui plongèrent la bourse de Chicago dans un flash crash retentissant, s'est refermé sur Largo Winch et la tradeuse Mary Stricker. Dans ce serveur surchauffé, serait-ce la fin de leur enquête ? Pourtant, cela n'est rien à l'aune du vol des dix parts du groupe Winch lors de leur transfert sous haute surveillance depuis la banque de Lucerne, en Suisse. Le Pope, antagoniste implacable aux méthodes proches de celles d'Igor Maliakov, s'en est emparé afin de les donner à l'oligarque russe qui a juré la perte de Largo. Contre ces titres, qui représentent les 50 milliards de dollars de la société W, celui-ci exige une rançon que le jeune directeur ne peut ignorer. Mais peut-il vraiment négocier sous la menace de ses ennemis ? Il se plie alors aux ordres et s'envole pour Saint-Pétersbourg tandis que, de l'autre côté du monde, le FBI et la SEC ont investi le siège du groupe Winch afin d'enquêter sur le krach dont Mary Stricker serait toujours responsable - en l'absence de preuves. Sur fond de chasse à l'homme et de conte russe, entre complots financiers et ressorts boursiers, ce nouvel épisode de Largo Winch renverse les vérités et dévoile les coulisses obscures de la finance !</DESCRIPTION>
+		<ISBN>979-1-0347-3103-9</ISBN>
+		<BOOKFORMAT>Comic</BOOKFORMAT>
+		<THEME>Action</THEME>
+		<TARGETREADER>Adult</TARGETREADER>
+		<EDITOR>Dupuis</EDITOR>
+		<RELEASEDATE>2019-11-15</RELEASEDATE>
+		<PURCHASEDATE>2005-02-22</PURCHASEDATE>
+		<BOOKAUTHORS>
+			<BOOKAUTHOR idAuthorRef="a6">
+				<ROLE>Scriptwriter</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a2">
+				<ROLE>Illustrator</ROLE>
+				<ROLE>Colourist</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a7">
+				<ROLE>Colourist</ROLE>
+			</BOOKAUTHOR>
+		</BOOKAUTHORS>
+		<BORROWABLE>true</BORROWABLE>
+		<BORROWDATE/>
+		<RETURNDATE/>
+		<NROFBORROWS>40</NROFBORROWS>
+	</BOOK>
+	<BOOK idBook="b23">
+		<TITLE>Frontière de la nuit</TITLE>
+		<DESCRIPTION>En visite incognito dans une mine d'étain en Indonésie, Largo Winch découvre avec stupeur que l'une de ses propres filiales emploie des enfants pour fournir des composants essentiels à nos smartphones. Une découverte qui encourage le milliardaire à faire évoluer le groupe W vers une économie plus éthique et plus verte, sans négliger toutefois les technologies de pointe, en particulier les marchés spatiaux, qu'il s'agisse de satellites ou du nettoyage de déchets en orbite. Largo Winch va ainsi croiser la route de Jarod et Demetria Manskind, jeunes... </DESCRIPTION>
+		<ISBN>979-1-0347-4295-0</ISBN>
+		<BOOKFORMAT>Comic</BOOKFORMAT>
+		<THEME>Action</THEME>
+		<TARGETREADER>Adult</TARGETREADER>
+		<EDITOR>Dupuis</EDITOR>
+		<RELEASEDATE>2021-11-05</RELEASEDATE>
+		<PURCHASEDATE>2005-02-23</PURCHASEDATE>
+		<BOOKAUTHORS>
+			<BOOKAUTHOR idAuthorRef="a6">
+				<ROLE>Scriptwriter</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a2">
+				<ROLE>Illustrator</ROLE>
+				<ROLE>Colourist</ROLE>
+			</BOOKAUTHOR>
+			<BOOKAUTHOR idAuthorRef="a7">
+				<ROLE>Colourist</ROLE>
+			</BOOKAUTHOR>
+		</BOOKAUTHORS>
+		<BORROWABLE>true</BORROWABLE>
+		<BORROWDATE/>
+		<RETURNDATE/>
+		<NROFBORROWS>96</NROFBORROWS>
+	</BOOK>
+
+
+
+    <BOOK idBook="b1000">
       <TITLE>string</TITLE>
       <DESCRIPTION>string</DESCRIPTION>
-      <ISBN>123-1-12-123456-1</ISBN>
+      <ISBN>123-1-1212-3456-1</ISBN>
       <BOOKFORMAT>Comic</BOOKFORMAT>
       <THEME>History</THEME>
       <TARGETREADER>0-3</TARGETREADER>
@@ -25,7 +632,7 @@
       <RETURNDATE>1980-01-14</RETURNDATE>
       <NROFBORROWS>350</NROFBORROWS>
     </BOOK>
-    <BOOK idBook="b2">
+    <BOOK idBook="b2000">
       <TITLE>string</TITLE>
       <DESCRIPTION>string</DESCRIPTION>
       <BOOKFORMAT>Book</BOOKFORMAT>
@@ -43,7 +650,7 @@
       <RETURNDATE>1980-01-14</RETURNDATE>
       <NROFBORROWS>0</NROFBORROWS>
     </BOOK>
-    <BOOK idBook="b3">
+    <BOOK idBook="b3000">
       <TITLE>string</TITLE>
       <DESCRIPTION>string</DESCRIPTION>
       <BOOKFORMAT>Comic</BOOKFORMAT>
@@ -62,7 +669,7 @@
       <RETURNDATE>1980-01-14</RETURNDATE>
       <NROFBORROWS>0</NROFBORROWS>
     </BOOK>
-    <BOOK idBook="b4">
+    <BOOK idBook="b4000">
       <TITLE>string</TITLE>
       <DESCRIPTION>string</DESCRIPTION>
       <BOOKFORMAT>Newspaper</BOOKFORMAT>
@@ -88,9 +695,9 @@
       <LASTNAME>string</LASTNAME>
       <BIRTHDATE>2016-03-20</BIRTHDATE>
       <BORROWINGS>
-        <BORROWING idBookRef="b1"/>
-        <BORROWING idBookRef="b2"/>
-        <BORROWING idBookRef="b3"/>
+        <BORROWING idBookRef="b1000"/>
+        <BORROWING idBookRef="b2000"/>
+        <BORROWING idBookRef="b3000"/>
       </BORROWINGS>
     </BORROWER>
     <BORROWER idBorrower="bo1235">
@@ -98,7 +705,7 @@
       <LASTNAME>string</LASTNAME>
       <BIRTHDATE>2016-03-20</BIRTHDATE>
       <BORROWINGS>
-        <BORROWING idBookRef="b4"/>
+        <BORROWING idBookRef="b4000"/>
       </BORROWINGS>
     </BORROWER>
     <BORROWER idBorrower="bo3456">
@@ -144,20 +751,70 @@
     </NEWSPAPERSERIE>
   </NEWSPAPERSERIES>
   <AUTHORS>
+    <AUTHOR idAuthor="a1">
+      <FIRSTNAME>Jean</FIRSTNAME>
+      <LASTNAME>Van Hamme</LASTNAME>
+      <BIRTHDATE>1939-01-16</BIRTHDATE>
+      <DEATHDATE/>
+    </AUTHOR>
+    <AUTHOR idAuthor="a2">
+      <FIRSTNAME>Philippe</FIRSTNAME>
+      <LASTNAME>Francq</LASTNAME>
+      <BIRTHDATE>1961-12-13</BIRTHDATE>
+      <DEATHDATE/>
+    </AUTHOR>
+    <AUTHOR idAuthor="a3">
+      <FIRSTNAME>Marie-Paule</FIRSTNAME>
+      <LASTNAME>Alluard</LASTNAME>
+      <BIRTHDATE/>
+      <DEATHDATE/>
+    </AUTHOR>
+    <AUTHOR idAuthor="a4">
+      <FIRSTNAME>Frédéric</FIRSTNAME>
+      <LASTNAME>Besson</LASTNAME>
+      <BIRTHDATE/>
+      <DEATHDATE/>
+    </AUTHOR>
+    <AUTHOR idAuthor="a5">
+      <FIRSTNAME>Yoann</FIRSTNAME>
+      <LASTNAME>Guillo</LASTNAME>
+      <BIRTHDATE/>
+      <DEATHDATE/>
+    </AUTHOR>
+    <AUTHOR idAuthor="a6">
+      <FIRSTNAME>Eric</FIRSTNAME>
+      <LASTNAME>Giacometti</LASTNAME>
+      <BIRTHDATE/>
+      <DEATHDATE/>
+    </AUTHOR>
+    <AUTHOR idAuthor="a7">
+      <FIRSTNAME>Bertrand</FIRSTNAME>
+      <LASTNAME>Denoulet</LASTNAME>
+      <BIRTHDATE/>
+      <DEATHDATE/>
+    </AUTHOR>
+
+
+
+
+
     <AUTHOR idAuthor="a9123">
       <FIRSTNAME>string</FIRSTNAME>
       <LASTNAME>string</LASTNAME>
       <BIRTHDATE>2016-01-25</BIRTHDATE>
+      <DEATHDATE/>
     </AUTHOR>
     <AUTHOR idAuthor="a1234">
       <FIRSTNAME>string</FIRSTNAME>
       <LASTNAME>string</LASTNAME>
       <BIRTHDATE>2016-01-25</BIRTHDATE>
+      <DEATHDATE/>
     </AUTHOR>
     <AUTHOR idAuthor="a5678">
       <FIRSTNAME>string</FIRSTNAME>
       <LASTNAME>string</LASTNAME>
       <BIRTHDATE>2016-01-25</BIRTHDATE>
+      <DEATHDATE/>
     </AUTHOR>
   </AUTHORS>
 </LIBRARY>

@@ -4,6 +4,7 @@
 I used https://www.liquid-technologies.com/online-xsd-to-xml-converter to generate a sample XML
 To validate: https://www.freeformatter.com/xml-validator-xsd.html
 XMLTools extension for Visual Studio Code
+https://www.convertcsv.com/csv-to-xml.htm to convert csv to xml to fasten xml creation
 
 Comments for the report
   - AUTHOR in AUTHORS for a sake of readiness
@@ -40,7 +41,7 @@ Comments related to the informations about the borrowings (NB: "BORROWABLE" is a
 Still to transfomr to integer for comparison in the xslt (1.0)
   - ISBN - in BOOK but will always be useless for the newspaper
   Disadvantage of having all elements in BOOK
-   regex for ISBN: (\d{3}-|)\d{1}-\d{2}-\d{6}-\d{1} (works for ISBN-10 and ISBN-13)
+   regex for ISBN: (\d{3}-|)\d{1}-\d{2}-\d{6}-(\d{1}|X) (works for ISBN-10 and ISBN-13)
   - ISSN : in NEWSPAPERSERIE (I understood that it is linked to the serie itself)
   regex for ISSN: ISSN \d{4}-\d{3}(\d|X) (with ISSN inside!)
 
@@ -62,7 +63,7 @@ TODO
 To-do xslt
 - Books per borrower
 - Book per author (XML?)
-- Books not yet returned
+- Books not yet returned (Borrowed book, with red color on the late ones)
 
 -->
   <!--LIBRARY
@@ -307,6 +308,8 @@ To-do xslt
       <xs:enumeration value="Tales"/>
       <xs:enumeration value="Economics"/>
       <xs:enumeration value="Finance"/>
+      <xs:enumeration value="Action"/>
+      <xs:enumeration value="Sport"/>
     </xs:restriction>
   </xs:simpleType>
 
@@ -341,6 +344,7 @@ To-do xslt
       <xs:element name="FIRSTNAME" type="xs:string"/>
       <xs:element name="LASTNAME" type="xs:string"/>
       <xs:element name="BIRTHDATE" type="customDateType"/>
+      <xs:element name="DEATHDATE" type="customDateType"/>
 		</xs:sequence>
     <xs:attribute name="idAuthor" type="idAuthorT" use="required"/>
 	</xs:complexType>
@@ -449,7 +453,7 @@ To-do xslt
   The pattern accepts empty ISBN (it is mandatory for a bookshop, but not for a library)-->
   <xs:simpleType name="ISBNType">
     <xs:restriction base="xs:string">
-      <xs:pattern value="((\d{3}-|)\d{1}-\d{2}-\d{6}-\d{1}|)"/>
+      <xs:pattern value="((\d{3}-|)\d{1}-\d{4}-\d{4}-(\d{1}|X)|)"/>
     </xs:restriction>
   </xs:simpleType>
 
