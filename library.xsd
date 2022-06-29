@@ -355,6 +355,7 @@ To-do xslt
       <xs:enumeration value="First"/>
       <xs:enumeration value="Nathan"/>
       <xs:enumeration value="Nord-Sud"/>
+      <xs:enumeration value="Groupe Amaury"/>
     </xs:restriction>
   </xs:simpleType>
 
