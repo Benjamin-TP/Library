@@ -98,9 +98,8 @@ To-do xslt
         <!--List of authors
         22.06.17 changed: list removed (used in the BOOKS element instead)
         replaced with AUTHOR one by one instead
-        minOccurs="0" because for some books we dont have the author(s) (newspapers, "le roman de renart"...)
         -->
-        <xs:element name="AUTHORS" type="authorsType" minOccurs="0"/>
+        <xs:element name="AUTHORS" type="authorsType"/>
 
       </xs:sequence>
     </xs:complexType>
@@ -199,8 +198,10 @@ To-do xslt
       <xs:element name="RELEASEDATE" type="customDateType"/>
       <xs:element name="PURCHASEDATE" type="customDateType"/>
 
-      <!--BookAuthors-->
-      <xs:element name="BOOKAUTHORS" type="bookAuthorsType"/>
+      <!--BookAuthors
+      minOccurs="0" because for some books we dont have the author(s) (newspapers, "le roman de renart"...)
+      -->
+      <xs:element name="BOOKAUTHORS" type="bookAuthorsType" minOccurs="0"/>
       <!--Series elements
       minOccurs, maxOccurs : 1 by default
       Some books are "one-shot" hence minOccurs="0"
