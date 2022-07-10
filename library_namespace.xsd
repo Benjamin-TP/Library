@@ -1,0 +1,582 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+ <!--
+I used https://www.liquid-technologies.com/online-xsd-to-xml-converter to generate a sample XML
+To validate: https://www.freeformatter.com/xml-validator-xsd.html
+XMLTools extension for Visual Studio Code
+https://www.convertcsv.com/csv-to-xml.htm to convert csv to xml to fasten xml creation
+https://www.freeformatter.com/xsl-transformer.html used when I was facing issues with the charset in the META tag.
+
+https://erwy.developpez.com/cours/langage/xslt/conditions/ I tried fo the charset without success
+
+Comments for the report
+  - AUTHOR in AUTHORS for a sake of readiness
+  - borrow info: where? In the books, to keep consistency with the way its done
+  - borrow info: a dedicated element; may or may not be available
+  - all the refkeys are under the book node
+  - Books then series outside. info repeated (editor, etc) but can change authors (e.g. with Largo Winch)
+  - minOccurs, maxOccurs always specified, for sake of readiness
+  - BOOKAUTHOR / ROLE: on BOOK, not AUTHOR level because an AUTHOR can switch roles (e.g. morris, goscinny, uderzo)
+  - BOOKAUTHOR / ROLE - choice made: several ROLE may be used for the same author (usual for the comics)
+  - BOOKAUTHOR / ROLE: minOccurs = 0 because it is useless for novels, for example
+  - BOOKAUTHOR / ROLE: at most 3 elements (for a comic book: Scriptwriter, Illustrator and Colourist)
+  - attribute: by default: optional, hence required for all attributes used for key and keyref
+  - key and keyref: I used the ".//" notation for the selector; no need to describe the full path.
+
+Comments related to the informations about the borrowings (NB: "BORROWABLE" is a neologism)
+  - BORROWABLE: a boolean attached to the BOOK.
+  there is still room to enhance it, e.g. two fields 
+  (one for "already borrowed", another one for "not borrowable yet")
+  - We could also add a field "Reserved" + position in the list
+  - BORROWER contains a list of a borrows/refkey to the BOOK; idBook created for that purpose.
+  I cannot use xs:assert with XSD 1.0, hence I didnt find any perfect solution.
+  MAX number of books: in the BORROWER info (limitation on the list) rather than from the book
+  NROFBOOKS removed from the BOORROWER info: it can be deducted from the above list
+  - BORROWINFO removed from the BOOK; everythinh is under BORROWER.
+  Still not the perfect solution, but the other was: 
+  BORROWINFO shared by BOOK and BORROWER: harder to achieve max number of borrowings without duplicating the info.
+  - BORROWDATE and RETURNDATE could also be in the BORROWING element
+
+
+  - bookseries and comicbookseries not merged despite they are very similar: still useful in a real library; the other option would be to flag them using the book format 
+
+  Dates: regex for date: \d{4}-\d{2}-\d{2} customDateType: similar to what we saw in the course, but with yyyy-mm-dd instead
+Still to transfomr to integer for comparison in the xslt (1.0)
+  - ISBN - in BOOK but will always be useless for the newspaper
+  Disadvantage of having all elements in BOOK
+   regex for ISBN: (\d{3}-|)\d{1}-\d{2}-\d{6}-(\d{1}|X) (works for ISBN-10 and ISBN-13)
+  - ISSN : in NEWSPAPERSERIE (I understood that it is linked to the serie itself)
+  regex for ISSN: ISSN \d{4}-\d{3}(\d|X) (with ISSN inside!)
+
+  - Newspaper: period start date and end date within NEWSPAPERSER, in order to avoid having it in all BOOK.
+  Enhancement: ref to a NEWSPAPERSERIE (requires a complextype) or dedicated NEWSPAPER at the same level as BOOK
+
+  Enhancement: type NEWSPAPER vs BOOK, in order to control the max number of borrowings per book type
+
+
+TODO
+
+  - Namespace
+
+  Not mandatory:
+  - Element +  ref vs element in the sequence only and that's it
+  - add simpletype for restrictions on size of string elements
+
+To-do xslt
+- Books per borrower, with number of books, sorted by return date (with red color on the late ones)):
+: priciple OK, A little formatting / style to do
+- List of the books per author, with the role of the author:
+: principle ok
+- Most popular books / per theme (> apply template theme then template books)? See https://newbedev.com/how-to-use-xslt-to-create-distinct-values/ and http://www.wandi.fr/Lab/Article/Item/select_distinct_values__xpath_1_0_-21.sls
+: principle OK
+
+<xsl:text>&#xA;</xsl:text>
+
+XML/JSON (invert them if one is too difficult
+XML:
+- Books sorted by serie (if we start with comicbookserie? Something using the series? Using "TITLE" variables (if there is no serie, then title picked)?
+>> I didn't find a solution; I should create a COMICBOOKSER for each comic book... And that's it
+JSON:
+- Book per author (XML?)
+
+Help fot the XSLT
+- spaces/end of lines: https://www.oreilly.com/library/view/xslt-2nd-edition/9780596527211/ch04s07s04.html
+- xsl: text: https://www.w3schools.com/XML/ref_xsl_el_text.asp
+- xsl: output (for avoiding character errors, use ISO-8859-1: https://www.w3schools.com/XML/ref_xsl_el_output.asp)
+
+- select current node: https://www.w3schools.com/xml/func_current.asp
+
+books borrowed
+        <BORROWING idBookRef="b1"/>
+        <BORROWING idBookRef="b12"/>
+        <BORROWING idBookRef="b15"/>
+		
+		<BORROWING idBookRef="b45"/>
+		
+		
+		<BORROWING idBookRef="b10"/>
+        <BORROWING idBookRef="b23"/>
+        <BORROWING idBookRef="b32"/>
+        <BORROWING idBookRef="b46"/>
+        <BORROWING idBookRef="b65"/>
+        <BORROWING idBookRef="b68"/>
+		
+		<BORROWING idBookRef="b4"/>
+        <BORROWING idBookRef="b7"/>
+        <BORROWING idBookRef="b28"/>
+        <BORROWING idBookRef="b33"/>
+        <BORROWING idBookRef="b54"/>
+	
+		
+		<BORROWING idBookRef="b6"/>
+        <BORROWING idBookRef="b13"/>
+        <BORROWING idBookRef="b24"/>
+        <BORROWING idBookRef="b31"/>
+-->
+  <!--LIBRARY
+    This element contains the whole database (it is its root node - "schema element")
+
+    - List of books: it contains all the books (book, comic, newspaper)
+    - List of authors
+    - List of borrowers
+    - List of series of books
+    - list of series of comics
+    - list of series of newspapers
+
+    -The keys
+  -->
+ 	<xs:element name="LIBRARY">
+    <xs:complexType>
+      <xs:sequence>
+        <!--By default, minOccurs and maxOccurs equal to 1, hence not specified
+        minOccurs="1" maxOccurs="unbounded"
+        -->
+        <!--List of Books, comic, newspaper-->
+        <xs:element name="BOOKS" type="booksType"/>
+
+        <!--List of borrowers-->
+        <xs:element name="BORROWERS" type="borrowersType"/>
+
+        <!--Series elements-->
+        <xs:element name="BOOKSERIES" type="bookSeriesType"/>
+        <xs:element name="COMICBOOKSERIES" type="comicBookSeriesType"/>
+        <xs:element name="NEWSPAPERSERIES" type="newspaperSeriesType"/>
+
+        <!--List of authors
+        22.06.17 changed: list removed (used in the BOOKS element instead)
+        replaced with AUTHOR one by one instead
+        -->
+        <xs:element name="AUTHORS" type="authorsType"/>
+
+      </xs:sequence>
+    </xs:complexType>
+
+    <!--key of BOOK / reffering key on BORROWING-->
+    <xs:key name="bookKey">
+			<xs:selector xpath=".//BOOK"/>
+			<xs:field xpath="@idBook"/>
+		</xs:key>
+    <xs:keyref name="borrowingToBook" refer="bookKey">
+      <xs:selector xpath=".//BORROWING"/>
+			<xs:field xpath="@idBookRef"/>
+		</xs:keyref>
+
+    <!--key of author / reffering key on BOOKAUTHOR-->
+    <xs:key name="authorKey">
+			<xs:selector xpath=".//AUTHOR"/>
+			<xs:field xpath="@idAuthor"/>
+		</xs:key>
+    <xs:keyref name="bookToAuthor" refer="authorKey">
+      <xs:selector xpath=".//BOOKAUTHOR"/>
+			<xs:field xpath="@idAuthorRef"/>
+		</xs:keyref>
+
+    <!--key of BOOKSERIE / refkey on BOOKSER-->
+    <xs:key name="bookSerieKey">
+			<xs:selector xpath=".//BOOKSERIE"/>
+			<xs:field xpath="@idBS"/>
+		</xs:key>
+    <xs:keyref name="bookSerToBookSerie" refer="bookSerieKey">
+			<xs:selector xpath=".//BOOKSER"/>
+			<xs:field xpath="@idBSRef"/>
+		</xs:keyref>
+
+    <!--key of COMICBOOKSERIE / refkey on COMICBOOKSER-->
+    <xs:key name="comicBookSerieKey">
+			<xs:selector xpath=".//COMICBOOKSERIE"/>
+			<xs:field xpath="@idCBS"/>
+		</xs:key>
+    <xs:keyref name="comicBookSerToComicBookSerie" refer="comicBookSerieKey">
+			<xs:selector xpath=".//COMICBOOKSER"/>
+			<xs:field xpath="@idCBSRef"/>
+		</xs:keyref>
+
+    <!--key of NEWSPAPERSERIE / refkey on NEWSPAPERSER-->
+    <xs:key name="newspaperSerieKey">
+			<xs:selector xpath=".//NEWSPAPERSERIE"/>
+			<xs:field xpath="@idNWS"/>
+		</xs:key>
+    <xs:keyref name="newspaperSerToNewspaperSerie" refer="newspaperSerieKey">
+			<xs:selector xpath=".//NEWSPAPERSER"/>
+			<xs:field xpath="@idNWSRef"/>
+		</xs:keyref>
+
+  </xs:element>
+
+
+  <xs:complexType name="booksType">
+		<xs:sequence>
+			<xs:element name="BOOK" type="bookType" minOccurs="0" maxOccurs="unbounded"/>
+      <!--<xs:element ref="BOOK" minOccurs="0" maxOccurs="unbounded"/>-->
+		</xs:sequence>
+	</xs:complexType>
+
+  <xs:complexType name="authorsType">
+		<xs:sequence>
+			<xs:element name="AUTHOR" type="authorType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+  <xs:complexType name="borrowersType">
+		<xs:sequence>
+			<xs:element name="BORROWER" type="borrowerType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+
+  <xs:complexType name="bookType">
+		<xs:sequence>
+      <!--For the book parameters: simpleType defined (with restriction on the values)
+      Theme/ThemeID
+      TargetReader/
+      Editor/
+      BookType/editor
+      -->
+      <xs:element name="TITLE" type="xs:string"/>
+      <xs:element name="DESCRIPTION" type="xs:string" minOccurs="0"/> <!--Not mandatory for newspapers-->
+      <xs:element name="ISBN" type="ISBNType" minOccurs="0"/> <!--Not mandatory for newspapers-->
+
+      <!--Book parameters-->
+      <xs:element name="BOOKFORMAT" type="bookFormatType"/>
+      <xs:element name="THEME" type="themeType"/>
+      <xs:element name="TARGETREADER" type="targetReaderType"/>
+      <xs:element name="EDITOR" type="editorType"/>
+
+      <xs:element name="RELEASEDATE" type="customDateType"/>
+      <xs:element name="PURCHASEDATE" type="customDateType"/>
+
+      <!--BookAuthors
+      minOccurs="0" because for some books we dont have the author(s) (newspapers, "le roman de renart"...)
+      -->
+      <xs:element name="BOOKAUTHORS" type="bookAuthorsType" minOccurs="0"/>
+      <!--Series elements
+      minOccurs, maxOccurs : 1 by default
+      Some books are "one-shot" hence minOccurs="0"
+      -->
+      <xs:choice minOccurs="0">
+        <xs:element name="BOOKSER" type="bookSerType"/>
+        <xs:element name="COMICBOOKSER" type="comicBookSerType"/>
+        <xs:element name="NEWSPAPERSER" type="newspaperSerType"/>
+      </xs:choice>
+
+      <!--BORROWABLE
+      not borrowable for two reasons
+      - for read-here only (e.g. for newspapers released recently)
+      - already borrowed by someone
+      -->
+      <xs:element name="BORROWABLE" type="xs:boolean"/>
+      
+      <!--Number of borrows - for statistics-->
+      <xs:element name="NROFBORROWS" type="xs:integer"/>
+
+		</xs:sequence>
+
+    <xs:attribute name="idBook" type="idBookT" use="required"/>
+	</xs:complexType>
+
+  <!--BookAuthors
+  List which contains BookAuthor
+  Each BookAuthor refers to an Author
+  -->
+  <xs:complexType name="bookAuthorsType">
+		<xs:sequence>
+      <xs:element name="BOOKAUTHOR" type="bookAuthorType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+  <!--BookAuthor: 
+  - one ROLE element for the role in the creation (writer, illustrator...)
+  - At most 5 roles per BOOKAUTHOR (there are only five choices)
+  - one attribute for the reference to Author-->
+  <xs:complexType name="bookAuthorType">
+    <xs:sequence>
+      <xs:element name="ROLE" type="roleType" minOccurs="0" maxOccurs="5"/>
+    </xs:sequence>
+		<xs:attribute name="idAuthorRef" type="idAuthorT" use="required"/>
+	</xs:complexType>
+
+  <!--roleType used by bookAuthorType-->
+  <xs:simpleType name="roleType">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="Novelist"/><!--Romancier-->
+        <xs:enumeration value="Writer"/><!--Ecrivain - more "generalist"-->
+        <xs:enumeration value="Scriptwriter"/><!--Scenariste-->
+        <xs:enumeration value="Illustrator"/><!--Dessins-->
+        <xs:enumeration value="Colourist"/><!--Coloriste-->
+    </xs:restriction>
+  </xs:simpleType>
+
+
+  <!--Complex types for the link between book and the series-->
+  <!--The three following elements are in an BOOK element
+  bookSerType refers to a bookSerieType (idBSref to idBS)
+  comicBookSerType refers to a comicBookSerieType (idCBSref to idCBS)
+  newspaperSerType refers to a newspaperSerieType (idNWSref to idNWS)
+  -->
+  <xs:complexType name="bookSerType">
+		<xs:attribute name="idBSRef" type="idBST" use="required"/>
+	</xs:complexType>
+
+  <xs:complexType name="comicBookSerType">
+		<xs:attribute name="idCBSRef" type="idCBST" use="required"/>
+	</xs:complexType>
+
+  <xs:complexType name="newspaperSerType">
+    <!--The NEWSPAPERSER element contains period info-->
+    <xs:sequence>
+      <xs:element name="PERIODSTARTDATE" type="customDateType"/>
+      <xs:element name="PERIODENDDATE" type="customDateType"/>
+    </xs:sequence>
+		<xs:attribute name="idNWSRef" type="idNWST" use="required"/>
+	</xs:complexType>
+
+  <!--Theme type with restriction / pattern (or restriction / enumeration)
+  Same for TargetReader, Editor, BookFormat
+  -->
+  <xs:simpleType name="bookFormatType">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="Book"/>
+        <xs:enumeration value="Comic"/>
+        <xs:enumeration value="Newspaper"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="themeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="History"/>
+      <xs:enumeration value="Politics"/>
+      <xs:enumeration value="Novel"/>
+      <xs:enumeration value="Science"/>
+      <xs:enumeration value="Nature"/>
+      <xs:enumeration value="Animals"/>
+      <xs:enumeration value="Painting"/>
+      <xs:enumeration value="Arts"/>
+      <xs:enumeration value="Tales"/>
+      <xs:enumeration value="Economics"/>
+      <xs:enumeration value="Finance"/>
+      <xs:enumeration value="Action"/>
+      <xs:enumeration value="Adventure"/>
+      <xs:enumeration value="Sport"/>
+      <xs:enumeration value="Society"/>
+      <xs:enumeration value="Philosophy"/>
+      <xs:enumeration value="Religion"/>
+      <xs:enumeration value="General"/>
+      <xs:enumeration value="Autobiography"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="targetReaderType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="0-3|4-6|7-11|12-15|Adult"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="editorType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Bayard"/>
+      <xs:enumeration value="Fleurus Presse"/>
+      <xs:enumeration value="Grasset"/>
+      <xs:enumeration value="Futuropolis"/>
+      <xs:enumeration value="Aire libre"/>
+      <xs:enumeration value="Dupuis"/>
+      <xs:enumeration value="Fayard"/>
+      <xs:enumeration value="Dargaud"/>
+      <xs:enumeration value="Glénat"/>
+      <xs:enumeration value="Casterman"/>
+      <xs:enumeration value="Plon"/>
+      <xs:enumeration value="Perrin"/>
+      <xs:enumeration value="JCLattès"/>
+      <xs:enumeration value="Flammarion"/>
+      <xs:enumeration value="Albin Michel"/>
+      <xs:enumeration value="La Découverte"/>
+      <xs:enumeration value="Bréal"/>
+      <xs:enumeration value="Desclée De Brouwer"/>
+      <xs:enumeration value="Denoël"/>
+      <xs:enumeration value="HongFei"/>
+      <xs:enumeration value="Milan"/>
+      <xs:enumeration value="BIBLI O"/>
+      <xs:enumeration value="J'ai lu"/>
+      <xs:enumeration value="Michel Lafon"/>
+      <xs:enumeration value="Librio"/>
+      <xs:enumeration value="First"/>
+      <xs:enumeration value="Nathan"/>
+      <xs:enumeration value="Nord-Sud"/>
+      <xs:enumeration value="Groupe Amaury"/>
+      <xs:enumeration value="Steinkis"/>
+      <xs:enumeration value="Le Livre de Poche"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="authorType">
+		<xs:sequence>
+      <xs:element name="FIRSTNAME" type="xs:string"/>
+      <xs:element name="LASTNAME" type="xs:string"/>
+      <xs:element name="BIRTHDATE" type="customDateType"/>
+      <xs:element name="DEATHDATE" type="customDateType"/>
+		</xs:sequence>
+    <xs:attribute name="idAuthor" type="idAuthorT" use="required"/>
+	</xs:complexType>
+
+  <xs:complexType name="borrowerType">
+		<xs:sequence>
+      <xs:element name="FIRSTNAME" type="xs:string"/>
+      <xs:element name="LASTNAME" type="xs:string"/>
+      <xs:element name="BIRTHDATE" type="customDateType"/>
+      <xs:element name="BORROWINGS" type="borrowingsType"/>
+		</xs:sequence>
+    <xs:attribute name="idBorrower" type="idBorrowerT" use="required"/>
+	</xs:complexType>
+
+  <xs:complexType name="borrowingsType">
+		<xs:sequence>
+      <!--Max number of borrowings with maxOccurs-->
+      <xs:element name="BORROWING" type="borrowingType" minOccurs="0" maxOccurs="10"/>
+		</xs:sequence>
+	</xs:complexType>
+
+  <xs:complexType name="borrowingType">
+    <xs:sequence>
+      <xs:element name="BORROWDATE" type="customDateType"/>
+      <xs:element name="RETURNDATE" type="customDateType"/>
+    </xs:sequence>
+		<xs:attribute name="idBookRef" type="idBookT" use="required"/>
+	</xs:complexType>
+ 
+  <!--The BookSeries list containt BookSerie elements-->
+  <xs:complexType name="bookSeriesType">
+		<xs:sequence>
+      <xs:element name="BOOKSERIE" type="bookSerieType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+  
+  <!--BookSerie contained in the BookSeries list-->
+  <xs:complexType name="bookSerieType">
+		<xs:sequence>
+      <xs:element name="TITLE" type="xs:string"/>
+      <xs:element name="DESCRIPTION" type="xs:string"/>
+      <xs:element name="NROFVOLUMES" type="xs:integer"/>
+		</xs:sequence>
+    <xs:attribute name="idBS" type="idBST" use="required"/>
+	</xs:complexType>
+
+
+  <!--The ComicBookSeries list containt BookSerie elements-->
+  <xs:complexType name="comicBookSeriesType">
+		<xs:sequence>
+      <xs:element name="COMICBOOKSERIE" type="comicBookSerieType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+  
+  <!--ComicBookSerie contained in the ComicBookSeries list-->
+  <xs:complexType name="comicBookSerieType">
+		<xs:sequence>
+      <xs:element name="TITLE" type="xs:string"/>
+      <xs:element name="DESCRIPTION" type="xs:string"/>
+      <xs:element name="NROFVOLUMES" type="xs:integer"/>
+		</xs:sequence>
+    <xs:attribute name="idCBS" type="idCBST" use="required"/>
+	</xs:complexType>
+
+
+  <!--The NewspaperSeries list contains NewspaperSerie elements-->
+  <xs:complexType name="newspaperSeriesType">
+		<xs:sequence>
+      <xs:element name="NEWSPAPERSERIE" type="newspaperSerieType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+  <xs:complexType name="newspaperSerieType">
+		<xs:sequence>
+      <xs:element name="ISSN" type="ISSNType"/>
+      <xs:element name="TITLE" type="xs:string"/>
+      <xs:element name="DESCRIPTION" type="xs:string"/>
+      <xs:element name="NROFVOLUMES" type="xs:integer"/>
+      <xs:element name="FREQUENCY" type="frequencyType"/>
+		</xs:sequence>
+    <xs:attribute name="idNWS" type="idNWST" use="required"/>
+	</xs:complexType>
+
+  <!--Frequency types list for the newspaper-->
+  <xs:simpleType name="frequencyType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Daily"/>
+      <xs:enumeration value="Weekly"/>
+      <xs:enumeration value="Fortnightly"/>
+      <xs:enumeration value="Monthly"/>
+      <xs:enumeration value="Bimonthly"/>
+      <xs:enumeration value="Biannual"/>
+      <xs:enumeration value="Annual"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+
+  <!--simpleType with restrictions for dates, ISBN and ISSN-->
+  <!--customDateType: similar to what we saw in the course, but with yyyy-mm-dd instead
+  It is be better for sorting by date in xslt transformation
+  The pattern accepts empty dates
+  -->
+  <xs:simpleType name="customDateType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="(\d{4}-\d{2}-\d{2}|)"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!--ISBN for the BOOK
+  The pattern accepts empty ISBN (it is mandatory for a bookshop, but not for a library)-->
+  <xs:simpleType name="ISBNType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="((\d{3}-|)\d{1}-\d{4}-\d{4}-(\d{1}|X)|)"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!--ISSN for NEWSPAPERSERIE
+  I chose to force filling the ISSN, since a newspaper always have one-->
+  <xs:simpleType name="ISSNType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="ISSN \d{4}-\d{3}(\d|X)"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+
+  <!--6 below simpleType for the 6 key / keyref pairs (actually, for the attributes) we have
+  In order to have "strutured" attribute ids
+  The 2nd part of the pattern is arbitrarily limited to 7 digits, for limiting the system
+  7 digits means: at most 10 millions - 1 books/authors, etc.
+  -->
+  <xs:simpleType name="idBookT">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="b\d{1,7}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="idAuthorT">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="a\d{1,7}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="idBST">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="bs\d{1,7}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="idCBST">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="cbs\d{1,7}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="idNWST">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="nws\d{1,7}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="idBorrowerT">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="bo\d{1,7}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>
