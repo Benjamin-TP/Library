@@ -34,12 +34,18 @@ List of the books per author, with the role.
 		
 		<xsl:variable name="id_author" select="@idAuthor"/>
 		
-		<!--and ROLE='Writer' in brackets: it filters but empty lists appear
-		Issue when duplicating (Writer, Scriptwriter, Novelist, Illustrator, Colourist: duplicates when an author appears more than once per book-->
-		<xsl:apply-templates select="../../BOOKS/BOOK/BOOKAUTHORS/BOOKAUTHOR[@idAuthorRef=$id_author]"> 
+		<xsl:apply-templates select="../../BOOKS/BOOK[BOOKAUTHORS/BOOKAUTHOR/@idAuthorRef=$id_author]"> <!--and ROLE='Writer' in brackets: it filters but empty lists appear-->
 			<xsl:with-param name="id_author" select="$id_author" />
-			<xsl:sort select="ROLE" order="descending"/> <!--This sort is useless!-->
+			<xsl:sort select="RELEASEDATE" order="ascending"/>
 		</xsl:apply-templates>
+		
+		<!--Issue when duplicating (Writer, Scriptwriter, Novelist, Illustrator, Colourist: duplicates when an author appears more than once per book
+		<xsl:apply-templates select="../../BOOKS/BOOK/BOOKAUTHORS/BOOKAUTHOR[@idAuthorRef=$id_author and ROLE='Writer']">
+			<xsl:with-param name="id_author" select="$id_author" />
+			<xsl:sort select="RELEASEDATE" order="descending"/>
+		</xsl:apply-templates>
+		-->
+		
 		
 		<br/>
 		<xsl:text>&#13;</xsl:text>
@@ -49,21 +55,53 @@ List of the books per author, with the role.
 
 	
 	<xsl:template match="BOOKAUTHOR">
-	
+		<p><xsl:value-of select="../../../BOOK/DESCRIPTION"/></p>	
+		
+		<!--
 		<xsl:apply-templates select="ROLE[.='Colourist']"/>
 		<xsl:apply-templates select="ROLE[.='Illustrator']"/>
 		<xsl:apply-templates select="ROLE[.='Novelist']"/>
 		<xsl:apply-templates select="ROLE[.='Scriptwriter']"/>
-		<xsl:apply-templates select="ROLE[.='Writer']"/>		
+		<xsl:apply-templates select="ROLE[.='Writer']"/>	-->	
 			
 	</xsl:template>
 	
+	<!--
 	<xsl:template match="ROLE">
-	<!--<xsl:text>Je suis la</xsl:text>-->
+	<xsl:text>Je suis la</xsl:text>
 		<p><xsl:value-of select="current()"/> on <xsl:value-of select="../../../TITLE"/></p>
 		
+	</xsl:template>-->
+	
+	<xsl:template match="ROLE">
+
+		<p><xsl:value-of select="current()"/><xsl:text> on </xsl:text>
+		<xsl:apply-templates select="../../../../BOOK"/>
+		</p>
 	</xsl:template>
 	
+	
+	<xsl:template match="BOOK">
+		<xsl:param name="id_author"/>
+		
+		<!--<xsl:if test="count(BOOKAUTHORS/BOOKAUTHOR[@idAuthorRef=$id_author]/ROLE[.='Colourist']) = 1">-->
+		<xsl:if test="count(BOOKAUTHORS/BOOKAUTHOR[@idAuthorRef=$id_author]/ROLE) = 1">
+			<p><xsl:value-of select="TITLE"/> as a <xsl:value-of select="BOOKAUTHORS/BOOKAUTHOR[@idAuthorRef=$id_author]/ROLE"/></p>
+		</xsl:if>
+		
+		<xsl:if test="count(BOOKAUTHORS/BOOKAUTHOR[@idAuthorRef=$id_author]/ROLE) &gt; 1">
+			<p><xsl:value-of select="TITLE"/> as a: </p>
+			<ul>
+			 <xsl:for-each select="BOOKAUTHORS/BOOKAUTHOR[@idAuthorRef=$id_author]/ROLE">
+				<xsl:sort select="." order="descending"/>
+				<li><xsl:value-of select="."/></li>	
+			</xsl:for-each>
+			</ul>
+		</xsl:if>
+	</xsl:template>
+	
+	<!--Lists: see https://www.w3schools.com/HTML/html_lists.asp-->
+
 	
 	<!--The three below work but we have one role only in case of several roles per author
 	NB: the if in BOOKAUTHOR is useless if we put the author id in the call
