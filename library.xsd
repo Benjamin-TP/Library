@@ -404,6 +404,7 @@ books borrowed
       <xs:enumeration value="Groupe Amaury"/>
       <xs:enumeration value="Steinkis"/>
       <xs:enumeration value="Le Livre de Poche"/>
+      <xs:enumeration value="Folio"/>
     </xs:restriction>
   </xs:simpleType>
 

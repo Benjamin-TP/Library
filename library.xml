@@ -2104,6 +2104,24 @@
 			<BORROWABLE>true</BORROWABLE>
 			<NROFBORROWS>12</NROFBORROWS>
 		</BOOK>
+		<BOOK idBook="b104">
+			<TITLE>La joueuse de go</TITLE>
+            <DESCRIPTION>Depuis 1931, le dernier empereur de Chine règne sans pouvoir sur la Mandchourie occupée par l'armée japonaise. Alors que l'aristocratie tente d'oublier la guerre, une princesse de seize ans joue au go, place des Mille Vents. Sur le damier, elle bat tous ses prétendants. Mais elle ignore encore son adversaire de demain : un jeune officier japonais dévoué à l'utopie impérialiste. Ils s'affrontent, sans un geste, jusqu'au bout, tandis que la Chine vacille sous les coups de l'envahisseur. Troublant et ardent, La joueuse de go est l'un des romans majeurs de ces dernières décennies.</DESCRIPTION>
+			<ISBN>978-2-2466-1611-5</ISBN>
+			<BOOKFORMAT>Book</BOOKFORMAT>
+			<THEME>Novel</THEME>
+			<TARGETREADER>12-15</TARGETREADER>
+			<EDITOR>Grasset</EDITOR>
+			<RELEASEDATE>2001-09-05</RELEASEDATE>
+			<PURCHASEDATE>2007-07-31</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a21">
+					<ROLE>Writer</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>53</NROFBORROWS>
+		</BOOK>
 	</BOOKS>
 	<BORROWERS>
 		<BORROWER idBorrower="bo1">
