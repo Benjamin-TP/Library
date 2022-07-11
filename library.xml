@@ -25,8 +25,6 @@
 			</BOOKAUTHORS>
 			<COMICBOOKSER idCBSRef="cbs1"/>
 			<BORROWABLE>false</BORROWABLE>
-			<BORROWDATE>2022-05-02</BORROWDATE>
-			<RETURNDATE>2022-05-23</RETURNDATE>
 			<NROFBORROWS>38</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b2">
@@ -52,8 +50,6 @@
 			</BOOKAUTHORS>
 			<COMICBOOKSER idCBSRef="cbs1"/>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>96</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b3">
@@ -79,8 +75,6 @@
 			</BOOKAUTHORS>
 			<COMICBOOKSER idCBSRef="cbs1"/>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>31</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b4">
@@ -106,8 +100,6 @@
 			</BOOKAUTHORS>
 			<COMICBOOKSER idCBSRef="cbs1"/>
 			<BORROWABLE>false</BORROWABLE>
-			<BORROWDATE>2022-05-21</BORROWDATE>
-			<RETURNDATE>2022-06-11</RETURNDATE>
 			<NROFBORROWS>53</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b5">
@@ -133,8 +125,6 @@
 			</BOOKAUTHORS>
 			<COMICBOOKSER idCBSRef="cbs1"/>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>27</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b6">
@@ -160,8 +150,6 @@
 			</BOOKAUTHORS>
 			<COMICBOOKSER idCBSRef="cbs1"/>
 			<BORROWABLE>false</BORROWABLE>
-			<BORROWDATE>2022-05-28</BORROWDATE>
-			<RETURNDATE>2022-06-18</RETURNDATE>
 			<NROFBORROWS>57</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b7">
@@ -187,8 +175,6 @@
 			</BOOKAUTHORS>
 			<COMICBOOKSER idCBSRef="cbs1"/>
 			<BORROWABLE>false</BORROWABLE>
-			<BORROWDATE>2022-05-21</BORROWDATE>
-			<RETURNDATE>2022-06-11</RETURNDATE>
 			<NROFBORROWS>18</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b8">
@@ -214,8 +200,6 @@
 			</BOOKAUTHORS>
 			<COMICBOOKSER idCBSRef="cbs1"/>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>19</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b9">
@@ -241,8 +225,6 @@
 			</BOOKAUTHORS>
 			<COMICBOOKSER idCBSRef="cbs1"/>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>49</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b10">
@@ -268,8 +250,6 @@
 			</BOOKAUTHORS>
 			<COMICBOOKSER idCBSRef="cbs1"/>
 			<BORROWABLE>false</BORROWABLE>
-			<BORROWDATE>2022-06-01</BORROWDATE>
-			<RETURNDATE>2022-06-22</RETURNDATE>
 			<NROFBORROWS>23</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b11">
@@ -295,8 +275,6 @@
 			</BOOKAUTHORS>
 			<COMICBOOKSER idCBSRef="cbs1"/>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>89</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b12">
@@ -322,8 +300,6 @@
 			</BOOKAUTHORS>
 			<COMICBOOKSER idCBSRef="cbs1"/>
 			<BORROWABLE>false</BORROWABLE>
-			<BORROWDATE>2022-05-02</BORROWDATE>
-			<RETURNDATE>2022-05-23</RETURNDATE>
 			<NROFBORROWS>3</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b13">
@@ -349,8 +325,6 @@
 			</BOOKAUTHORS>
 			<COMICBOOKSER idCBSRef="cbs1"/>
 			<BORROWABLE>false</BORROWABLE>
-			<BORROWDATE>2022-05-28</BORROWDATE>
-			<RETURNDATE>2022-06-18</RETURNDATE>
 			<NROFBORROWS>98</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b14">
@@ -376,8 +350,6 @@
 			</BOOKAUTHORS>
 			<COMICBOOKSER idCBSRef="cbs1"/>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>78</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b15">
@@ -403,8 +375,6 @@
 			</BOOKAUTHORS>
 			<COMICBOOKSER idCBSRef="cbs1"/>
 			<BORROWABLE>false</BORROWABLE>
-			<BORROWDATE>2022-06-01</BORROWDATE>
-			<RETURNDATE>2022-06-22</RETURNDATE>
 			<NROFBORROWS>33</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b16">
@@ -430,8 +400,6 @@
 			</BOOKAUTHORS>
 			<COMICBOOKSER idCBSRef="cbs1"/>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>86</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b17">
@@ -458,8 +426,6 @@
 			</BOOKAUTHORS>
 			<COMICBOOKSER idCBSRef="cbs1"/>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>21</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b18">
@@ -485,8 +451,6 @@
 			</BOOKAUTHORS>
 			<COMICBOOKSER idCBSRef="cbs1"/>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>2</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b19">
@@ -513,8 +477,6 @@
 			</BOOKAUTHORS>
 			<COMICBOOKSER idCBSRef="cbs1"/>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>49</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b20">
@@ -541,8 +503,6 @@
 			</BOOKAUTHORS>
 			<COMICBOOKSER idCBSRef="cbs1"/>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>1</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b21">
@@ -569,8 +529,6 @@
 			</BOOKAUTHORS>
 			<COMICBOOKSER idCBSRef="cbs1"/>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>44</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b22">
@@ -597,8 +555,6 @@
 			</BOOKAUTHORS>
 			<COMICBOOKSER idCBSRef="cbs1"/>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>40</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b23">
@@ -625,8 +581,6 @@
 			</BOOKAUTHORS>
 			<COMICBOOKSER idCBSRef="cbs1"/>
 			<BORROWABLE>false</BORROWABLE>
-			<BORROWDATE>2022-06-01</BORROWDATE>
-			<RETURNDATE>2022-06-22</RETURNDATE>
 			<NROFBORROWS>96</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b24">
@@ -645,8 +599,6 @@
 				</BOOKAUTHOR>
 			</BOOKAUTHORS>
 			<BORROWABLE>false</BORROWABLE>
-			<BORROWDATE>2022-05-28</BORROWDATE>
-			<RETURNDATE>2022-06-18</RETURNDATE>
 			<NROFBORROWS>41</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b25">
@@ -665,8 +617,6 @@
 				</BOOKAUTHOR>
 			</BOOKAUTHORS>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>37</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b26">
@@ -685,8 +635,6 @@
 				</BOOKAUTHOR>
 			</BOOKAUTHORS>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>52</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b27">
@@ -705,8 +653,6 @@
 				</BOOKAUTHOR>
 			</BOOKAUTHORS>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>66</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b28">
@@ -725,8 +671,6 @@
 				</BOOKAUTHOR>
 			</BOOKAUTHORS>
 			<BORROWABLE>false</BORROWABLE>
-			<BORROWDATE>2022-05-21</BORROWDATE>
-			<RETURNDATE>2022-06-11</RETURNDATE>
 			<NROFBORROWS>73</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b29">
@@ -745,8 +689,6 @@
 				</BOOKAUTHOR>
 			</BOOKAUTHORS>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>54</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b30">
@@ -765,8 +707,6 @@
 				</BOOKAUTHOR>
 			</BOOKAUTHORS>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>60</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b31">
@@ -785,8 +725,6 @@
 				</BOOKAUTHOR>
 			</BOOKAUTHORS>
 			<BORROWABLE>false</BORROWABLE>
-			<BORROWDATE>2022-05-28</BORROWDATE>
-			<RETURNDATE>2022-06-18</RETURNDATE>
 			<NROFBORROWS>49</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b32">
@@ -808,8 +746,6 @@
 				</BOOKAUTHOR>
 			</BOOKAUTHORS>
 			<BORROWABLE>false</BORROWABLE>
-			<BORROWDATE>2022-06-01</BORROWDATE>
-			<RETURNDATE>2022-06-22</RETURNDATE>
 			<NROFBORROWS>41</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b33">
@@ -828,8 +764,6 @@
 				</BOOKAUTHOR>
 			</BOOKAUTHORS>
 			<BORROWABLE>false</BORROWABLE>
-			<BORROWDATE>2022-05-21</BORROWDATE>
-			<RETURNDATE>2022-06-11</RETURNDATE>
 			<NROFBORROWS>80</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b34">
@@ -848,8 +782,6 @@
 				</BOOKAUTHOR>
 			</BOOKAUTHORS>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>14</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b35">
@@ -871,8 +803,6 @@
 				</BOOKAUTHOR>
 			</BOOKAUTHORS>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>24</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b36">
@@ -891,8 +821,6 @@
 				</BOOKAUTHOR>
 			</BOOKAUTHORS>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>37</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b37">
@@ -911,8 +839,6 @@
 				</BOOKAUTHOR>
 			</BOOKAUTHORS>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>12</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b38">
@@ -934,8 +860,6 @@
 				</BOOKAUTHOR>
 			</BOOKAUTHORS>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>87</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b39">
@@ -954,8 +878,6 @@
 				</BOOKAUTHOR>
 			</BOOKAUTHORS>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>24</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b40">
@@ -975,8 +897,6 @@
 				</BOOKAUTHOR>
 			</BOOKAUTHORS>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>93</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b41">
@@ -996,8 +916,6 @@
 				</BOOKAUTHOR>
 			</BOOKAUTHORS>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>28</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b42">
@@ -1016,8 +934,6 @@
 				</BOOKAUTHOR>
 			</BOOKAUTHORS>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>70</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b43">
@@ -1036,8 +952,6 @@
 				</BOOKAUTHOR>
 			</BOOKAUTHORS>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>49</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b44">
@@ -1053,8 +967,6 @@
 				<PERIODENDDATE>2022-01-15</PERIODENDDATE>
 			</NEWSPAPERSER>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>7</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b45">
@@ -1070,8 +982,6 @@
 				<PERIODENDDATE>2022-01-31</PERIODENDDATE>
 			</NEWSPAPERSER>
 			<BORROWABLE>false</BORROWABLE>
-			<BORROWDATE>2022-05-14</BORROWDATE>
-			<RETURNDATE>2022-06-04</RETURNDATE>
 			<NROFBORROWS>53</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b46">
@@ -1087,8 +997,6 @@
 				<PERIODENDDATE>2022-02-15</PERIODENDDATE>
 			</NEWSPAPERSER>
 			<BORROWABLE>false</BORROWABLE>
-			<BORROWDATE>2022-06-01</BORROWDATE>
-			<RETURNDATE>2022-06-22</RETURNDATE>
 			<NROFBORROWS>91</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b47">
@@ -1104,8 +1012,6 @@
 				<PERIODENDDATE>2022-02-28</PERIODENDDATE>
 			</NEWSPAPERSER>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>17</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b48">
@@ -1121,8 +1027,6 @@
 				<PERIODENDDATE>2022-03-15</PERIODENDDATE>
 			</NEWSPAPERSER>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>26</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b49">
@@ -1138,8 +1042,6 @@
 				<PERIODENDDATE>2022-03-31</PERIODENDDATE>
 			</NEWSPAPERSER>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>7</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b50">
@@ -1155,8 +1057,6 @@
 				<PERIODENDDATE>2022-04-15</PERIODENDDATE>
 			</NEWSPAPERSER>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>61</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b51">
@@ -1172,8 +1072,6 @@
 				<PERIODENDDATE>2022-04-30</PERIODENDDATE>
 			</NEWSPAPERSER>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>9</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b52">
@@ -1189,8 +1087,6 @@
 				<PERIODENDDATE>2022-05-15</PERIODENDDATE>
 			</NEWSPAPERSER>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>29</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b53">
@@ -1206,8 +1102,6 @@
 				<PERIODENDDATE>2022-05-31</PERIODENDDATE>
 			</NEWSPAPERSER>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>61</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b54">
@@ -1223,8 +1117,6 @@
 				<PERIODENDDATE>2022-06-15</PERIODENDDATE>
 			</NEWSPAPERSER>
 			<BORROWABLE>false</BORROWABLE>
-			<BORROWDATE>2022-05-21</BORROWDATE>
-			<RETURNDATE>2022-06-11</RETURNDATE>
 			<NROFBORROWS>30</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b55">
@@ -1240,8 +1132,6 @@
 				<PERIODENDDATE>2022-06-30</PERIODENDDATE>
 			</NEWSPAPERSER>
 			<BORROWABLE>false</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>66</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b56">
@@ -1257,8 +1147,6 @@
 				<PERIODENDDATE>2022-06-15</PERIODENDDATE>
 			</NEWSPAPERSER>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>40</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b57">
@@ -1274,8 +1162,6 @@
 				<PERIODENDDATE>2022-06-16</PERIODENDDATE>
 			</NEWSPAPERSER>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>32</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b58">
@@ -1291,8 +1177,6 @@
 				<PERIODENDDATE>2022-06-17</PERIODENDDATE>
 			</NEWSPAPERSER>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>79</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b59">
@@ -1308,8 +1192,6 @@
 				<PERIODENDDATE>2022-06-18</PERIODENDDATE>
 			</NEWSPAPERSER>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>36</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b60">
@@ -1325,8 +1207,6 @@
 				<PERIODENDDATE>2022-06-19</PERIODENDDATE>
 			</NEWSPAPERSER>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>90</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b61">
@@ -1342,8 +1222,6 @@
 				<PERIODENDDATE>2022-06-20</PERIODENDDATE>
 			</NEWSPAPERSER>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>11</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b62">
@@ -1359,8 +1237,6 @@
 				<PERIODENDDATE>2022-06-21</PERIODENDDATE>
 			</NEWSPAPERSER>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>74</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b63">
@@ -1376,8 +1252,6 @@
 				<PERIODENDDATE>2022-06-22</PERIODENDDATE>
 			</NEWSPAPERSER>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>16</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b64">
@@ -1393,8 +1267,6 @@
 				<PERIODENDDATE>2022-06-23</PERIODENDDATE>
 			</NEWSPAPERSER>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>32</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b65">
@@ -1410,8 +1282,6 @@
 				<PERIODENDDATE>2022-06-24</PERIODENDDATE>
 			</NEWSPAPERSER>
 			<BORROWABLE>false</BORROWABLE>
-			<BORROWDATE>2022-06-01</BORROWDATE>
-			<RETURNDATE>2022-06-22</RETURNDATE>
 			<NROFBORROWS>19</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b66">
@@ -1427,8 +1297,6 @@
 				<PERIODENDDATE>2022-06-25</PERIODENDDATE>
 			</NEWSPAPERSER>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>84</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b67">
@@ -1444,8 +1312,6 @@
 				<PERIODENDDATE>2022-06-26</PERIODENDDATE>
 			</NEWSPAPERSER>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>3</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b68">
@@ -1461,8 +1327,6 @@
 				<PERIODENDDATE>2022-06-27</PERIODENDDATE>
 			</NEWSPAPERSER>
 			<BORROWABLE>false</BORROWABLE>
-			<BORROWDATE>2022-06-01</BORROWDATE>
-			<RETURNDATE>2022-06-22</RETURNDATE>
 			<NROFBORROWS>66</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b69">
@@ -1478,8 +1342,6 @@
 				<PERIODENDDATE>2022-06-28</PERIODENDDATE>
 			</NEWSPAPERSER>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>0</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b70">
@@ -1495,8 +1357,6 @@
 				<PERIODENDDATE>2022-06-29</PERIODENDDATE>
 			</NEWSPAPERSER>
 			<BORROWABLE>true</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>28</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b71">
@@ -1512,9 +1372,737 @@
 				<PERIODENDDATE>2022-06-30</PERIODENDDATE>
 			</NEWSPAPERSER>
 			<BORROWABLE>false</BORROWABLE>
-			<BORROWDATE/>
-			<RETURNDATE/>
 			<NROFBORROWS>0</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b72">
+			<TITLE>Les ignorants</TITLE>
+			<DESCRIPTION>Par un beau temps d'hiver, deux individus, bonnets sur la tête, sécateur en main, taillent une vigne. L'un a le geste et la parole assurés. L'autre, plus emprunté, regarde le premier, cherche à comprendre « ce qui relie ce type à sa vigne », et s'étonne de « la singulière fusion entre un individu et un morceau de rocher battu par les vents ». Le premier est vigneron, le second auteur de bandes dessinées. Pendant un an, Étienne Davodeau a goûté aux joies de la taille, du décavaillonnage, de la tonnellerie ou encore s'est interrogé sur la biodynamie. Richard Leroy, de son côté, a lu des bandes dessinées choisies par Étienne, a rencontré des auteurs, s'est rendu dans des festivals, est allé chez un imprimeur, s'est penché sur la planche à dessin d'Étienne... Étienne et Richard échangent leurs savoirs et savoir-faire, mettent en évidence les points que ces pratiques (artistiques et vigneronnes) peuvent avoir en commun , et ils sont plus nombreux qu'on ne pourrait l'envisager de prime abord...</DESCRIPTION>
+			<ISBN>978-2-7548-0382-3</ISBN>
+			<BOOKFORMAT>Comic</BOOKFORMAT>
+			<THEME>Nature</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Futuropolis</EDITOR>
+			<RELEASEDATE>2011-10-06</RELEASEDATE>
+			<PURCHASEDATE>2011-12-06</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a30">
+					<ROLE>Scriptwriter</ROLE>
+					<ROLE>Illustrator</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<COMICBOOKSER idCBSRef="cbs3"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>32</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b73">
+			<TITLE>Le voyage de Marcel Grob</TITLE>
+			<DESCRIPTION> 11 octobre 2009, Marcel Grob, 83 ans, est convoqué dans le bureau d’un juge à Belfort. Il doit répondre d’exactions qu’il aurait commises pendant la guerre, lorsqu’il faisait partie de la Waffen SS. Après avoir nié avec vigueur, les preuves accumulées contre lui vont obliger le vieil homme à plonger dans son passé trouble. Le 27 juin 1944, en effet, Marcel et son meilleur ami Antoine sont convoqués par les allemands afin d’être enrôlés dans l’armée. Ils n’en ont pas vraiment envie, mais savent ce que risquent les déserteurs et les familles de ces derniers. Les voilà donc partis. Au début engagés comme simples artilleurs, Marcel et Antoine vont être rapidement intégrés à la Waffen SS. Dans cette armée, présentée comme l’élite de l’armée allemande et bras armé des nazis, les deux jeunes gens vont devoir participer à des actions terribles sur les civils...</DESCRIPTION>
+			<ISBN>978-2-2981-5549-5</ISBN>
+			<BOOKFORMAT>Comic</BOOKFORMAT>
+			<THEME>History</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Futuropolis</EDITOR>
+			<RELEASEDATE>2019-09-01</RELEASEDATE>
+			<PURCHASEDATE>2019-09-30</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a31">
+					<ROLE>Scriptwriter</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a32">
+					<ROLE>Illustrator</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<COMICBOOKSER idCBSRef="cbs11"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>26</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b74">
+			<TITLE>La patrie des frère Werner</TITLE>
+			<DESCRIPTION>Mai 1945. Dans les ruines de Berlin, deux orphelins juifs assistent apeurés à la victoire soviétique. Réfugiés à Leipzig, Konrad et Andreas Werner deviennent citoyens Est-allemands. C’est la marche de l’histoire. Juin 1956. Les deux frères ont rejoint les rangs de la Stasi pour échapper au camp de rééducation. Ils seront les fils de l’Est. Juin 1974. Lors de la 10ème coupe du monde de football, un match historique va opposer la RFA et la RDA. C’est le match de la guerre froide. Le retentissement est mondial. Pour faire gagner la RDA, Erich Honecker décide d’impliquer les meilleurs agents de la Stasi. Il faut prouver la supériorité du régime socialiste sur le monde capitaliste. Konrad Werner est infiltré depuis des mois dans l’équipe de la RFA. Andreas Werner fait partie de la délégation de RDA. Voilà douze ans qu’ils ne se sont pas vus. Le choc des deux bloc va ébranler leurs convictions.</DESCRIPTION>
+			<ISBN>978-2-7548-2824-6</ISBN>
+			<BOOKFORMAT>Comic</BOOKFORMAT>
+			<THEME>History</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Futuropolis</EDITOR>
+			<RELEASEDATE>2020-08-26</RELEASEDATE>
+			<PURCHASEDATE>2020-09-30</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a31">
+					<ROLE>Scriptwriter</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a32">
+					<ROLE>Illustrator</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<COMICBOOKSER idCBSRef="cbs4"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>50</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b75">
+			<TITLE>L'algérie c'est beau comme l'Amérique </TITLE>
+			<DESCRIPTION/>
+			<ISBN>979-1-0900-9056-9</ISBN>
+			<BOOKFORMAT>Comic</BOOKFORMAT>
+			<THEME>Autobiography</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Steinkis</EDITOR>
+			<RELEASEDATE>2015-01-21</RELEASEDATE>
+			<PURCHASEDATE>2015-03-31</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a33">
+					<ROLE>Scriptwriter</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a34">
+					<ROLE>Illustrator</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<COMICBOOKSER idCBSRef="cbs5"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>52</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b76">
+			<TITLE>Chicago-sur-Rhône</TITLE>
+			<DESCRIPTION>Assassiné en 1975, le juge Renaud est le premier magistrat de France à être tué depuis l'Occupation. En charge de dossiers brûlants, c'était un homme au caractère bien trempé. Connu pour sa façon peu orthodoxe de s'occuper des affaires en instruction, il était surnommé « le Shérif » ! La justice n'a jamais élucidé cette sombre histoire impliquant des politiciens, le SAC et le fameux gang des Lyonnais. Un non-lieu, prononcé en 1992, fait de ce scandale un symbole de la faillite de la justice et de la police.</DESCRIPTION>
+			<ISBN>978-2-2050-7365-2</ISBN>
+			<BOOKFORMAT>Comic</BOOKFORMAT>
+			<THEME>History</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Dargaud</EDITOR>
+			<RELEASEDATE>2015-05-22</RELEASEDATE>
+			<PURCHASEDATE>2015-06-23</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a35">
+					<ROLE>Scriptwriter</ROLE>
+					<ROLE>Illustrator</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<COMICBOOKSER idCBSRef="cbs2"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>53</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b77">
+			<TITLE>Le gang des lyonnais</TITLE>
+			<DESCRIPTION>L'assassinat du juge Renaud, en 1975, reste l'un des plus grands scandales de la Ve République : dix-huit ans d'instruction n'ont pas suffi pour faire éclater la vérité. Au moment des faits, le magistrat, personnage haut en couleur et ancien héros de la Résistance, enquêtait sur les liens entre la Mafia - via le gang des Lyonnais, au centre de cet épisode - et le monde de la politique. Il soupçonnait ainsi le financement d'un parti grâce, notamment, au fameux casse de Strasbourg (11 millions de francs dérobés !). À la fois documentaire et fiction.</DESCRIPTION>
+			<ISBN>978-2-2050-7511-3</ISBN>
+			<BOOKFORMAT>Comic</BOOKFORMAT>
+			<THEME>History</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Dargaud</EDITOR>
+			<RELEASEDATE>2016-04-15</RELEASEDATE>
+			<PURCHASEDATE>2016-07-16</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a35">
+					<ROLE>Scriptwriter</ROLE>
+					<ROLE>Illustrator</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<COMICBOOKSER idCBSRef="cbs2"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>80</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b78">
+			<TITLE>Chronique d'une mort annoncée</TITLE>
+			<DESCRIPTION>Le 3 juillet 1975, à Lyon, le juge Renaud, qui enquêtait sur des dossiers, est assassiné de trois balles. Malgré les enquêtes, les soupçons, les théories parfois extravagantes, ce meurtre reste sans explication officielle depuis plus de quarante ans ! Grâce à un travail colossal de documentation et à l'aide du fils du juge Renaud ainsi que celle d'autres protagonistes, Olivier Berlion raconte dans cette passionnante trilogie les liens qui unissaient le milieu à certains hommes politiques. Cette histoire est aussi, tout simplement, celle de la faillite d'une justice restée sans réponse face à ce scandale. Le Juge se lit comme un polar implacable d'une très grande tenue.</DESCRIPTION>
+			<ISBN>978-2-2050-7606-6</ISBN>
+			<BOOKFORMAT>Comic</BOOKFORMAT>
+			<THEME>History</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Dargaud</EDITOR>
+			<RELEASEDATE>2017-01-13</RELEASEDATE>
+			<PURCHASEDATE>2017-03-14</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a35">
+					<ROLE>Scriptwriter</ROLE>
+					<ROLE>Illustrator</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<COMICBOOKSER idCBSRef="cbs2"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>75</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b79">
+			<TITLE>Cher pays de notre enfance</TITLE>
+			<DESCRIPTION>Enquête sur les années de plomb de la Ve République</DESCRIPTION>
+			<ISBN>978-2-7548-1085-2</ISBN>
+			<BOOKFORMAT>Comic</BOOKFORMAT>
+			<THEME>History</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Futuropolis</EDITOR>
+			<RELEASEDATE>2015-10-08</RELEASEDATE>
+			<PURCHASEDATE>2016-05-03</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a30">
+					<ROLE>Scriptwriter</ROLE>
+					<ROLE>Illustrator</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a36">
+					<ROLE>Scriptwriter</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<COMICBOOKSER idCBSRef="cbs6"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>49</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b80">
+			<TITLE>Les Démons des années 30</TITLE>
+			<DESCRIPTION>Du polar historique de haute tenue ! Les Ligues d'extrême-droite des années 30, Vichy, la collaboration avec l'Allemagne, l'épuration, la Guerre froide, les événements d'Algérie, le pétrole africain...Philippe Richelle revisite l'Histoire de France des années 30 à nos jours dans une grande série policière portée par trois dessinateurs de talent : Pierre Wachs, Alfio Buscaglia et François Ravard.Dans trois cycles d'histoires indépendantes les unes des autres, des policiers enquêtant sur des crimes pénétreront dans les méandres obscurs de la grande Histoire, nous la montrant parfois sous ses aspects les plus méconnus.Les Mystères de la République propose un rythme de parution ambitieux, puisque les trois premiers tomes paraîtront simultanément, puis chaque publication ne sera espacée que de 4 mois.1937...Lucien Fabre, l'autoritaire directeur de La Vérité, un journal antirépublicain à grand tirage, est sauvagement abattu.Les articles sulfureux de ce journal ont notamment brisé la carrière d'un ministre du gouvernement de Front populaire, qui avait interdit les ligues d'extrême-droite...Tout naturellement, c'est dans cette direction que le commissaire Peretti et son équipe orientent leur enquête.Philippe Richelle et Pierre Wachs tissent une intrigue passionnante qui s'inscrit dans une France malade de ses institutions, partagée entre la tentation communiste et la tentation fasciste, à la veille de la Deuxième Guerre mondiale...</DESCRIPTION>
+			<ISBN>978-2-7234-8936-2</ISBN>
+			<BOOKFORMAT>Comic</BOOKFORMAT>
+			<THEME>History</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Glénat</EDITOR>
+			<RELEASEDATE>2013-05-15</RELEASEDATE>
+			<PURCHASEDATE>2013-07-15</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a37">
+					<ROLE>Scriptwriter</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a38">
+					<ROLE>Illustrator</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a39">
+					<ROLE>Colourist</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<COMICBOOKSER idCBSRef="cbs7"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>88</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b81">
+			<TITLE>Le Tueur dévot</TITLE>
+			<DESCRIPTION>Un polar historique dévoilant les sombres années de la République française. Novembre 1936. Le ministre de l'Intérieur en exercice, Roger Allendrot, est retrouvé mort noyé dans un étang en forêt de Rambouillet. L'enquête conclut à un suicide. Un an plus tard, le commissaire Peretti revient sur l'affaire. La thèse du suicide ne paraît plus si évidente. En effet, le policier se rend vite compte que l'autopsie avait été bâclée. Cela aurait-il à voir avec les prises de position du ministre contre les ligues nationalistes et antisémites qui pullulaient à l'époque? Dans ce deuxième tome de la série évènement Les Mystères de la 3ème République, Philippe Richelle, allié au dessin réaliste et précis de Pierre Wachs, tisse une nouvelle intrigue passionnante dans la France des années 30, partagée entre la tentation communiste et la tentation fasciste, à la veille de la Deuxième Guerre mondiale..</DESCRIPTION>
+			<ISBN>978-2-7234-9559-2</ISBN>
+			<BOOKFORMAT>Comic</BOOKFORMAT>
+			<THEME>History</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Glénat</EDITOR>
+			<RELEASEDATE>2013-09-25</RELEASEDATE>
+			<PURCHASEDATE>2013-09-26</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a37">
+					<ROLE>Scriptwriter</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a38">
+					<ROLE>Illustrator</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a39">
+					<ROLE>Colourist</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<COMICBOOKSER idCBSRef="cbs7"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>36</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b82">
+			<TITLE>Complot fasciste</TITLE>
+			<DESCRIPTION>Le polar historique qui dévoile les sombres années de la République française Paris, fin 1937. Albert Devigny et la plupart des activistes de son organisation d'extrême droite sont maintenant sous les verrous. Seul manque à l'appel André Paillol, alias le « Tueur dévot », qui a disparu de la circulation après avoir forcé un barrage de gendarmerie. Alors que l'un de ses adjoints est sur les traces du criminel, le commissaire Franck Peretti mène parallèlement une enquête où l'acronyme SAIC revient régulièrement. Officiellement un centre voué à la documentation industrielle et commerciale ou à l'étude des mouvements politiques, cette « Société anonyme de l'industrie et du commerce » serait en réalité une entreprise fantôme... Sous le pinceau affûté de Pierre Wachs, Philippe Richelle nous plonge dans une nouvelle enquête du commissaire Peretti dans les dessous troubles de la IIIe République, nous montrant comment l'idéologie fasciste gangrénait l'ensemble de la société à la fin des années 1930.</DESCRIPTION>
+			<ISBN>978-2-3440-0064-9</ISBN>
+			<BOOKFORMAT>Comic</BOOKFORMAT>
+			<THEME>History</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Glénat</EDITOR>
+			<RELEASEDATE>2014-09-17</RELEASEDATE>
+			<PURCHASEDATE>2014-10-17</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a37">
+					<ROLE>Scriptwriter</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a38">
+					<ROLE>Illustrator</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a39">
+					<ROLE>Colourist</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<COMICBOOKSER idCBSRef="cbs7"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>9</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b83">
+			<TITLE>Le Sang d'un ami</TITLE>
+			<DESCRIPTION>Crime de guerre... Vichy, 1940. Une semaine à peine après la proclamation de Pétain en chef de l’État français, le Parlement adopte une loi permettant de se débarrasser sans formalité de tout fonctionnaire qui ne donnerait pas satisfaction... 2 ans plus tard, dans le Paris occupé, le commissaire Peretti enquête sur le meurtre de l’un de ses anciens hommes : l’inspecteur Perrier. Il s’agirait probablement d’un règlement de compte lié au juteux marché noir qui s’est installé pendant l’Occupation allemande...</DESCRIPTION>
+			<ISBN>978-2-3440-0390-9</ISBN>
+			<BOOKFORMAT>Comic</BOOKFORMAT>
+			<THEME>History</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Glénat</EDITOR>
+			<RELEASEDATE>2016-05-25</RELEASEDATE>
+			<PURCHASEDATE>2016-06-24</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a37">
+					<ROLE>Scriptwriter</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a38">
+					<ROLE>Illustrator</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a39">
+					<ROLE>Colourist</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<COMICBOOKSER idCBSRef="cbs7"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>63</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b84">
+			<TITLE>Mort d'un collabo</TITLE>
+			<DESCRIPTION>Londres, octobre 1943. Sous l’impulsion du général de Gaulle, le BCRA (Bureau Central de Renseignements et d'Actions clandestines de la France Libre) met une priorité à unifier la Résistance en France, pour le moment déchirée entre les gaullistes et les partisans de l’ancien général vichyste Henri Giraud. À Paris, le commissaire Peretti est chargé d’aller rencontrer le responsable du mouvement giraudiste Renaissance : un dénommé Féval. Mais il ignore que derrière ce nom de code se cache une vieille connaissance qu’il aurait préféré ne pas revoir.</DESCRIPTION>
+			<ISBN>978-2-3440-0866-9</ISBN>
+			<BOOKFORMAT>Comic</BOOKFORMAT>
+			<THEME>History</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Glénat</EDITOR>
+			<RELEASEDATE>2017-06-14</RELEASEDATE>
+			<PURCHASEDATE>2017-07-14</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a37">
+					<ROLE>Scriptwriter</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a38">
+					<ROLE>Illustrator</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a39">
+					<ROLE>Colourist</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<COMICBOOKSER idCBSRef="cbs7"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>42</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b85">
+			<TITLE>Les résistants de septembre</TITLE>
+			<DESCRIPTION>1946 Suite à la découverte du cadavre enfoui d'un ancien résistant communiste, le commissaire Coste reçoit une lettre anonyme l'invitant à poursuivre les fouilles. C'est un véritable charnier qui est mis au jour. Coste oriente alors ses recherches vers les milieux collaborationnistes. À travers une intrigue riche en rebondissements, Philippe Richelle et Alfio Buscaglia dessinent le portrait d'une France qui tente vaille que vaille de faire table rase d'un passé trop récent pour que ses fantômes abdiquent...</DESCRIPTION>
+			<ISBN>978-2-7234-8937-9</ISBN>
+			<BOOKFORMAT>Comic</BOOKFORMAT>
+			<THEME>History</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Glénat</EDITOR>
+			<RELEASEDATE>2013-05-15</RELEASEDATE>
+			<PURCHASEDATE>2013-06-14</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a37">
+					<ROLE>Scriptwriter</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a40">
+					<ROLE>Illustrator</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a39">
+					<ROLE>Colourist</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<COMICBOOKSER idCBSRef="cbs8"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>79</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b86">
+			<TITLE>Marseille la rouge</TITLE>
+			<DESCRIPTION>Marseille, printemps 1950. À peine sorti de la prison des Baumettes, un truand nommé Ange Casoni est engagé pour un nouveau « travail » : il doit mettre la pression sur les représentants CGT des dockers qui, par leurs actions militantes, gênent visiblement des intérêts puissants. Dans le même temps, Patrick Zardi, un agent de la DST, est retrouvé mort chez lui, asphyxié dans sa propre voiture. Tout semble conforter la thèse du suicide. Mais le commissaire Coste, envoyé sur les lieux du drame, remarque tout de même de troublantes anomalies : Zardi aurait bel et bien été assassiné. Mais qui aurait pu aller jusqu'à tuer de sang-froid un membre du contre-espionnage français ?Au travers d'une nouvelle intrigue policière haletante, ce deuxième opus des Mystères de la 4e République nous montre cette fois comment les syndicats de l'époque étaient utilisés à des fins politiques par les différents blocs de la guerre froide, à peine instaurée. Cette série s'affirme d'ores et déjà comme un best-seller avec près de 80 000 exemplaires vendus en moins d'un an !</DESCRIPTION>
+			<ISBN>978-2-7234-9664-3</ISBN>
+			<BOOKFORMAT>Comic</BOOKFORMAT>
+			<THEME>History</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Glénat</EDITOR>
+			<RELEASEDATE>2014-01-15</RELEASEDATE>
+			<PURCHASEDATE>2014-02-14</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a37">
+					<ROLE>Scriptwriter</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a40">
+					<ROLE>Illustrator</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a39">
+					<ROLE>Colourist</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<COMICBOOKSER idCBSRef="cbs8"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>93</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b87">
+			<TITLE>Le bel automne des collabos</TITLE>
+			<DESCRIPTION>Printemps 1953. Le commissaire Coste, victime d'un attentat trois ans plus tôt à Marseille, a décidé de rejoindre les effectifs de la police de Paris pour la sécurité de sa famille. Il est envoyé avec l'un de ses adjoints sur une scène de crime près de Coulommiers. Là, sur le sol mouillé d'une aire de repos déserte, gît le corps d'un certain Paul Nouzières, abattu par une balle de calibre 11.43 en pleine poitrine. Homme de lettres, ancien résistant et ex-membre du Parti communiste, Nouzières avait récemment rejoint un parti révolutionnaire dissident aux financements occultes : le MRT. En suivant cette piste, Coste va s'apercevoir que les méthodes crapuleuses de certaines officines de la capitale n'ont rien à envier à celles des pires mafieux de la cité phocéenne...Philippe Richelle et Alfio Buscaglia nous plongent dans une nouvelle enquête du commissaire Coste au coeur des affaires sordides qui émaillent la France de la IVe République, dont les plaies laissées par l'Occupation ont décidément bien du mal à cicatriser...À ce jour, la série Les Mystères de la République totalise déjà plus de 110 000 exemplaires vendus, et ce n'est qu'un début !</DESCRIPTION>
+			<ISBN>978-2-3440-0385-5</ISBN>
+			<BOOKFORMAT>Comic</BOOKFORMAT>
+			<THEME>History</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Glénat</EDITOR>
+			<RELEASEDATE>2015-01-07</RELEASEDATE>
+			<PURCHASEDATE>2015-02-06</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a37">
+					<ROLE>Scriptwriter</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a40">
+					<ROLE>Illustrator</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a39">
+					<ROLE>Colourist</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<COMICBOOKSER idCBSRef="cbs8"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>93</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b88">
+			<TITLE>La main rouge</TITLE>
+			<DESCRIPTION>Une voiture et son conducteur explosent dans les rues d’Hambourg, RFA. Au même moment, Marc Durand, journaliste pigiste et écrivain occasionnel, est retrouvé mort dans son appartement parisien. Le rapport d’autopsie est formel : surdose d’héroïne. Le commissaire Coste, en charge de l’affaire, écarte très vite la thèse du suicide. La cause du meurtre pourrait très bien être en lien avec le sujet du livre sur lequel travaillait Durand : Les mouvements pro colonialistes en Afrique du Nord, en particulier le groupe de la « Main Rouge. »</DESCRIPTION>
+			<ISBN>978-2-3440-0962-8</ISBN>
+			<BOOKFORMAT>Comic</BOOKFORMAT>
+			<THEME>History</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Glénat</EDITOR>
+			<RELEASEDATE>2016-05-25</RELEASEDATE>
+			<PURCHASEDATE>2016-06-24</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a37">
+					<ROLE>Scriptwriter</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a40">
+					<ROLE>Illustrator</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a39">
+					<ROLE>Colourist</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<COMICBOOKSER idCBSRef="cbs8"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>36</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b89">
+			<TITLE>Opération résurrection</TITLE>
+			<DESCRIPTION>1958. Après la Bataille d’Alger et le démantèlement des principaux réseaux FLN, l’Algérie semble avoir retrouvé un semblant de paix. Sauf que les grands colons, hostiles à toute forme de changement, voient d’un mauvais œil les réformes que le gouverneur général Lacoste s’apprête à faire passer, faisant des Musulmans des citoyens à part entière. À vrai dire, les tensions sont loin d’avoir quitté la capitale algérienne. Une triste réalité que va amèrement découvrir le commissaire Coste, profitant de quelques jours de congés pour rendre visite à son ancien collègue Hautcoeur, désormais en poste à Alger...</DESCRIPTION>
+			<ISBN>978-2-3440-0963-5</ISBN>
+			<BOOKFORMAT>Comic</BOOKFORMAT>
+			<THEME>History</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Glénat</EDITOR>
+			<RELEASEDATE>2017-06-14</RELEASEDATE>
+			<PURCHASEDATE>2017-07-14</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a37">
+					<ROLE>Scriptwriter</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a40">
+					<ROLE>Illustrator</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a39">
+					<ROLE>Colourist</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<COMICBOOKSER idCBSRef="cbs8"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>96</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b90">
+			<TITLE>Trésor de guerre</TITLE>
+			<DESCRIPTION>Luc Chevalier, un jeune homme de bonne famille, est assassiné dans la rue du Bac par deux individus qui emportent le sac qu'il transportait...Le commissaire Verne, chargé de l'enquête, découvre rapidement que la victime était un ancien rappelé revenu meurtri de son expérience militaire en Algérie.L'enquête va pénétrer au coeur des réseaux de financement du FLN en métropole.Philippe Richelle et François Ravard lèvent le voile sur un aspect peu connu de ce que l'on appelait pudiquement les événements d'Algérie : le soutien d'intellectuels et de religieux français aux indépendantistes algériens... </DESCRIPTION>
+			<ISBN>978-2-7234-8938-6</ISBN>
+			<BOOKFORMAT>Comic</BOOKFORMAT>
+			<THEME>History</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Glénat</EDITOR>
+			<RELEASEDATE>2013-05-15</RELEASEDATE>
+			<PURCHASEDATE>2013-06-14</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a37">
+					<ROLE>Scriptwriter</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a41">
+					<ROLE>Illustrator</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a39">
+					<ROLE>Colourist</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<COMICBOOKSER idCBSRef="cbs9"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>31</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b91">
+			<TITLE>Octobre noir</TITLE>
+			<DESCRIPTION>Le polar historique qui dévoile les sombres années de la République française 20 octobre 1961. Trois jours après la célèbre manifestation organisée par le FLN qui a tourné au massacre, un épicier algérien, Mohamed Mansouri, est retrouvé mort le corps criblé de balles dans une ruelle parisienne. Le commissaire Verne, dépêché sur les lieux, se rend compte avec effroi qu'il connait la victime : Mohamed était le père de son meilleur ami, à Alger, lorsqu'il était enfant. Dans un climat sous haute tension, alors que le couvre-feu est instauré pour les ressortissants algériens et que les bavures policières se multiplient, Verne va tout faire pour identifier les coupables. Quitte à se heurter à sa hiérarchie ou à se frotter aux réseaux troubles du FLN en métropole. Dans cette nouvelle enquête des Mystères de la Ve République, Philippe Richelle et François Ravard continuent de lever le voile sur les aspects méconnus de ce que l'on appelait pudiquement alors les « événements d'Algérie ». Une série qui s'affirme d'ores et déjà comme un best-seller avec près de 100 000 exemplaires vendus en quelques mois !</DESCRIPTION>
+			<ISBN>978-2-7234-9665-0</ISBN>
+			<BOOKFORMAT>Comic</BOOKFORMAT>
+			<THEME>History</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Glénat</EDITOR>
+			<RELEASEDATE>2014-05-28</RELEASEDATE>
+			<PURCHASEDATE>2014-06-27</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a37">
+					<ROLE>Scriptwriter</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a41">
+					<ROLE>Illustrator</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a39">
+					<ROLE>Colourist</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<COMICBOOKSER idCBSRef="cbs9"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>81</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b92">
+			<TITLE>Les larmes d'Alger</TITLE>
+			<DESCRIPTION>Le polar historique qui dévoile les sombres années de la République française Paris, 15 février 1962. Paul Verne reçoit un appel de sa soeur Monique : leur père a été retrouvé mort, deux balles dans la tête, dans sa villa à Alger. Partisan de l'Algérie française, il a très probablement été tué par des membres du FLN. C'est en tout cas ce que le directeur de la PJ locale dit au commissaire à son arrivée sur le sol algérien. Mais beaucoup de choses restent floues... Alors que le pays est gangréné par la lutte entre les indépendantistes et les nationalistes français, Verne va essayer de découvrir la vérité sur cette affaire. Pour commencer : il doit mettre la main sur son jeune frère André, membre de franges extrémistes de l'OAS, qui est introuvable...Cette nouvelle enquête des Mystères de la Ve République nous emmène sur le sol agité de l'Algérie à la veille de son indépendance, alors que la guerre entre le FLN et l'OAS gronde...</DESCRIPTION>
+			<ISBN>978-2-3440-0270-4</ISBN>
+			<BOOKFORMAT>Comic</BOOKFORMAT>
+			<THEME>History</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Glénat</EDITOR>
+			<RELEASEDATE>2015-05-06</RELEASEDATE>
+			<PURCHASEDATE>2015-06-05</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a37">
+					<ROLE>Scriptwriter</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a41">
+					<ROLE>Illustrator</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a39">
+					<ROLE>Colourist</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<COMICBOOKSER idCBSRef="cbs9"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>33</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b93">
+			<TITLE>L'ombre du SAC</TITLE>
+			<DESCRIPTION>Au service de la France ? 1963, Aéroport d’Orly. Un avion de la Swiss-Air est dévalisé par des hommes cagoulés. Pas un coup de feu, pas un blessé, le braquage a duré 5 minutes en tout et pour tout. Un véritable travail de pros. Pendant ce temps, Verne est toujours sur la trace des assassins de son père, exécuté d’une balle dans la tête en Algérie. Petit à petit, il se rend compte que les deux affaires se rejoignent. Elles impliqueraient une équipe de Barbouzes...</DESCRIPTION>
+			<ISBN>978-2-3440-0964-2</ISBN>
+			<BOOKFORMAT>Comic</BOOKFORMAT>
+			<THEME>History</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Glénat</EDITOR>
+			<RELEASEDATE>2016-05-25</RELEASEDATE>
+			<PURCHASEDATE>2016-06-24</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a37">
+					<ROLE>Scriptwriter</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a41">
+					<ROLE>Illustrator</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a39">
+					<ROLE>Colourist</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<COMICBOOKSER idCBSRef="cbs9"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>92</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b94">
+			<TITLE>Au nom de la France</TITLE>
+			<DESCRIPTION>Début 1968. L’ex-commissaire Verne poursuit ses investigations pour l’écriture d’un livre sur les intérêts de la France en Afrique de l’Ouest. Il reprend contact avec Moreno, un homme d’affaire rencontré dans la capitale gabonaise de Libreville, impliqué dans des sociétés aux finances obscures et étroitement liées au gouvernement français. Malheureusement, en raison d’un évènement dramatique, son livre n’aboutira jamais... C’est Berlier, son ancien subordonné et nouveau commissaire de la PJ qui reprend l’enquête. En la mémoire de son collègue, pour son ami, il tirera toute cette affaire au clair...</DESCRIPTION>
+			<ISBN>978-2-3440-0965-9</ISBN>
+			<BOOKFORMAT>Comic</BOOKFORMAT>
+			<THEME>History</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Glénat</EDITOR>
+			<RELEASEDATE>2017-06-14</RELEASEDATE>
+			<PURCHASEDATE>2017-07-14</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a37">
+					<ROLE>Scriptwriter</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a41">
+					<ROLE>Illustrator</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a39">
+					<ROLE>Colourist</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a42">
+					<ROLE>Colourist</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<COMICBOOKSER idCBSRef="cbs9"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>20</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b95">
+			<TITLE>Derniers beaux jours</TITLE>
+			<DESCRIPTION>Les chroniques d'une guerre. Le récit d'une déchirure.Algérie, le 24 octobre 1957. Une poignée d'hommes met au point les derniers préparatifs d'une opération militaire qui durera huit ans. Ils sont six. Six hommes pour gagner l'indépendance de leur pays. L'Histoire les appellera les « Fils de la Toussaint. »10 ans plus tôt, alors que s'achève la Seconde Guerre mondiale, un groupe d'écoliers aux origines diverses grandit dans l'Algérie plurielle, déjà secouée par des tensions naissantes. Ils sont réfugiés, fils de résistants ou de pétainistes, pieds-noirs ou musulmans, tous unis par les liens très forts de l'enfance. Les « événements d'Algérie », comme on les appelait pudiquement à l'époque, vont finir de bouleverser le cours de leur vie...Après Les Mystères de la République, Philippe Richelle poursuit son exploration des méandres obscures de l'histoire de France à travers une nouvelle série de bande dessinée illustrée par Alfio Buscaglia. Algérie, une guerre française : un récit passionnant, grand public, nourri aux meilleures sources documentaires, qui permet de mieux comprendre ces années noires de notre histoire dont on s'évertue à dissimuler les cicatrices pourtant indélébiles...</DESCRIPTION>
+			<ISBN>978-2-3440-2809-4</ISBN>
+			<BOOKFORMAT>Comic</BOOKFORMAT>
+			<THEME>History</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Glénat</EDITOR>
+			<RELEASEDATE>2019-03-06</RELEASEDATE>
+			<PURCHASEDATE>2019-04-05</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a37">
+					<ROLE>Scriptwriter</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a40">
+					<ROLE>Illustrator</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a40">
+					<ROLE>Colourist</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<COMICBOOKSER idCBSRef="cbs10"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>56</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b96">
+			<TITLE>L'escalade fatale</TITLE>
+			<DESCRIPTION/>
+			<ISBN>978-2-3440-3852-9</ISBN>
+			<BOOKFORMAT>Comic</BOOKFORMAT>
+			<THEME>History</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Glénat</EDITOR>
+			<RELEASEDATE>2020-03-04</RELEASEDATE>
+			<PURCHASEDATE>2020-04-03</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a37">
+					<ROLE>Scriptwriter</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a40">
+					<ROLE>Illustrator</ROLE>
+				</BOOKAUTHOR>
+				<BOOKAUTHOR idAuthorRef="a40">
+					<ROLE>Colourist</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<COMICBOOKSER idCBSRef="cbs10"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>12</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b97">
+			<TITLE>1. Le Roi de fer</TITLE>
+			<DESCRIPTION/>
+			<ISBN>978-2-2530-1101-9</ISBN>
+			<BOOKFORMAT>Book</BOOKFORMAT>
+			<THEME>History</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Le Livre de Poche</EDITOR>
+			<RELEASEDATE>1973-05-01</RELEASEDATE>
+			<PURCHASEDATE>2005-04-03</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a43">
+					<ROLE>Scriptwriter</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<BOOKSER idBSRef="bs2"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>12</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b98">
+			<TITLE>2. La Reine étranglée</TITLE>
+			<DESCRIPTION>Faisant suite au Roi de fer, La Reine étranglée commence au lendemain même de la mort de Philippe le Bel. Un prince de faible caractère, Louis X le Hutin, dont l'épouse Marguerite de Bourgogne est emprisonnée pour adultère, succède à un monarque exceptionnel. Tandis que la Chrétienté attend un pape et que le peuple meurt de faim, les rivalités, les intrigues, les complots vont déchirer la cour de France et conduire barons, prélats, banquiers, et le roi lui-même, au fond d'une impasse dont ils ne pourront sortir que par le crime.</DESCRIPTION>
+			<ISBN>978-2-2530-0306-9</ISBN>
+			<BOOKFORMAT>Book</BOOKFORMAT>
+			<THEME>History</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Le Livre de Poche</EDITOR>
+			<RELEASEDATE>1973-05-01</RELEASEDATE>
+			<PURCHASEDATE>2005-04-03</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a43">
+					<ROLE>Scriptwriter</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<BOOKSER idBSRef="bs2"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>10</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b99">
+			<TITLE>3. Les Poisons de la couronne</TITLE>
+			<DESCRIPTION/>
+			<ISBN>978-2-2530-0404-2</ISBN>
+			<BOOKFORMAT>Book</BOOKFORMAT>
+			<THEME>History</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Le Livre de Poche</EDITOR>
+			<RELEASEDATE>1973-05-01</RELEASEDATE>
+			<PURCHASEDATE>2005-04-03</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a43">
+					<ROLE>Scriptwriter</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<BOOKSER idBSRef="bs2"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>13</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b100">
+			<TITLE>4. La Loi des Mâles</TITLE>
+			<DESCRIPTION>Juin 1316. Louis X le Hutin vient de mourir empoisonné. Pour la première fois depuis trois cents ans, un roi capétien disparaît sans qu'un fils lui succède. Ce quatrième volume des Rois maudits fait revivre les luttes acharnées qui vont être livrées afin de s'emparer de la Régence. C'est le frère du roi mort, le comte de Poitiers, qui l'emportera. Pour préparer son accession au trône, il s'appuiera sur une certaine loi salique, cette " loi des mâles ", en vérité adaptée pour la circonstance, qui constituera désormais le règlement de succession de la monarchie française. La disparition du fils posthume de Louis le Hutin permet au comte de Poitiers de devenir Philippe V, dit le Long.</DESCRIPTION>
+			<ISBN>978-2-2530-0405-9</ISBN>
+			<BOOKFORMAT>Book</BOOKFORMAT>
+			<THEME>History</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Le Livre de Poche</EDITOR>
+			<RELEASEDATE>1973-05-01</RELEASEDATE>
+			<PURCHASEDATE>2005-04-03</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a43">
+					<ROLE>Scriptwriter</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<BOOKSER idBSRef="bs2"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>14</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b101">
+			<TITLE>5. La La Louve de France</TITLE>
+			<DESCRIPTION>Philippe V le Long vient de mourir avant d'avoir atteint trente ans et, comme son frère Louis X le Hutin, sans descendance mâle. Le troisième fils du Roi de fer, le faible Charles IV le Bel, succède à Philippe V. Une évasion de la tour de Londres ; la chevauchée cruelle conduite par une reine française d'Angleterre pour chasser du trône son époux ; un atroce assassinat perpétré sur un souverain... La relance de l'Histoire vient d'Angleterre. La " Louve de France ", c'est le tragique surnom que les chroniqueurs donnèrent à la reine Isabelle, fille de Philippe le Bel, qui semblait avoir transporté outre-Manche la malédiction des templiers.</DESCRIPTION>
+			<ISBN>978-2-2530-0406-6</ISBN>
+			<BOOKFORMAT>Book</BOOKFORMAT>
+			<THEME>History</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Le Livre de Poche</EDITOR>
+			<RELEASEDATE>1973-05-01</RELEASEDATE>
+			<PURCHASEDATE>2005-04-03</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a43">
+					<ROLE>Scriptwriter</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<BOOKSER idBSRef="bs2"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>18</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b102">
+			<TITLE>6. Le Lis et le Lion</TITLE>
+			<DESCRIPTION>Avec la mort de Charles IV le Bel s'éteint la dynastie capétienne. La branche Valois la remplace dans le ciel de France. Le comte Robert d'Artois anime ces années décisives pour l'occident européen. Nul ne s'est dépensé plus que lui pour faire attribuer la couronne à son cousin Philippe de Valois. En échange, il attend qu'on lui rende le comté de ses aïeux. Pour soutenir son bon droit, rien ne l'arrête : ni l'usage de faux, ni le parjure ou les crimes. Déchu de ses titres, banni de sa patrie, c'est lui qui prononcera, devant le roi Edouard III et le Parlement d'Angleterre, la harangue qui sera le premier acte de la guerre de Cent Ans.</DESCRIPTION>
+			<ISBN>978-2-2530-0465-3</ISBN>
+			<BOOKFORMAT>Book</BOOKFORMAT>
+			<THEME>History</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Le Livre de Poche</EDITOR>
+			<RELEASEDATE>1973-05-01</RELEASEDATE>
+			<PURCHASEDATE>2005-04-03</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a43">
+					<ROLE>Scriptwriter</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<BOOKSER idBSRef="bs2"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>12</NROFBORROWS>
+		</BOOK>
+		<BOOK idBook="b103">
+			<TITLE>7. Quand un roi perd la France</TITLE>
+			<DESCRIPTION>Dans ce septième et dernier volume des Rois maudits, c'est le règne de Jean II qui est retracé. L'Histoire a surnommé ce roi Jean le Bon, mais ce monarque fut, en fait, aussi vaniteux et cruel qu'indécis et incapable. La France est, à l'époque, en crise : les clans et les factions se disputent le pays, l'Angleterre revendique le royaume, les impôts sont écrasants, la peste fait des ravages et le roi accumule les erreurs. On suit, à travers le récit d'un haut personnage de l'époque, l'évolution du règne. Une épopée malheureuse et sanglante qui va mener le roi au désastre de la bataille de Poitiers où il sera fait prisonnier des Anglais.</DESCRIPTION>
+			<ISBN>978-2-2530-2197-1</ISBN>
+			<BOOKFORMAT>Book</BOOKFORMAT>
+			<THEME>History</THEME>
+			<TARGETREADER>Adult</TARGETREADER>
+			<EDITOR>Le Livre de Poche</EDITOR>
+			<RELEASEDATE>1979-05-01</RELEASEDATE>
+			<PURCHASEDATE>2005-04-03</PURCHASEDATE>
+			<BOOKAUTHORS>
+				<BOOKAUTHOR idAuthorRef="a43">
+					<ROLE>Scriptwriter</ROLE>
+				</BOOKAUTHOR>
+			</BOOKAUTHORS>
+			<BOOKSER idBSRef="bs2"/>
+			<BORROWABLE>true</BORROWABLE>
+			<NROFBORROWS>12</NROFBORROWS>
 		</BOOK>
 	</BOOKS>
 	<BORROWERS>
@@ -1523,9 +2111,18 @@
 			<LASTNAME>Doe</LASTNAME>
 			<BIRTHDATE>1986-01-01</BIRTHDATE>
 			<BORROWINGS>
-				<BORROWING idBookRef="b1"/>
-				<BORROWING idBookRef="b12"/>
-				<BORROWING idBookRef="b15"/>
+				<BORROWING idBookRef="b1">
+					<BORROWDATE>2022-05-02</BORROWDATE>
+					<RETURNDATE>2022-05-23</RETURNDATE>
+				</BORROWING>
+				<BORROWING idBookRef="b12">
+					<BORROWDATE>2022-05-02</BORROWDATE>
+					<RETURNDATE>2022-05-23</RETURNDATE>
+				</BORROWING>
+				<BORROWING idBookRef="b15">
+					<BORROWDATE>2022-06-01</BORROWDATE>
+					<RETURNDATE>2022-06-22</RETURNDATE>
+				</BORROWING>
 			</BORROWINGS>
 		</BORROWER>
 		<BORROWER idBorrower="bo2">
@@ -1533,7 +2130,10 @@
 			<LASTNAME>Doe</LASTNAME>
 			<BIRTHDATE>1978-01-12</BIRTHDATE>
 			<BORROWINGS>
-				<BORROWING idBookRef="b45"/>
+				<BORROWING idBookRef="b45">
+					<BORROWDATE>2022-05-14</BORROWDATE>
+					<RETURNDATE>2022-06-04</RETURNDATE>
+				</BORROWING>
 			</BORROWINGS>
 		</BORROWER>
 		<BORROWER idBorrower="bo3">
@@ -1541,12 +2141,30 @@
 			<LASTNAME>Haddock</LASTNAME>
 			<BIRTHDATE>1950-01-01</BIRTHDATE>
 			<BORROWINGS>
-				<BORROWING idBookRef="b10"/>
-				<BORROWING idBookRef="b23"/>
-				<BORROWING idBookRef="b32"/>
-				<BORROWING idBookRef="b46"/>
-				<BORROWING idBookRef="b65"/>
-				<BORROWING idBookRef="b68"/>
+				<BORROWING idBookRef="b10">
+					<BORROWDATE>2022-06-01</BORROWDATE>
+					<RETURNDATE>2022-06-22</RETURNDATE>
+				</BORROWING>
+				<BORROWING idBookRef="b23">
+					<BORROWDATE>2022-06-01</BORROWDATE>
+					<RETURNDATE>2022-06-22</RETURNDATE>
+				</BORROWING>
+				<BORROWING idBookRef="b32">
+					<BORROWDATE>2022-06-01</BORROWDATE>
+					<RETURNDATE>2022-06-22</RETURNDATE>
+				</BORROWING>
+				<BORROWING idBookRef="b46">
+					<BORROWDATE>2022-06-01</BORROWDATE>
+					<RETURNDATE>2022-06-22</RETURNDATE>
+				</BORROWING>
+				<BORROWING idBookRef="b65">
+					<BORROWDATE>2022-06-01</BORROWDATE>
+					<RETURNDATE>2022-06-22</RETURNDATE>
+				</BORROWING>
+				<BORROWING idBookRef="b68">
+					<BORROWDATE>2022-06-01</BORROWDATE>
+					<RETURNDATE>2022-06-22</RETURNDATE>
+				</BORROWING>
 			</BORROWINGS>
 		</BORROWER>
 		<BORROWER idBorrower="bo4">
@@ -1554,11 +2172,26 @@
 			<LASTNAME>Vaillant</LASTNAME>
 			<BIRTHDATE>1960-01-01</BIRTHDATE>
 			<BORROWINGS>
-				<BORROWING idBookRef="b4"/>
-				<BORROWING idBookRef="b7"/>
-				<BORROWING idBookRef="b28"/>
-				<BORROWING idBookRef="b33"/>
-				<BORROWING idBookRef="b54"/>
+				<BORROWING idBookRef="b4">
+					<BORROWDATE>2022-05-21</BORROWDATE>
+					<RETURNDATE>2022-06-11</RETURNDATE>
+				</BORROWING>
+				<BORROWING idBookRef="b7">
+					<BORROWDATE>2022-05-21</BORROWDATE>
+					<RETURNDATE>2022-06-11</RETURNDATE>
+				</BORROWING>
+				<BORROWING idBookRef="b28">
+					<BORROWDATE>2022-05-21</BORROWDATE>
+					<RETURNDATE>2022-06-11</RETURNDATE>
+				</BORROWING>
+				<BORROWING idBookRef="b33">
+					<BORROWDATE>2022-05-21</BORROWDATE>
+					<RETURNDATE>2022-06-11</RETURNDATE>
+				</BORROWING>
+				<BORROWING idBookRef="b54">
+					<BORROWDATE>2022-05-21</BORROWDATE>
+					<RETURNDATE>2022-06-11</RETURNDATE>
+				</BORROWING>
 			</BORROWINGS>
 		</BORROWER>
 		<BORROWER idBorrower="bo5">
@@ -1566,10 +2199,22 @@
 			<LASTNAME>Tsuno</LASTNAME>
 			<BIRTHDATE>1975-12-01</BIRTHDATE>
 			<BORROWINGS>
-				<BORROWING idBookRef="b6"/>
-				<BORROWING idBookRef="b13"/>
-				<BORROWING idBookRef="b24"/>
-				<BORROWING idBookRef="b31"/>
+				<BORROWING idBookRef="b6">
+					<BORROWDATE>2022-05-28</BORROWDATE>
+					<RETURNDATE>2022-06-18</RETURNDATE>
+				</BORROWING>
+				<BORROWING idBookRef="b13">
+					<BORROWDATE>2022-05-28</BORROWDATE>
+					<RETURNDATE>2022-06-18</RETURNDATE>
+				</BORROWING>
+				<BORROWING idBookRef="b24">
+					<BORROWDATE>2022-05-28</BORROWDATE>
+					<RETURNDATE>2022-06-18</RETURNDATE>
+				</BORROWING>
+				<BORROWING idBookRef="b31">
+					<BORROWDATE>2022-05-28</BORROWDATE>
+					<RETURNDATE>2022-06-18</RETURNDATE>
+				</BORROWING>
 			</BORROWINGS>
 		</BORROWER>
 	</BORROWERS>
@@ -1579,12 +2224,67 @@
 			<DESCRIPTION>Un voyage à la croisée des chemins entre histoire, économie et culture…</DESCRIPTION>
 			<NROFVOLUMES>2</NROFVOLUMES>
 		</BOOKSERIE>
+		<BOOKSERIE idBS="bs2">
+			<TITLE>Les rois maudits</TITLE>
+			<DESCRIPTION>La série historique inspirée de la fin des Capétiens directs.</DESCRIPTION>
+			<NROFVOLUMES>7</NROFVOLUMES>
+		</BOOKSERIE>
 	</BOOKSERIES>
 	<COMICBOOKSERIES>
 		<COMICBOOKSERIE idCBS="cbs1">
 			<TITLE>Largo Winch</TITLE>
 			<DESCRIPTION>À 26 ans, Largo Winch hérite d'un cartel financier de 10 milliards de dollars. Contestataire, coureur de jupons, bagarreur et anticonformiste, parviendra-t-il à garder les mains propres à la tête d'un tel empire ?</DESCRIPTION>
 			<NROFVOLUMES>23</NROFVOLUMES>
+		</COMICBOOKSERIE>
+		<COMICBOOKSERIE idCBS="cbs2">
+			<TITLE>Juge, la République assassinée (Le)</TITLE>
+			<DESCRIPTION>L'histoire, en trois volumes, du juge Renaud, premier magistrat de la Ve République à avoir été assassiné.</DESCRIPTION>
+			<NROFVOLUMES>3</NROFVOLUMES>
+		</COMICBOOKSERIE>
+		<COMICBOOKSERIE idCBS="cbs3">
+			<TITLE>Ignorants (Les)</TITLE>
+			<DESCRIPTION/>
+			<NROFVOLUMES>1</NROFVOLUMES>
+		</COMICBOOKSERIE>
+		<COMICBOOKSERIE idCBS="cbs4">
+			<TITLE>Patrie des frères Werner (La)</TITLE>
+			<DESCRIPTION/>
+			<NROFVOLUMES>1</NROFVOLUMES>
+		</COMICBOOKSERIE>
+		<COMICBOOKSERIE idCBS="cbs5">
+			<TITLE>Algérie c'est beau comme l'Amérique (L')</TITLE>
+			<DESCRIPTION/>
+			<NROFVOLUMES>1</NROFVOLUMES>
+		</COMICBOOKSERIE>
+		<COMICBOOKSERIE idCBS="cbs6">
+			<TITLE>Cher pays de notre enfance</TITLE>
+			<DESCRIPTION/>
+			<NROFVOLUMES>1</NROFVOLUMES>
+		</COMICBOOKSERIE>
+		<COMICBOOKSERIE idCBS="cbs7">
+			<TITLE>Mystères de la Troisième République (Les)</TITLE>
+			<DESCRIPTION>Paris, 1944, le commissaire Peretti s'apprête à passer à la guillotine. Pour comprendre comment il en est arrivé là, l'histoire remonte à 1937, toujours dans la capitale, lorsque le directeur du journal anti-républicain La Vérité, Lucien Fabre, est assassiné. Le Peretti mène l'enquête sur le meurtre, qui la conduit à infiltrer des ligues d’extrême-droite.</DESCRIPTION>
+			<NROFVOLUMES>5</NROFVOLUMES>
+		</COMICBOOKSERIE>
+		<COMICBOOKSERIE idCBS="cbs8">
+			<TITLE>Mystères de la Quatrième République (Les)</TITLE>
+			<DESCRIPTION>Paris, 1956, le commissaire Serge Coste, qui réprouve le meurtre, s'apprête pourtant à abattre un homme de sang froid. Afin de découvrir ses motivations, l'histoire revient en arrière, en 1946, dans le Lubéron, lorsqu'un agriculteur découvre un cadavre enterré dans son champ. À Marseille, Serge Coste investigue sur l'affaire et découvre que ce fait divers est lié à une complexe affaire de résistants et de collaborationnistes.</DESCRIPTION>
+			<NROFVOLUMES>5</NROFVOLUMES>
+		</COMICBOOKSERIE>
+		<COMICBOOKSERIE idCBS="cbs9">
+			<TITLE>Mystères de la Cinquième République (Les)</TITLE>
+			<DESCRIPTION>Paris, 1959, le commissaire Verne, tente de résoudre le mystère concernant le meurtre du jeune Luc Chevalier, rue du Bac. Issu d'un milieu aisé, ce dernier, étudiant en médecine, s'avère avoir servi durant la guerre d'Algérie où il a assisté à la torture faite par son régiment, ce qui le conduit à son retour en métropole a soutenir la cause de l'indépendance. Les enquêtes du policier le conduiront à investiguer sur des organisations comme le FLN ou l'OAS.</DESCRIPTION>
+			<NROFVOLUMES>5</NROFVOLUMES>
+		</COMICBOOKSERIE>
+		<COMICBOOKSERIE idCBS="cbs10">
+			<TITLE>Algérie une guerre française</TITLE>
+			<DESCRIPTION>Les chroniques d'une guerre. Le récit d'une déchirure.Algérie, le 24 octobre 1957. Une poignée d'hommes met au point les derniers préparatifs d'une opération militaire qui durera huit ans. Ils sont six. Six hommes pour gagner l'indépendance de leur pays. L'Histoire les appellera les « Fils de la Toussaint. »10 ans plus tôt, alors que s'achève la Seconde Guerre mondiale, un groupe d'écoliers aux origines diverses grandit dans l'Algérie plurielle, déjà secouée par des tensions naissantes. Ils sont réfugiés, fils de résistants ou de pétainistes, pieds-noirs ou musulmans, tous unis par les liens très forts de l'enfance. Les « événements d'Algérie », comme on les appelait pudiquement à l'époque, vont finir de bouleverser le cours de leur vie...Après Les Mystères de la République, Philippe Richelle poursuit son exploration des méandres obscures de l'histoire de France à travers une nouvelle série de bande dessinée illustrée par Alfio Buscaglia. Algérie, une guerre française : un récit passionnant, grand public, nourri aux meilleures sources documentaires, qui permet de mieux comprendre ces années noires de notre histoire dont on s'évertue à dissimuler les cicatrices pourtant indélébiles...</DESCRIPTION>
+			<NROFVOLUMES>2</NROFVOLUMES>
+		</COMICBOOKSERIE>
+		<COMICBOOKSERIE idCBS="cbs11">
+			<TITLE>Voyage de Marcel Grob (Le)</TITLE>
+			<DESCRIPTION/>
+			<NROFVOLUMES>2</NROFVOLUMES>
 		</COMICBOOKSERIE>
 	</COMICBOOKSERIES>
 	<NEWSPAPERSERIES>
@@ -1777,6 +2477,90 @@
 			<LASTNAME>de Kersauson</LASTNAME>
 			<BIRTHDATE>1944-07-20</BIRTHDATE>
 			<DEATHDATE/>
+		</AUTHOR>
+		<AUTHOR idAuthor="a30">
+			<FIRSTNAME>Etienne</FIRSTNAME>
+			<LASTNAME>Davodeau</LASTNAME>
+			<BIRTHDATE>1965-10-19</BIRTHDATE>
+			<DEATHDATE/>
+		</AUTHOR>
+		<AUTHOR idAuthor="a31">
+			<FIRSTNAME>Philippe</FIRSTNAME>
+			<LASTNAME>Collin</LASTNAME>
+			<BIRTHDATE>1975-04-06</BIRTHDATE>
+			<DEATHDATE/>
+		</AUTHOR>
+		<AUTHOR idAuthor="a32">
+			<FIRSTNAME>Sébastien</FIRSTNAME>
+			<LASTNAME>Goethals</LASTNAME>
+			<BIRTHDATE>1970-01-01</BIRTHDATE>
+			<DEATHDATE/>
+		</AUTHOR>
+		<AUTHOR idAuthor="a33">
+			<FIRSTNAME>Olivia</FIRSTNAME>
+			<LASTNAME>Burton</LASTNAME>
+			<BIRTHDATE>1968-01-01</BIRTHDATE>
+			<DEATHDATE/>
+		</AUTHOR>
+		<AUTHOR idAuthor="a34">
+			<FIRSTNAME>Mahi</FIRSTNAME>
+			<LASTNAME>Grand</LASTNAME>
+			<BIRTHDATE>1969-01-01</BIRTHDATE>
+			<DEATHDATE/>
+		</AUTHOR>
+		<AUTHOR idAuthor="a35">
+			<FIRSTNAME>Olivier</FIRSTNAME>
+			<LASTNAME>Berlion</LASTNAME>
+			<BIRTHDATE>1969-04-12</BIRTHDATE>
+			<DEATHDATE/>
+		</AUTHOR>
+		<AUTHOR idAuthor="a36">
+			<FIRSTNAME>Benoît</FIRSTNAME>
+			<LASTNAME>Collombat</LASTNAME>
+			<BIRTHDATE>1970-01-01</BIRTHDATE>
+			<DEATHDATE/>
+		</AUTHOR>
+		<AUTHOR idAuthor="a37">
+			<FIRSTNAME>Philippe</FIRSTNAME>
+			<LASTNAME>Richelle</LASTNAME>
+			<BIRTHDATE>1970-01-01</BIRTHDATE>
+			<DEATHDATE/>
+		</AUTHOR>
+		<AUTHOR idAuthor="a38">
+			<FIRSTNAME>Pierre</FIRSTNAME>
+			<LASTNAME>Wachs</LASTNAME>
+			<BIRTHDATE>1957-07-26</BIRTHDATE>
+			<DEATHDATE/>
+		</AUTHOR>
+		<AUTHOR idAuthor="a39">
+			<FIRSTNAME>Claudia</FIRSTNAME>
+			<LASTNAME>Boccato</LASTNAME>
+			<BIRTHDATE/>
+			<DEATHDATE/>
+		</AUTHOR>
+		<AUTHOR idAuthor="a40">
+			<FIRSTNAME>Alfio</FIRSTNAME>
+			<LASTNAME>Buscaglia</LASTNAME>
+			<BIRTHDATE>1969-01-01</BIRTHDATE>
+			<DEATHDATE/>
+		</AUTHOR>
+		<AUTHOR idAuthor="a41">
+			<FIRSTNAME>François</FIRSTNAME>
+			<LASTNAME>Ravard</LASTNAME>
+			<BIRTHDATE>1981-11-08</BIRTHDATE>
+			<DEATHDATE/>
+		</AUTHOR>
+		<AUTHOR idAuthor="a42">
+			<FIRSTNAME>Bruno</FIRSTNAME>
+			<LASTNAME>Pradelle</LASTNAME>
+			<BIRTHDATE>1972-07-06</BIRTHDATE>
+			<DEATHDATE/>
+		</AUTHOR>
+		<AUTHOR idAuthor="a43">
+			<FIRSTNAME>Maurice</FIRSTNAME>
+			<LASTNAME>Druon</LASTNAME>
+			<BIRTHDATE>1918-04-23</BIRTHDATE>
+			<DEATHDATE>2009-04-14</DEATHDATE>
 		</AUTHOR>
 	</AUTHORS>
 </LIBRARY>

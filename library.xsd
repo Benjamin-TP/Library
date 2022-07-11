@@ -5,6 +5,9 @@ I used https://www.liquid-technologies.com/online-xsd-to-xml-converter to genera
 To validate: https://www.freeformatter.com/xml-validator-xsd.html
 XMLTools extension for Visual Studio Code
 https://www.convertcsv.com/csv-to-xml.htm to convert csv to xml to fasten xml creation
+https://www.freeformatter.com/xsl-transformer.html used when I was facing issues with the charset in the META tag.
+
+https://erwy.developpez.com/cours/langage/xslt/conditions/ I tried fo the charset without success
 
 Comments for the report
   - AUTHOR in AUTHORS for a sake of readiness
@@ -29,7 +32,7 @@ Comments related to the informations about the borrowings (NB: "BORROWABLE" is a
   I cannot use xs:assert with XSD 1.0, hence I didnt find any perfect solution.
   MAX number of books: in the BORROWER info (limitation on the list) rather than from the book
   NROFBOOKS removed from the BOORROWER info: it can be deducted from the above list
-  - BORROWINFO removed from the BOOK; only two columns remain under BOOK: BORROWDATE and RETURNDATE
+  - BORROWINFO removed from the BOOK; everythinh is under BORROWER.
   Still not the perfect solution, but the other was: 
   BORROWINFO shared by BOOK and BORROWER: harder to achieve max number of borrowings without duplicating the info.
   - BORROWDATE and RETURNDATE could also be in the BORROWING element
@@ -60,10 +63,28 @@ TODO
   - add simpletype for restrictions on size of string elements
 
 To-do xslt
-- Books per borrower
-- Book per author (XML?)
-- Books not yet returned (Borrowed book, with red color on the late ones)
+- Books per borrower, with number of books, sorted by return date (with red color on the late ones)):
+: priciple OK, A little formatting / style to do
+- List of the books per author, with the role of the author:
+: principle ok
+- Most popular books / per theme (> apply template theme then template books)? See https://newbedev.com/how-to-use-xslt-to-create-distinct-values/ and http://www.wandi.fr/Lab/Article/Item/select_distinct_values__xpath_1_0_-21.sls
+: principle OK
 
+<xsl:text>&#xA;</xsl:text>
+
+XML/JSON (invert them if one is too difficult
+XML:
+- Books sorted by serie (if we start with comicbookserie? Something using the series? Using "TITLE" variables (if there is no serie, then title picked)?
+>> I didn't find a solution; I should create a COMICBOOKSER for each comic book... And that's it
+JSON:
+- Book per author (XML?)
+
+Help fot the XSLT
+- spaces/end of lines: https://www.oreilly.com/library/view/xslt-2nd-edition/9780596527211/ch04s07s04.html
+- xsl: text: https://www.w3schools.com/XML/ref_xsl_el_text.asp
+- xsl: output (for avoiding character errors, use ISO-8859-1: https://www.w3schools.com/XML/ref_xsl_el_output.asp)
+
+- select current node: https://www.w3schools.com/xml/func_current.asp
 
 books borrowed
         <BORROWING idBookRef="b1"/>
@@ -244,9 +265,6 @@ books borrowed
       - already borrowed by someone
       -->
       <xs:element name="BORROWABLE" type="xs:boolean"/>
-
-      <xs:element name="BORROWDATE" type="customDateType"/>
-      <xs:element name="RETURNDATE" type="customDateType"/>
       
       <!--Number of borrows - for statistics-->
       <xs:element name="NROFBORROWS" type="xs:integer"/>
@@ -343,6 +361,7 @@ books borrowed
       <xs:enumeration value="Philosophy"/>
       <xs:enumeration value="Religion"/>
       <xs:enumeration value="General"/>
+      <xs:enumeration value="Autobiography"/>
     </xs:restriction>
   </xs:simpleType>
 
@@ -383,6 +402,8 @@ books borrowed
       <xs:enumeration value="Nathan"/>
       <xs:enumeration value="Nord-Sud"/>
       <xs:enumeration value="Groupe Amaury"/>
+      <xs:enumeration value="Steinkis"/>
+      <xs:enumeration value="Le Livre de Poche"/>
     </xs:restriction>
   </xs:simpleType>
 
@@ -414,6 +435,10 @@ books borrowed
 	</xs:complexType>
 
   <xs:complexType name="borrowingType">
+    <xs:sequence>
+      <xs:element name="BORROWDATE" type="customDateType"/>
+      <xs:element name="RETURNDATE" type="customDateType"/>
+    </xs:sequence>
 		<xs:attribute name="idBookRef" type="idBookT" use="required"/>
 	</xs:complexType>
  
