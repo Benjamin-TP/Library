@@ -30,7 +30,7 @@ List of the books per author, with the role.
 	
 		<p><strong><xsl:value-of select="LASTNAME"/>
 		<xsl:text>  </xsl:text>
-		<xsl:value-of select="FIRSTNAME"/></strong> is, for the following books:</p>
+		<xsl:value-of select="FIRSTNAME"/></strong> is author for the following books:</p>
 		
 		<xsl:variable name="id_author" select="@idAuthor"/>
 		
@@ -83,21 +83,39 @@ List of the books per author, with the role.
 	
 	<xsl:template match="BOOK">
 		<xsl:param name="id_author"/>
+		<xsl:variable name="nr_of_roles" select="count(BOOKAUTHORS/BOOKAUTHOR[@idAuthorRef=$id_author]/ROLE)"/>
+		
+		<xsl:variable name="id_comicserie" select="COMICBOOKSER/@idCBSRef"/>
+		
 		
 		<!--<xsl:if test="count(BOOKAUTHORS/BOOKAUTHOR[@idAuthorRef=$id_author]/ROLE[.='Colourist']) = 1">-->
-		<xsl:if test="count(BOOKAUTHORS/BOOKAUTHOR[@idAuthorRef=$id_author]/ROLE) = 1">
-			<p><xsl:value-of select="TITLE"/> as a <xsl:value-of select="BOOKAUTHORS/BOOKAUTHOR[@idAuthorRef=$id_author]/ROLE"/></p>
-		</xsl:if>
+		<!--<xsl:if test="count(COMICBOOKSER) = 1">
+		</xsl:if>-->
 		
-		<xsl:if test="count(BOOKAUTHORS/BOOKAUTHOR[@idAuthorRef=$id_author]/ROLE) &gt; 1">
-			<p><xsl:value-of select="TITLE"/> as a: </p>
-			<ul>
-			 <xsl:for-each select="BOOKAUTHORS/BOOKAUTHOR[@idAuthorRef=$id_author]/ROLE">
-				<xsl:sort select="." order="descending"/>
-				<li><xsl:value-of select="."/></li>	
-			</xsl:for-each>
-			</ul>
-		</xsl:if>
+		<!--TODO: Comicbook serie with an if or using a count
+				<xsl:value-of select="../../COMICBOOKSERIES/COMICBOOKSERIE[@idCBS=$id_comicserie]/TITLE"/>
+				<xsl:text> (serie): </xsl:text>
+		-->
+		<ul>
+			<xsl:if test="$nr_of_roles = 1">
+				<li>
+					<xsl:value-of select="TITLE"/> as a <xsl:value-of select="BOOKAUTHORS/BOOKAUTHOR[@idAuthorRef=$id_author]/ROLE"/>
+				</li>
+			</xsl:if>
+			
+			
+			<xsl:if test="$nr_of_roles &gt; 1">
+				<li><xsl:value-of select="TITLE"/> as a: </li>
+					<ul>
+					 <xsl:for-each select="BOOKAUTHORS/BOOKAUTHOR[@idAuthorRef=$id_author]/ROLE">
+						<xsl:sort select="." order="descending"/>
+						<li>
+							<xsl:value-of select="."/>
+						</li>	
+					</xsl:for-each>
+					</ul>
+			</xsl:if>
+		</ul>
 	</xsl:template>
 	
 	<!--Lists: see https://www.w3schools.com/HTML/html_lists.asp-->
