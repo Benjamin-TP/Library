@@ -97,15 +97,15 @@ List of the books per author, with the role.
 				<xsl:text> (serie): </xsl:text>
 		-->
 		<ul>
-			<xsl:if test="$nr_of_roles = 1">
-				<li>
-					<xsl:value-of select="TITLE"/> as a <xsl:value-of select="BOOKAUTHORS/BOOKAUTHOR[@idAuthorRef=$id_author]/ROLE"/>
-				</li>
-			</xsl:if>
-			
-			
-			<xsl:if test="$nr_of_roles &gt; 1">
-				<li><xsl:value-of select="TITLE"/> as a: </li>
+			<li>
+				<xsl:value-of select="TITLE"/>
+				
+				<xsl:if test="$nr_of_roles = 1">
+					 <xsl:text> as a </xsl:text><xsl:value-of select="BOOKAUTHORS/BOOKAUTHOR[@idAuthorRef=$id_author]/ROLE"/>
+				</xsl:if>
+				
+				<xsl:if test="$nr_of_roles &gt; 1">
+					<xsl:text> as a: </xsl:text>
 					<ul>
 					 <xsl:for-each select="BOOKAUTHORS/BOOKAUTHOR[@idAuthorRef=$id_author]/ROLE">
 						<xsl:sort select="." order="descending"/>
@@ -114,7 +114,10 @@ List of the books per author, with the role.
 						</li>	
 					</xsl:for-each>
 					</ul>
-			</xsl:if>
+				</xsl:if>
+			
+			</li>
+			
 		</ul>
 	</xsl:template>
 	
