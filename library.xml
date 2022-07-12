@@ -1417,7 +1417,7 @@
 			<NROFBORROWS>26</NROFBORROWS>
 		</BOOK>
 		<BOOK idBook="b74">
-			<TITLE>La patrie des frère Werner</TITLE>
+			<TITLE>La patrie des frères Werner</TITLE>
 			<DESCRIPTION>Mai 1945. Dans les ruines de Berlin, deux orphelins juifs assistent apeurés à la victoire soviétique. Réfugiés à Leipzig, Konrad et Andreas Werner deviennent citoyens Est-allemands. C’est la marche de l’histoire. Juin 1956. Les deux frères ont rejoint les rangs de la Stasi pour échapper au camp de rééducation. Ils seront les fils de l’Est. Juin 1974. Lors de la 10ème coupe du monde de football, un match historique va opposer la RFA et la RDA. C’est le match de la guerre froide. Le retentissement est mondial. Pour faire gagner la RDA, Erich Honecker décide d’impliquer les meilleurs agents de la Stasi. Il faut prouver la supériorité du régime socialiste sur le monde capitaliste. Konrad Werner est infiltré depuis des mois dans l’équipe de la RFA. Andreas Werner fait partie de la délégation de RDA. Voilà douze ans qu’ils ne se sont pas vus. Le choc des deux bloc va ébranler leurs convictions.</DESCRIPTION>
 			<ISBN>978-2-7548-2824-6</ISBN>
 			<BOOKFORMAT>Comic</BOOKFORMAT>
@@ -2243,7 +2243,7 @@
 			<NROFVOLUMES>2</NROFVOLUMES>
 		</BOOKSERIE>
 		<BOOKSERIE idBS="bs2">
-			<TITLE>Les rois maudits</TITLE>
+			<TITLE>Les Rois maudits</TITLE>
 			<DESCRIPTION>La série historique inspirée de la fin des Capétiens directs.</DESCRIPTION>
 			<NROFVOLUMES>7</NROFVOLUMES>
 		</BOOKSERIE>

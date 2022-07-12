@@ -66,7 +66,7 @@ To-do xslt
 - Books per borrower, with number of books, sorted by return date (with red color on the late ones)):
 : priciple OK, A little formatting / style to do
 - List of the books per author, with the role of the author:
-: principle ok
+: principle OK, a little reshaping (comments, choose instead of if)
 - Most popular books / per theme (> apply template theme then template books)? See https://newbedev.com/how-to-use-xslt-to-create-distinct-values/ and http://www.wandi.fr/Lab/Article/Item/select_distinct_values__xpath_1_0_-21.sls
 : principle OK
 
