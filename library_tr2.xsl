@@ -86,6 +86,7 @@ List of the books per author, with the role.
 		<xsl:variable name="nr_of_roles" select="count(BOOKAUTHORS/BOOKAUTHOR[@idAuthorRef=$id_author]/ROLE)"/>
 		
 		<xsl:variable name="id_comicserie" select="COMICBOOKSER/@idCBSRef"/>
+		<xsl:variable name="id_bookserie" select="BOOKSER/@idBSRef"/>
 		
 		
 		<!--<xsl:if test="count(BOOKAUTHORS/BOOKAUTHOR[@idAuthorRef=$id_author]/ROLE[.='Colourist']) = 1">-->
@@ -98,6 +99,10 @@ List of the books per author, with the role.
 		-->
 		<ul>
 			<li>
+				
+				<xsl:apply-templates select="../../COMICBOOKSERIES/COMICBOOKSERIE[@idCBS=$id_comicserie]"/>
+				<xsl:apply-templates select="../../BOOKSERIES/BOOKSERIE[@idBS=$id_bookserie]"/>
+				
 				<xsl:value-of select="TITLE"/>
 				
 				<xsl:if test="$nr_of_roles = 1">
@@ -119,6 +124,20 @@ List of the books per author, with the role.
 			</li>
 			
 		</ul>
+	</xsl:template>
+	
+	<xsl:template match="COMICBOOKSERIE">
+		<xsl:if test="NROFVOLUMES &gt; 1">
+			<xsl:value-of select="TITLE"/>
+			<xsl:text> (serie): </xsl:text>
+		</xsl:if>
+	</xsl:template>
+	
+	<xsl:template match="BOOKSERIE">
+		<xsl:if test="NROFVOLUMES &gt; 1">
+			<xsl:value-of select="TITLE"/>
+			<xsl:text> (serie): </xsl:text>
+		</xsl:if>
 	</xsl:template>
 	
 	<!--Lists: see https://www.w3schools.com/HTML/html_lists.asp-->
