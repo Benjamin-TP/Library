@@ -7,7 +7,7 @@ Comic books sorted by series
 	<xsl:template match="/">
 		<html>
 			<head>
-				<title>List of the books sorted by serie</title>
+				<title>List of the comic books sorted by serie</title>
 			</head>
 			<body>
 				<blockquote>
@@ -90,7 +90,7 @@ Comic books sorted by series
 			<xsl:value-of select="FIRSTNAME"/>
 			<xsl:text> </xsl:text>
 			<xsl:value-of select="LASTNAME"/>
-		
+					
 	</xsl:template>
 	
 </xsl:stylesheet>
