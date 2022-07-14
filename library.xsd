@@ -54,21 +54,15 @@ Still to transfomr to integer for comparison in the xslt (1.0)
   Enhancement: type NEWSPAPER vs BOOK, in order to control the max number of borrowings per book type
 
 
-TODO
 
-  - Namespace
-
-  Not mandatory:
-  - Element +  ref vs element in the sequence only and that's it
-  - add simpletype for restrictions on size of string elements
 
 To-do xslt
 - Books per borrower, with number of books, sorted by return date (with red color on the late ones)):
-: priciple OK, A little formatting / style to do
+: priciple OK, a little formatting / style to do
 - List of the books per author, with the role of the author:
 : principle OK, a little reshaping (comments, choose instead of if)
 - Most popular books / per theme (> apply template theme then template books)? See https://newbedev.com/how-to-use-xslt-to-create-distinct-values/ and http://www.wandi.fr/Lab/Article/Item/select_distinct_values__xpath_1_0_-21.sls
-: principle OK
+: principle OK, a little reshaping
 
 <xsl:text>&#xA;</xsl:text>
 
@@ -78,6 +72,19 @@ XML:
 >> I didn't find a solution; I should create a COMICBOOKSER for each comic book... And that's it
 JSON:
 - Book per author (XML?)
+
+TODO after XSLT
+
+  - Namespace
+
+  - Add a couple of borrowers
+
+  Not mandatory:
+  - Element +  ref vs element in the sequence only and that's it
+  - add simpletype for restrictions on size of string elements
+
+  - Add a couple of books
+  - newspaper number for the newspapers
 
 Help fot the XSLT
 - spaces/end of lines: https://www.oreilly.com/library/view/xslt-2nd-edition/9780596527211/ch04s07s04.html
