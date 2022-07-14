@@ -64,16 +64,33 @@ Comic books sorted by series
 		
 		<xsl:variable name="id_author" select="@idAuthorRef"/>
 		
-		<xsl:apply-templates select="//AUTHOR[@idAuthor=$id_author]"/>
+		<li>
+			<xsl:apply-templates select="//AUTHOR[@idAuthor=$id_author]"/>
+
+			<xsl:choose>
+				<xsl:when test="count(ROLE) &gt; 1">
+					<ul>
+						<xsl:for-each select="ROLE">
+							<li><xsl:value-of select="."/></li>
+						</xsl:for-each>
+					</ul>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:text> (</xsl:text>
+					<xsl:value-of select="ROLE"/>
+					<xsl:text>) </xsl:text>
+				</xsl:otherwise>
+			</xsl:choose>
+		</li>
 
 	</xsl:template>
 	
 	<xsl:template match="AUTHOR">
-		<li>
+		
 			<xsl:value-of select="FIRSTNAME"/>
 			<xsl:text> </xsl:text>
 			<xsl:value-of select="LASTNAME"/>
-		</li>
+		
 	</xsl:template>
 	
 </xsl:stylesheet>
