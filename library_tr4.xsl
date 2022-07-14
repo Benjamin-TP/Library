@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+Books by authors (Writer / Scriptwriter / Novelist)
+-->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:output method="xml" version="1.0" encoding="utf-8" indent="yes"/>
 	
@@ -53,6 +56,8 @@
 			<xsl:element name="RELEASEDATE">
 				<xsl:value-of select="RELEASEDATE"/>
 			</xsl:element>
+			
+			<xsl:text>&#13;&#13;</xsl:text>
 			
 		</xsl:element>
 	</xsl:template>

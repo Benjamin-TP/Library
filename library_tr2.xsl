@@ -51,35 +51,6 @@ List of the books per author, with the role.
 		<xsl:text>&#13;</xsl:text>
 		<xsl:text>&#13;</xsl:text>
 	</xsl:template>
-
-
-	
-	<xsl:template match="BOOKAUTHOR">
-		<p><xsl:value-of select="../../../BOOK/DESCRIPTION"/></p>	
-		
-		<!--
-		<xsl:apply-templates select="ROLE[.='Colourist']"/>
-		<xsl:apply-templates select="ROLE[.='Illustrator']"/>
-		<xsl:apply-templates select="ROLE[.='Novelist']"/>
-		<xsl:apply-templates select="ROLE[.='Scriptwriter']"/>
-		<xsl:apply-templates select="ROLE[.='Writer']"/>	-->	
-			
-	</xsl:template>
-	
-	<!--
-	<xsl:template match="ROLE">
-	<xsl:text>Je suis la</xsl:text>
-		<p><xsl:value-of select="current()"/> on <xsl:value-of select="../../../TITLE"/></p>
-		
-	</xsl:template>-->
-	
-	<xsl:template match="ROLE">
-
-		<p><xsl:value-of select="current()"/><xsl:text> on </xsl:text>
-		<xsl:apply-templates select="../../../../BOOK"/>
-		</p>
-	</xsl:template>
-	
 	
 	<xsl:template match="BOOK">
 		<xsl:param name="id_author"/>
