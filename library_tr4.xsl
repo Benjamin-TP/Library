@@ -58,17 +58,23 @@
 	</xsl:template>
 
 	<xsl:template match="BOOKSERIE">
-		<xsl:if test="NROFVOLUMES &gt; 1">
-			<xsl:element name="SERIE_TITLE">
-				<xsl:value-of select="TITLE"/>
+		<xsl:element name="SERIE_TITLE">
+			<xsl:value-of select="TITLE"/>
+		</xsl:element>
+		<xsl:if test="NROFVOLUMES = 1">
+			<xsl:element name="ONE_SHOT">
+				<xsl:text>true</xsl:text>
 			</xsl:element>
 		</xsl:if>
 	</xsl:template>
 	
 	<xsl:template match="COMICBOOKSERIE">
-		<xsl:if test="NROFVOLUMES &gt; 1">
-			<xsl:element name="SERIE_TITLE">
-				<xsl:value-of select="TITLE"/>
+		<xsl:element name="SERIE_TITLE">
+			<xsl:value-of select="TITLE"/>
+		</xsl:element>
+		<xsl:if test="NROFVOLUMES = 1">
+			<xsl:element name="ONE_SHOT">
+				<xsl:text>true</xsl:text>
 			</xsl:element>
 		</xsl:if>
 	</xsl:template>
