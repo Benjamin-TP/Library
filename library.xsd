@@ -67,13 +67,7 @@ To-do xslt
 <xsl:text>&#xA;</xsl:text>
 
 - XML: Book per author (XML) - OK
-
-XML/JSON (invert them if one is too difficult
-XML:
-- Books sorted by serie (if we start with comicbookserie? Something using the series? Using "TITLE" variables (if there is no serie, then title picked)?
->> I didn't find a solution; I should create a COMICBOOKSER for each comic book... And that's it
-JSON:
-
+- JSON: COMIC info per serie - Principle OK, still to remove IDs, maybe? And add ISBN
 
 TODO after XSLT
 
