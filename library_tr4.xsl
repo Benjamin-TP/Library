@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-Books by authors (Writer / Scriptwriter / Novelist)
--->
+<!--Books by authors (Writer / Scriptwriter / Novelist)-->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:output method="xml" version="1.0" encoding="utf-8" indent="yes"/>
 	
@@ -16,8 +14,7 @@ Books by authors (Writer / Scriptwriter / Novelist)
 	<xsl:template match="AUTHOR">
 		<xsl:variable name="id_author" select="@idAuthor"/>
 		
-		<!--Colourist and Illustrator not included, since they always are coauthors
-		<xsl:variable name="is_writer" select="count(//BOOKS/BOOK/BOOKAUTHORS/BOOKAUTHOR[@idAuthorRef=$id_author]/ROLE[.='Scriptwriter'])"/>-->
+		<!--Colourist and Illustrator not included, since they always are coauthors -->
 		<xsl:variable name="is_writer" select="count(//BOOKS/BOOK/BOOKAUTHORS/BOOKAUTHOR[@idAuthorRef=$id_author]/ROLE[.!='Colourist' and .!='Illustrator'])"/>
 
 		<xsl:if test="$is_writer &gt; 0">
@@ -34,6 +31,9 @@ Books by authors (Writer / Scriptwriter / Novelist)
 				</xsl:apply-templates>
 					
 			</xsl:element>
+			
+			<xsl:text>&#13;&#13;</xsl:text>
+						
 		</xsl:if>
 		
 	</xsl:template>
