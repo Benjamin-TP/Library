@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-List of the books per author, with the role.
-
--->
+<!--List of the books per author, with the role(s).-->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:output method="html" encoding="UTF-8" indent="yes"/>
 
@@ -10,9 +7,13 @@ List of the books per author, with the role.
 		<html>
 			<head>
 				<title>List of the books available sorted by Author</title>
+				<style>
+					h1,h2 {text-align: center;}
+				</style>
 			</head>
 			<body>
 				<h1>List of the books available sorted by Author</h1>
+				<h2>The authors are sorted by last name (ascending), the books are sorted by release date (ascending - not displayed)</h2>
 					<xsl:apply-templates select="//AUTHORS"/>
 			</body>
 		</html>
@@ -28,24 +29,16 @@ List of the books per author, with the role.
 	
 	<xsl:template match="AUTHOR">
 	
-		<p><strong><xsl:value-of select="LASTNAME"/>
+		<p><strong><xsl:value-of select="FIRSTNAME"/>
 		<xsl:text>  </xsl:text>
-		<xsl:value-of select="FIRSTNAME"/></strong> is author for the following books:</p>
+		<xsl:value-of select="LASTNAME"/></strong> is author for the following books:</p>
 		
 		<xsl:variable name="id_author" select="@idAuthor"/>
 		
-		<xsl:apply-templates select="../../BOOKS/BOOK[BOOKAUTHORS/BOOKAUTHOR/@idAuthorRef=$id_author]"> <!--and ROLE='Writer' in brackets: it filters but empty lists appear-->
+		<xsl:apply-templates select="../../BOOKS/BOOK[BOOKAUTHORS/BOOKAUTHOR/@idAuthorRef=$id_author]">
 			<xsl:with-param name="id_author" select="$id_author" />
 			<xsl:sort select="RELEASEDATE" order="ascending"/>
 		</xsl:apply-templates>
-		
-		<!--Issue when duplicating (Writer, Scriptwriter, Novelist, Illustrator, Colourist: duplicates when an author appears more than once per book
-		<xsl:apply-templates select="../../BOOKS/BOOK/BOOKAUTHORS/BOOKAUTHOR[@idAuthorRef=$id_author and ROLE='Writer']">
-			<xsl:with-param name="id_author" select="$id_author" />
-			<xsl:sort select="RELEASEDATE" order="descending"/>
-		</xsl:apply-templates>
-		-->
-		
 		
 		<br/>
 		<xsl:text>&#13;</xsl:text>
@@ -59,22 +52,13 @@ List of the books per author, with the role.
 		<xsl:variable name="id_comicserie" select="COMICBOOKSER/@idCBSRef"/>
 		<xsl:variable name="id_bookserie" select="BOOKSER/@idBSRef"/>
 		
-		
-		<!--<xsl:if test="count(BOOKAUTHORS/BOOKAUTHOR[@idAuthorRef=$id_author]/ROLE[.='Colourist']) = 1">-->
-		<!--<xsl:if test="count(COMICBOOKSER) = 1">
-		</xsl:if>-->
-		
-		<!--TODO: Comicbook serie with an if or using a count
-				<xsl:value-of select="../../COMICBOOKSERIES/COMICBOOKSERIE[@idCBS=$id_comicserie]/TITLE"/>
-				<xsl:text> (serie): </xsl:text>
-		-->
 		<ul>
 			<li>
 				
 				<xsl:apply-templates select="../../COMICBOOKSERIES/COMICBOOKSERIE[@idCBS=$id_comicserie]"/>
 				<xsl:apply-templates select="../../BOOKSERIES/BOOKSERIE[@idBS=$id_bookserie]"/>
 				
-				<xsl:value-of select="TITLE"/>
+				<i><xsl:value-of select="TITLE"/></i>
 				
 				<xsl:if test="$nr_of_roles = 1">
 					 <xsl:text> as a </xsl:text><xsl:value-of select="BOOKAUTHORS/BOOKAUTHOR[@idAuthorRef=$id_author]/ROLE"/>
@@ -110,42 +94,6 @@ List of the books per author, with the role.
 			<xsl:text> (serie): </xsl:text>
 		</xsl:if>
 	</xsl:template>
-	
-	<!--Lists: see https://www.w3schools.com/HTML/html_lists.asp-->
-
-	
-	<!--The three below work but we have one role only in case of several roles per author
-	NB: the if in BOOKAUTHOR is useless if we put the author id in the call
-	<xsl:template match="BOOKAUTHOR">
-	
-		<xsl:param name="id_author"/>
-		<xsl:if test="@idAuthorRef = $id_author">
-			<p><xsl:value-of select="ROLE"/> on <xsl:value-of select="../../TITLE"/> 
-			<xsl:apply-templates select="../../COMICBOOKSER[@idCBSRef]"/>
-			</p>
-		</xsl:if>
-		
-	</xsl:template>
-	
-	<xsl:template match="COMICBOOKSER">
-		<xsl:variable name="id_cbs" select="@idCBSRef"/>
-		
-		<xsl:apply-templates select="../../../COMICBOOKSERIES/COMICBOOKSERIE">
-			<xsl:with-param name="id_cbs" select="$id_cbs" />
-		</xsl:apply-templates>
-	</xsl:template>
-	
-	
-	<xsl:template match="COMICBOOKSERIE">
-		<xsl:param name="id_cbs"/>
-		<xsl:if test="@idCBS = $id_cbs">
-			<xsl:text> (Book serie </xsl:text> 
-			<xsl:value-of select="TITLE"/>
-			<xsl:text> ) . </xsl:text> 
-		</xsl:if>
-	</xsl:template>
-	-->
-	
 
 </xsl:stylesheet>
 
