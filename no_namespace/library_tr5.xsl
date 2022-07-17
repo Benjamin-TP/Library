@@ -19,8 +19,9 @@
 	<xsl:template match="COMICBOOKSERIE">
 		<xsl:variable name="id_cbserie" select="@idCBS"/>
 		
-		<xsl:text>{"@idCBS": "</xsl:text><xsl:value-of select="@idCBS"/> <xsl:text>",</xsl:text>
-		<xsl:text> "Title": "</xsl:text><xsl:value-of select="TITLE"/> <xsl:text>",</xsl:text>
+		<xsl:text>{"Title": "</xsl:text><xsl:value-of select="TITLE"/> <xsl:text>",</xsl:text>
+		<xsl:text> "SerieDescription": "</xsl:text><xsl:value-of select="DESCRIPTION"/> <xsl:text>",</xsl:text>
+		<xsl:text> "NrOfVolumes": "</xsl:text><xsl:value-of select="NROFVOLUMES"/> <xsl:text>",</xsl:text>
 		
 		<xsl:text>        
 			"Comics": [
@@ -54,6 +55,7 @@
 		<xsl:if test="COMICBOOKSER/@idCBSRef = $id_cbserie">
 			
 			<xsl:text>{"Title": "</xsl:text><xsl:value-of select="TITLE"/> <xsl:text>",</xsl:text>
+			<xsl:text> "ISBN": "</xsl:text><xsl:value-of select="ISBN"/> <xsl:text>",</xsl:text>
 			<xsl:text> "ReleaseDate": "</xsl:text><xsl:value-of select="RELEASEDATE"/> <xsl:text>",</xsl:text>
 			<xsl:text> "Authors": [ </xsl:text>
 				
@@ -99,7 +101,7 @@
 	
 
   	<xsl:template match="AUTHOR">
-		<xsl:text>"@idAuthor": "</xsl:text><xsl:value-of select="@idAuthor"/> <xsl:text>",</xsl:text>
+		<xsl:text>"idAuthor": "</xsl:text><xsl:value-of select="@idAuthor"/> <xsl:text>",</xsl:text>
 		<xsl:text>"Lastname": "</xsl:text><xsl:value-of select="LASTNAME"/> <xsl:text>",</xsl:text>
 		<xsl:text> "Firstname": "</xsl:text><xsl:value-of select="FIRSTNAME"/> <xsl:text>",</xsl:text>		
 	</xsl:template>
