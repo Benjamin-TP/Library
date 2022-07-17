@@ -4,11 +4,17 @@
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 	<xsl:output method="text" encoding="UTF-8"/>
+	<!--COMICBOOK serie information:
+	Serie title, description and number of volumes.
+	List of comics of the serie
+	For each comic, title and list of the authors with their roles.
+	-->
   
 	<xsl:template match="/">
 		<xsl:text>{        
 		"ComicBookSeries": [
 		</xsl:text>
+		<!--For this transformation, the "master" template is COMICBOOKSERIE-->
 		<xsl:apply-templates select="//lib:COMICBOOKSERIE">
 			<xsl:sort select="lib:TITLE" order="ascending"/>
 	</xsl:apply-templates>
@@ -20,15 +26,19 @@
 
 	<xsl:template match="lib:COMICBOOKSERIE">
 		<xsl:variable name="id_cbserie" select="@idCBS"/>
+		<!--Above variable for linking BOOK (using the child node BOOKSER with its attribute idCBSRef) to the serie-->
 		
 		<xsl:text>{"SerieTitle": "</xsl:text><xsl:value-of select="lib:TITLE"/> <xsl:text>",</xsl:text>
 		<xsl:text> "SerieDescription": "</xsl:text><xsl:value-of select="lib:DESCRIPTION"/> <xsl:text>",</xsl:text>
 		<xsl:text> "NrOfVolumes": </xsl:text><xsl:value-of select="lib:NROFVOLUMES"/> <xsl:text>,</xsl:text>
 		
+		<!--List of comics in brackets-->
 		<xsl:text>        
 			"Comics": [
 		</xsl:text>
 		
+		<!--BOOK template called to retrieve book information (title, authors)
+		parameter id_cbserie added to link the book to its serie inside the BOOK template-->
 		<xsl:apply-templates select="../../lib:BOOKS/lib:BOOK">
 			<xsl:with-param name="id_cbserie" select="$id_cbserie" />
 			<xsl:sort select="lib:RELEASEDATE" order="ascending"/>
@@ -39,7 +49,7 @@
 		</xsl:text>
 		
 		<xsl:choose>
-			<!--If the current node is the last one, hence end of list (hence, no comma)-->
+			<!--If the current node is the last one, then end of list (hence, no comma added)-->
 			<xsl:when test="position()!=last()">
 				<xsl:text>},</xsl:text>
 			</xsl:when>
@@ -47,13 +57,19 @@
 				<xsl:text>}</xsl:text>
 			</xsl:otherwise>
 		</xsl:choose>
+		
 	</xsl:template>
 	
 	
+	<!--BOOK template-->
 	<xsl:template match="lib:BOOK">
 	
 		<xsl:param name="id_cbserie"/>
+		<!--Above parameter retrieved from the call of this cuurent template-->
 		
+		
+		<!--If the current BOOK's COMICBOOKSER idCBSRef matches the key of the calling COMICBOOKSERIE,
+		then we display the information-->
 		<xsl:if test="lib:COMICBOOKSER/@idCBSRef = $id_cbserie">
 			
 			<xsl:text>{"Title": "</xsl:text><xsl:value-of select="lib:TITLE"/> <xsl:text>",</xsl:text>
@@ -80,16 +96,23 @@
 	<xsl:template match="lib:BOOKAUTHOR">
 		
 		<xsl:variable name="id_author" select="@idAuthorRef"/>
+		<!--The above variable is used to call template only on the desired author
+		(idAuthorRef of the BOOKAUTHOR, child element of BOOK, refers to idAuthor of AUTHOR
+		-->
 		
 
 		<xsl:text>{</xsl:text>
 		
 		<xsl:apply-templates select="//lib:AUTHOR[@idAuthor=$id_author]"/>
 		
+		<!--Retrieval of the ROLE(s) of this BOOKAUTHOR)
+		As an array, because there can be more than one role per bookauthor
+		-->
 		<xsl:text>"Roles": [ </xsl:text>
 			<xsl:apply-templates select="lib:ROLE"/>
 		<xsl:text> ]</xsl:text>
 		
+		<!--If the current node is the last one, then end of list (hence, no comma added)-->
 		<xsl:choose>
 			<xsl:when test="position()!=last()">
 				<xsl:text>},</xsl:text>
@@ -101,7 +124,9 @@
 
 	</xsl:template>
 	
-
+	
+	<!--AUTHOR template to display the author personal information.
+	Called in the BOOKAUTHOR template-->
   	<xsl:template match="lib:AUTHOR">
 		<xsl:text>"idAuthor": "</xsl:text><xsl:value-of select="@idAuthor"/> <xsl:text>",</xsl:text>
 		<xsl:text>"Lastname": "</xsl:text><xsl:value-of select="lib:LASTNAME"/> <xsl:text>",</xsl:text>
@@ -109,6 +134,8 @@
 	</xsl:template>
 	
 	
+	<!--ROLE template to display the ROLE personal information
+	Called in the BOOKAUTHOR template-->
   	<xsl:template match="lib:ROLE">
 		<xsl:text>"</xsl:text><xsl:value-of select="."/>
 		<xsl:choose>

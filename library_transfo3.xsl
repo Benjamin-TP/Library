@@ -15,6 +15,11 @@
 			</head>
 			<body>
 				<h1>List of the books sorted per category and popularity</h1>
+				
+				<!--THEME template applied 
+				In order to avoid list duplicated (each theme should appear only once),
+				the filter not(.=preceding::*) is added
+				-->
 				<xsl:apply-templates select="//lib:THEME[not(.=preceding::*)]">
 					<xsl:sort select="." order="ascending"/>
 				</xsl:apply-templates>
@@ -22,19 +27,34 @@
 		</html>
 	</xsl:template>
 
+
+	<!--From the theme, we need to retrieve the BOOK with this theme-->
 	<xsl:template match="lib:THEME">
 		<xsl:variable name="theme_name" select="."/>
+		<!-- current value as a variable to put it as a filter when calling the BOOK template-->
+		
 		<p>
 			<strong>
 				<xsl:value-of select="."/>
 			</strong>
 		</p>
+		
+		<!--BOOK selected by filtering on the theme_name variable
+		The most popular books appear first: they are sorted by number of times borrowed descending
+		-->
 		<xsl:apply-templates select="//lib:BOOK[lib:THEME=$theme_name]">
 			<xsl:sort select="lib:NROFBORROWS" order="descending"/>
 		</xsl:apply-templates>
 		<br/>
+		
 	</xsl:template>
 
+
+	<!--BOOK template
+	Called in THEME
+	TITLE and NROFBORROWS displayed
+	Eventually PERIODSTARTDATE for the newspapers only (in order to distinguish them)
+	-->
 	<xsl:template match="lib:BOOK">
 		<p>
 			<i><xsl:value-of select="lib:TITLE"/></i>
