@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <lib:LIBRARY
-	xmlns:lib="http://www.example.com/PO1"
+	xmlns:lib="https://github.com/Benjamin-TP/Library/"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	xsi:schemaLocation="http://www.example.com/PO1 library_namespace.xsd">
+	xsi:schemaLocation="https://github.com/Benjamin-TP/Library/ library.xsd">
 	<lib:BOOKS>
 		<lib:BOOK idBook="b1">
 			<lib:TITLE>L'Héritier</lib:TITLE>

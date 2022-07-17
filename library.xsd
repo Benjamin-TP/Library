@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <xs:schema 
 	xmlns:xs="http://www.w3.org/2001/XMLSchema" 
-	xmlns:lib="http://www.example.com/PO1" 
-	targetNamespace="http://www.example.com/PO1" 
+	xmlns:lib="https://github.com/Benjamin-TP/Library/" 
+	targetNamespace="https://github.com/Benjamin-TP/Library/" 
 	elementFormDefault="qualified" 
 	attributeFormDefault="unqualified">
 

@@ -1,0 +1,98 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+	"properties": {
+		"ComicBookSeries": {
+			"description": "Set of series of comics",
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"SerieTitle": {
+						"description": "Title of the serie",
+						"type": "string"
+					},
+					"SerieDescription": {
+						"description": "Synopsis",
+						"type": "string"
+					},
+					"NrOfVolumes": {
+						"description": "Number of volumes of this serie",
+						"type": "number",
+						"minimum": 0
+					},
+					"Comics" : {
+						"type": "array",
+						"items": {
+							"type": "object",
+							"properties" : {
+								"Title": {
+									"description": "Comic title",
+									"type": "string"
+								},
+								"ISBN": {
+									"description": "International Standard Book Number - unique identifier",
+									"type": "string",
+									"pattern": "((\\d{3}-|)\\d{1}-\\d{4}-\\d{4}-(\\d{1}|X)|)"
+								},
+								"ReleaseDate": {
+									"description": "Release date, in YYYY-MM-DD format",
+									"type": "string",
+									"pattern": "(\\d{4}-\\d{2}-\\d{2}|)"
+								},
+								"Authors": {
+									"description": "List of authors of the current book, with their roles",
+									"type" : "array",
+									"items" : {
+										"description": "Author information (including roles)",
+										"type": "object",
+										"properties": {
+											"idAuthor": {
+												"description": "author unique ID in the database",
+												"type": "string",
+												"pattern": "a\\d{1,7}"
+											},
+											"Lastname": {
+												"description": "Last name",
+												"type": "string"
+											},
+											"Firstname": {
+												"description": "Firstname name",
+												"type": "string"
+											},
+											"Roles" : {
+												"description": "List of roles (there can be more than one) among the values: Scriptwriter, Illustrator, Colourist",
+												"type" : "array",
+												"items": {
+													"type": "string",
+													"enum" : ["Scriptwriter", "Illustrator", "Colourist"]
+												}
+											}
+										},
+										"required": [
+											"idAuthor",
+											"Lastname",
+											"Firstname",
+											"Roles"
+										]
+									}
+								}
+							},
+							"required": [
+								"Title",
+								"ISBN",
+								"ReleaseDate",
+								"Authors"
+							]
+						}
+					}
+				},
+				"required": [
+					"SerieTitle",
+					"SerieDescription",
+					"NrOfVolumes"
+				]
+			}
+		}
+	}
+}

@@ -1,9 +1,9 @@
 {
 	"ComicBookSeries": [
 		{
-			"Title": "Algérie c'est beau comme l'Amérique (L')",
+			"SerieTitle": "Algérie c'est beau comme l'Amérique (L')",
 			"SerieDescription": "",
-			"NrOfVolumes": "1",
+			"NrOfVolumes": 1,
 			"Comics": [
 				{
 					"Title": "L'Algérie c'est beau comme l'Amérique ",
@@ -31,9 +31,9 @@
 			]
 		},
 		{
-			"Title": "Algérie une guerre française",
+			"SerieTitle": "Algérie une guerre française",
 			"SerieDescription": "Les chroniques d'une guerre. Le récit d'une déchirure.Algérie, le 24 octobre 1957. Une poignée d'hommes met au point les derniers préparatifs d'une opération militaire qui durera huit ans. Ils sont six. Six hommes pour gagner l'indépendance de leur pays. L'Histoire les appellera les « Fils de la Toussaint. »10 ans plus tôt, alors que s'achève la Seconde Guerre mondiale, un groupe d'écoliers aux origines diverses grandit dans l'Algérie plurielle, déjà secouée par des tensions naissantes. Ils sont réfugiés, fils de résistants ou de pétainistes, pieds-noirs ou musulmans, tous unis par les liens très forts de l'enfance. Les « événements d'Algérie », comme on les appelait pudiquement à l'époque, vont finir de bouleverser le cours de leur vie...Après Les Mystères de la République, Philippe Richelle poursuit son exploration des méandres obscures de l'histoire de France à travers une nouvelle série de bande dessinée illustrée par Alfio Buscaglia. Algérie, une guerre française : un récit passionnant, grand public, nourri aux meilleures sources documentaires, qui permet de mieux comprendre ces années noires de notre histoire dont on s'évertue à dissimuler les cicatrices pourtant indélébiles...",
-			"NrOfVolumes": "2",
+			"NrOfVolumes": 2,
 			"Comics": [
 				{
 					"Title": "Derniers beaux jours",
@@ -100,9 +100,9 @@
 			]
 		},
 		{
-			"Title": "Cher pays de notre enfance",
+			"SerieTitle": "Cher pays de notre enfance",
 			"SerieDescription": "",
-			"NrOfVolumes": "1",
+			"NrOfVolumes": 1,
 			"Comics": [
 				{
 					"Title": "Cher pays de notre enfance",
@@ -131,9 +131,9 @@
 			]
 		},
 		{
-			"Title": "Ignorants (Les)",
+			"SerieTitle": "Ignorants (Les)",
 			"SerieDescription": "",
-			"NrOfVolumes": "1",
+			"NrOfVolumes": 1,
 			"Comics": [
 				{
 					"Title": "Les ignorants",
@@ -154,9 +154,9 @@
 			]
 		},
 		{
-			"Title": "Juge, la République assassinée (Le)",
+			"SerieTitle": "Juge, la République assassinée (Le)",
 			"SerieDescription": "L'histoire, en trois volumes, du juge Renaud, premier magistrat de la Ve République à avoir été assassiné.",
-			"NrOfVolumes": "3",
+			"NrOfVolumes": 3,
 			"Comics": [
 				{
 					"Title": "Chicago-sur-Rhône",
@@ -209,9 +209,9 @@
 			]
 		},
 		{
-			"Title": "Largo Winch",
+			"SerieTitle": "Largo Winch",
 			"SerieDescription": "À 26 ans, Largo Winch hérite d'un cartel financier de 10 milliards de dollars. Contestataire, coureur de jupons, bagarreur et anticonformiste, parviendra-t-il à garder les mains propres à la tête d'un tel empire ?",
-			"NrOfVolumes": "23",
+			"NrOfVolumes": 23,
 			"Comics": [
 				{
 					"Title": "L'Héritier",
@@ -935,9 +935,9 @@
 			]
 		},
 		{
-			"Title": "Mystères de la Cinquième République (Les)",
+			"SerieTitle": "Mystères de la Cinquième République (Les)",
 			"SerieDescription": "Paris, 1959, le commissaire Verne, tente de résoudre le mystère concernant le meurtre du jeune Luc Chevalier, rue du Bac. Issu d'un milieu aisé, ce dernier, étudiant en médecine, s'avère avoir servi durant la guerre d'Algérie où il a assisté à la torture faite par son régiment, ce qui le conduit à son retour en métropole a soutenir la cause de l'indépendance. Les enquêtes du policier le conduiront à investiguer sur des organisations comme le FLN ou l'OAS.",
-			"NrOfVolumes": "5",
+			"NrOfVolumes": 5,
 			"Comics": [
 				{
 					"Title": "Trésor de guerre",
@@ -1105,9 +1105,9 @@
 			]
 		},
 		{
-			"Title": "Mystères de la Quatrième République (Les)",
+			"SerieTitle": "Mystères de la Quatrième République (Les)",
 			"SerieDescription": "Paris, 1956, le commissaire Serge Coste, qui réprouve le meurtre, s'apprête pourtant à abattre un homme de sang froid. Afin de découvrir ses motivations, l'histoire revient en arrière, en 1946, dans le Lubéron, lorsqu'un agriculteur découvre un cadavre enterré dans son champ. À Marseille, Serge Coste investigue sur l'affaire et découvre que ce fait divers est lié à une complexe affaire de résistants et de collaborationnistes.",
-			"NrOfVolumes": "5",
+			"NrOfVolumes": 5,
 			"Comics": [
 				{
 					"Title": "Les résistants de septembre",
@@ -1267,9 +1267,9 @@
 			]
 		},
 		{
-			"Title": "Mystères de la Troisième République (Les)",
+			"SerieTitle": "Mystères de la Troisième République (Les)",
 			"SerieDescription": "Paris, 1944, le commissaire Peretti s'apprête à passer à la guillotine. Pour comprendre comment il en est arrivé là, l'histoire remonte à 1937, toujours dans la capitale, lorsque le directeur du journal anti-républicain La Vérité, Lucien Fabre, est assassiné. Le Peretti mène l'enquête sur le meurtre, qui la conduit à infiltrer des ligues d’extrême-droite.",
-			"NrOfVolumes": "5",
+			"NrOfVolumes": 5,
 			"Comics": [
 				{
 					"Title": "Les Démons des années 30",
@@ -1429,9 +1429,9 @@
 			]
 		},
 		{
-			"Title": "Patrie des frères Werner (La)",
+			"SerieTitle": "Patrie des frères Werner (La)",
 			"SerieDescription": "",
-			"NrOfVolumes": "1",
+			"NrOfVolumes": 1,
 			"Comics": [
 				{
 					"Title": "La patrie des frères Werner",
@@ -1459,9 +1459,9 @@
 			]
 		},
 		{
-			"Title": "Voyage de Marcel Grob (Le)",
+			"SerieTitle": "Voyage de Marcel Grob (Le)",
 			"SerieDescription": "",
-			"NrOfVolumes": "1",
+			"NrOfVolumes": 1,
 			"Comics": [
 				{
 					"Title": "Le voyage de Marcel Grob",

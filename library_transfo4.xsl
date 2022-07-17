@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--Books by authors (Writer / Scriptwriter / Novelist)-->
 <xsl:stylesheet version="1.0" 
-	xmlns:lib="http://www.example.com/PO1"
+	xmlns:lib="https://github.com/Benjamin-TP/Library/"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	
 	<xsl:output method="xml" version="1.0" encoding="ISO-8859-1" indent="yes"/>
