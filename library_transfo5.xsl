@@ -23,7 +23,7 @@
 		
 		<xsl:text>{"Title": "</xsl:text><xsl:value-of select="lib:TITLE"/> <xsl:text>",</xsl:text>
 		<xsl:text> "SerieDescription": "</xsl:text><xsl:value-of select="lib:DESCRIPTION"/> <xsl:text>",</xsl:text>
-		<xsl:text> "NrOfVolumes": "</xsl:text><xsl:value-of select="lib:NROFVOLUMES"/> <xsl:text>",</xsl:text>
+		<xsl:text> "NrOfVolumes": </xsl:text><xsl:value-of select="lib:NROFVOLUMES"/> <xsl:text>,</xsl:text>
 		
 		<xsl:text>        
 			"Comics": [
