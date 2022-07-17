@@ -38,6 +38,14 @@
 	<xsl:template match="lib:BOOK">
 		<p>
 			<i><xsl:value-of select="lib:TITLE"/></i>
+			
+			<!--If its a Newspaper: display the start date in order to distinguish the newspapers of the same serie-->
+			<xsl:if test="lib:BOOKFORMAT = 'Newspaper'">
+				<xsl:text> (date: </xsl:text>
+				<xsl:value-of select="lib:NEWSPAPERSER/lib:PERIODSTARTDATE"/>
+				<xsl:text> )  </xsl:text>
+			</xsl:if>
+			
 			<xsl:text>, borrowed </xsl:text>
 			<strong><xsl:value-of select="lib:NROFBORROWS"/></strong>
 			<xsl:text> times</xsl:text>

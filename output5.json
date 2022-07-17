@@ -1,0 +1,1492 @@
+{
+	"ComicBookSeries": [
+		{
+			"Title": "Algérie c'est beau comme l'Amérique (L')",
+			"SerieDescription": "",
+			"NrOfVolumes": "1",
+			"Comics": [
+				{
+					"Title": "L'Algérie c'est beau comme l'Amérique ",
+					"ISBN": "979-1-0900-9056-9",
+					"ReleaseDate": "2015-01-21",
+					"Authors": [
+						{
+							"idAuthor": "a33",
+							"Lastname": "Burton",
+							"Firstname": "Olivia",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a34",
+							"Lastname": "Grand",
+							"Firstname": "Mahi",
+							"Roles": [
+								"Illustrator"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"Title": "Algérie une guerre française",
+			"SerieDescription": "Les chroniques d'une guerre. Le récit d'une déchirure.Algérie, le 24 octobre 1957. Une poignée d'hommes met au point les derniers préparatifs d'une opération militaire qui durera huit ans. Ils sont six. Six hommes pour gagner l'indépendance de leur pays. L'Histoire les appellera les « Fils de la Toussaint. »10 ans plus tôt, alors que s'achève la Seconde Guerre mondiale, un groupe d'écoliers aux origines diverses grandit dans l'Algérie plurielle, déjà secouée par des tensions naissantes. Ils sont réfugiés, fils de résistants ou de pétainistes, pieds-noirs ou musulmans, tous unis par les liens très forts de l'enfance. Les « événements d'Algérie », comme on les appelait pudiquement à l'époque, vont finir de bouleverser le cours de leur vie...Après Les Mystères de la République, Philippe Richelle poursuit son exploration des méandres obscures de l'histoire de France à travers une nouvelle série de bande dessinée illustrée par Alfio Buscaglia. Algérie, une guerre française : un récit passionnant, grand public, nourri aux meilleures sources documentaires, qui permet de mieux comprendre ces années noires de notre histoire dont on s'évertue à dissimuler les cicatrices pourtant indélébiles...",
+			"NrOfVolumes": "2",
+			"Comics": [
+				{
+					"Title": "Derniers beaux jours",
+					"ISBN": "978-2-3440-2809-4",
+					"ReleaseDate": "2019-03-06",
+					"Authors": [
+						{
+							"idAuthor": "a37",
+							"Lastname": "Richelle",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a40",
+							"Lastname": "Buscaglia",
+							"Firstname": "Alfio",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a40",
+							"Lastname": "Buscaglia",
+							"Firstname": "Alfio",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "L'escalade fatale",
+					"ISBN": "978-2-3440-3852-9",
+					"ReleaseDate": "2020-03-04",
+					"Authors": [
+						{
+							"idAuthor": "a37",
+							"Lastname": "Richelle",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a40",
+							"Lastname": "Buscaglia",
+							"Firstname": "Alfio",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a40",
+							"Lastname": "Buscaglia",
+							"Firstname": "Alfio",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"Title": "Cher pays de notre enfance",
+			"SerieDescription": "",
+			"NrOfVolumes": "1",
+			"Comics": [
+				{
+					"Title": "Cher pays de notre enfance",
+					"ISBN": "978-2-7548-1085-2",
+					"ReleaseDate": "2015-10-08",
+					"Authors": [
+						{
+							"idAuthor": "a30",
+							"Lastname": "Davodeau",
+							"Firstname": "Etienne",
+							"Roles": [
+								"Scriptwriter",
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a36",
+							"Lastname": "Collombat",
+							"Firstname": "Benoît",
+							"Roles": [
+								"Scriptwriter"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"Title": "Ignorants (Les)",
+			"SerieDescription": "",
+			"NrOfVolumes": "1",
+			"Comics": [
+				{
+					"Title": "Les ignorants",
+					"ISBN": "978-2-7548-0382-3",
+					"ReleaseDate": "2011-10-06",
+					"Authors": [
+						{
+							"idAuthor": "a30",
+							"Lastname": "Davodeau",
+							"Firstname": "Etienne",
+							"Roles": [
+								"Scriptwriter",
+								"Illustrator"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"Title": "Juge, la République assassinée (Le)",
+			"SerieDescription": "L'histoire, en trois volumes, du juge Renaud, premier magistrat de la Ve République à avoir été assassiné.",
+			"NrOfVolumes": "3",
+			"Comics": [
+				{
+					"Title": "Chicago-sur-Rhône",
+					"ISBN": "978-2-2050-7365-2",
+					"ReleaseDate": "2015-05-22",
+					"Authors": [
+						{
+							"idAuthor": "a35",
+							"Lastname": "Berlion",
+							"Firstname": "Olivier",
+							"Roles": [
+								"Scriptwriter",
+								"Illustrator"
+							]
+						}
+					]
+				},
+				{
+					"Title": "Le gang des lyonnais",
+					"ISBN": "978-2-2050-7511-3",
+					"ReleaseDate": "2016-04-15",
+					"Authors": [
+						{
+							"idAuthor": "a35",
+							"Lastname": "Berlion",
+							"Firstname": "Olivier",
+							"Roles": [
+								"Scriptwriter",
+								"Illustrator"
+							]
+						}
+					]
+				},
+				{
+					"Title": "Chronique d'une mort annoncée",
+					"ISBN": "978-2-2050-7606-6",
+					"ReleaseDate": "2017-01-13",
+					"Authors": [
+						{
+							"idAuthor": "a35",
+							"Lastname": "Berlion",
+							"Firstname": "Olivier",
+							"Roles": [
+								"Scriptwriter",
+								"Illustrator"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"Title": "Largo Winch",
+			"SerieDescription": "À 26 ans, Largo Winch hérite d'un cartel financier de 10 milliards de dollars. Contestataire, coureur de jupons, bagarreur et anticonformiste, parviendra-t-il à garder les mains propres à la tête d'un tel empire ?",
+			"NrOfVolumes": "23",
+			"Comics": [
+				{
+					"Title": "L'Héritier",
+					"ISBN": "2-8001-1791-5",
+					"ReleaseDate": "1990-11-01",
+					"Authors": [
+						{
+							"idAuthor": "a1",
+							"Lastname": "Van Hamme",
+							"Firstname": "Jean",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a2",
+							"Lastname": "Francq",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a3",
+							"Lastname": "Alluard",
+							"Firstname": "Marie-Paule",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "Le groupe W",
+					"ISBN": "2-8001-1832-6",
+					"ReleaseDate": "1991-09-01",
+					"Authors": [
+						{
+							"idAuthor": "a1",
+							"Lastname": "Van Hamme",
+							"Firstname": "Jean",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a2",
+							"Lastname": "Francq",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a3",
+							"Lastname": "Alluard",
+							"Firstname": "Marie-Paule",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "O.P.A",
+					"ISBN": "2-8001-1947-0",
+					"ReleaseDate": "1992-11-01",
+					"Authors": [
+						{
+							"idAuthor": "a1",
+							"Lastname": "Van Hamme",
+							"Firstname": "Jean",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a2",
+							"Lastname": "Francq",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a3",
+							"Lastname": "Alluard",
+							"Firstname": "Marie-Paule",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "Business Blues",
+					"ISBN": "2-8001-2046-0",
+					"ReleaseDate": "1993-10-01",
+					"Authors": [
+						{
+							"idAuthor": "a1",
+							"Lastname": "Van Hamme",
+							"Firstname": "Jean",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a2",
+							"Lastname": "Francq",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a3",
+							"Lastname": "Alluard",
+							"Firstname": "Marie-Paule",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "H",
+					"ISBN": "2-8001-2127-0",
+					"ReleaseDate": "1994-01-09",
+					"Authors": [
+						{
+							"idAuthor": "a1",
+							"Lastname": "Van Hamme",
+							"Firstname": "Jean",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a2",
+							"Lastname": "Francq",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a3",
+							"Lastname": "Alluard",
+							"Firstname": "Marie-Paule",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "Dutch Connection",
+					"ISBN": "2-8001-2201-3",
+					"ReleaseDate": "1995-06-01",
+					"Authors": [
+						{
+							"idAuthor": "a1",
+							"Lastname": "Van Hamme",
+							"Firstname": "Jean",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a2",
+							"Lastname": "Francq",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a3",
+							"Lastname": "Alluard",
+							"Firstname": "Marie-Paule",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "La Forteresse de Makiling",
+					"ISBN": "2-8001-2307-9",
+					"ReleaseDate": "1996-06-01",
+					"Authors": [
+						{
+							"idAuthor": "a1",
+							"Lastname": "Van Hamme",
+							"Firstname": "Jean",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a2",
+							"Lastname": "Francq",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a3",
+							"Lastname": "Alluard",
+							"Firstname": "Marie-Paule",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "L'Heure du Tigre",
+					"ISBN": "2-8001-2444-X",
+					"ReleaseDate": "1997-06-01",
+					"Authors": [
+						{
+							"idAuthor": "a1",
+							"Lastname": "Van Hamme",
+							"Firstname": "Jean",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a2",
+							"Lastname": "Francq",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a3",
+							"Lastname": "Alluard",
+							"Firstname": "Marie-Paule",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "Voir Venise…",
+					"ISBN": "2-8001-2628-0",
+					"ReleaseDate": "1997-06-01",
+					"Authors": [
+						{
+							"idAuthor": "a1",
+							"Lastname": "Van Hamme",
+							"Firstname": "Jean",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a2",
+							"Lastname": "Francq",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a3",
+							"Lastname": "Alluard",
+							"Firstname": "Marie-Paule",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "...Et mourir",
+					"ISBN": "2-8001-2849-6",
+					"ReleaseDate": "1998-09-01",
+					"Authors": [
+						{
+							"idAuthor": "a1",
+							"Lastname": "Van Hamme",
+							"Firstname": "Jean",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a2",
+							"Lastname": "Francq",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a3",
+							"Lastname": "Alluard",
+							"Firstname": "Marie-Paule",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "Golden Gate",
+					"ISBN": "2-8001-2981-6",
+					"ReleaseDate": "1999-09-01",
+					"Authors": [
+						{
+							"idAuthor": "a1",
+							"Lastname": "Van Hamme",
+							"Firstname": "Jean",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a2",
+							"Lastname": "Francq",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a3",
+							"Lastname": "Alluard",
+							"Firstname": "Marie-Paule",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "Shadow",
+					"ISBN": "2-8001-3123-3",
+					"ReleaseDate": "2002-06-01",
+					"Authors": [
+						{
+							"idAuthor": "a1",
+							"Lastname": "Van Hamme",
+							"Firstname": "Jean",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a2",
+							"Lastname": "Francq",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a3",
+							"Lastname": "Alluard",
+							"Firstname": "Marie-Paule",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "Le Prix de l'argent",
+					"ISBN": "2-8001-3387-2",
+					"ReleaseDate": "2004-06-01",
+					"Authors": [
+						{
+							"idAuthor": "a1",
+							"Lastname": "Van Hamme",
+							"Firstname": "Jean",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a2",
+							"Lastname": "Francq",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a3",
+							"Lastname": "Alluard",
+							"Firstname": "Marie-Paule",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "La Loi du dollar",
+					"ISBN": "2-8001-3536-0",
+					"ReleaseDate": "2005-11-01",
+					"Authors": [
+						{
+							"idAuthor": "a1",
+							"Lastname": "Van Hamme",
+							"Firstname": "Jean",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a2",
+							"Lastname": "Francq",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a3",
+							"Lastname": "Alluard",
+							"Firstname": "Marie-Paule",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "Les Trois Yeux des gardiens du Tao",
+					"ISBN": "978-2-8001-3861-9",
+					"ReleaseDate": "2007-03-01",
+					"Authors": [
+						{
+							"idAuthor": "a1",
+							"Lastname": "Van Hamme",
+							"Firstname": "Jean",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a2",
+							"Lastname": "Francq",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a4",
+							"Lastname": "Besson",
+							"Firstname": "Frédéric",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "La Voie et la Vertu",
+					"ISBN": "978-2-8001-4070-4",
+					"ReleaseDate": "2008-11-01",
+					"Authors": [
+						{
+							"idAuthor": "a1",
+							"Lastname": "Van Hamme",
+							"Firstname": "Jean",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a2",
+							"Lastname": "Francq",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a4",
+							"Lastname": "Besson",
+							"Firstname": "Frédéric",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "Mer Noire",
+					"ISBN": "978-2-8001-4757-4",
+					"ReleaseDate": "2010-11-01",
+					"Authors": [
+						{
+							"idAuthor": "a1",
+							"Lastname": "Van Hamme",
+							"Firstname": "Jean",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a2",
+							"Lastname": "Francq",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Illustrator",
+								"Colourist"
+							]
+						},
+						{
+							"idAuthor": "a4",
+							"Lastname": "Besson",
+							"Firstname": "Frédéric",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "Colère rouge",
+					"ISBN": "978-2-8001-5360-5",
+					"ReleaseDate": "2012-10-19",
+					"Authors": [
+						{
+							"idAuthor": "a1",
+							"Lastname": "Van Hamme",
+							"Firstname": "Jean",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a2",
+							"Lastname": "Francq",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a5",
+							"Lastname": "Guillo",
+							"Firstname": "Yoann",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "Chassé-croisé",
+					"ISBN": "978-2-8001-5931-7",
+					"ReleaseDate": "2014-11-14",
+					"Authors": [
+						{
+							"idAuthor": "a1",
+							"Lastname": "Van Hamme",
+							"Firstname": "Jean",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a2",
+							"Lastname": "Francq",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Illustrator",
+								"Colourist"
+							]
+						},
+						{
+							"idAuthor": "a5",
+							"Lastname": "Guillo",
+							"Firstname": "Yoann",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "Vingt secondes",
+					"ISBN": "978-2-8001-6551-6",
+					"ReleaseDate": "2015-11-20",
+					"Authors": [
+						{
+							"idAuthor": "a1",
+							"Lastname": "Van Hamme",
+							"Firstname": "Jean",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a2",
+							"Lastname": "Francq",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Illustrator",
+								"Colourist"
+							]
+						},
+						{
+							"idAuthor": "a5",
+							"Lastname": "Guillo",
+							"Firstname": "Yoann",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "L'Étoile du matin",
+					"ISBN": "978-2-8001-6861-6",
+					"ReleaseDate": "2017-10-06",
+					"Authors": [
+						{
+							"idAuthor": "a6",
+							"Lastname": "Giacomettti",
+							"Firstname": "Eric",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a2",
+							"Lastname": "Francq",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Illustrator",
+								"Colourist"
+							]
+						},
+						{
+							"idAuthor": "a7",
+							"Lastname": "Denoulet",
+							"Firstname": "Bertrand",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "Les Voiles écarlates",
+					"ISBN": "979-1-0347-3103-9",
+					"ReleaseDate": "2019-11-15",
+					"Authors": [
+						{
+							"idAuthor": "a6",
+							"Lastname": "Giacomettti",
+							"Firstname": "Eric",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a2",
+							"Lastname": "Francq",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Illustrator",
+								"Colourist"
+							]
+						},
+						{
+							"idAuthor": "a7",
+							"Lastname": "Denoulet",
+							"Firstname": "Bertrand",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "Frontière de la nuit",
+					"ISBN": "979-1-0347-4295-0",
+					"ReleaseDate": "2021-11-05",
+					"Authors": [
+						{
+							"idAuthor": "a6",
+							"Lastname": "Giacomettti",
+							"Firstname": "Eric",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a2",
+							"Lastname": "Francq",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Illustrator",
+								"Colourist"
+							]
+						},
+						{
+							"idAuthor": "a7",
+							"Lastname": "Denoulet",
+							"Firstname": "Bertrand",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"Title": "Mystères de la Cinquième République (Les)",
+			"SerieDescription": "Paris, 1959, le commissaire Verne, tente de résoudre le mystère concernant le meurtre du jeune Luc Chevalier, rue du Bac. Issu d'un milieu aisé, ce dernier, étudiant en médecine, s'avère avoir servi durant la guerre d'Algérie où il a assisté à la torture faite par son régiment, ce qui le conduit à son retour en métropole a soutenir la cause de l'indépendance. Les enquêtes du policier le conduiront à investiguer sur des organisations comme le FLN ou l'OAS.",
+			"NrOfVolumes": "5",
+			"Comics": [
+				{
+					"Title": "Trésor de guerre",
+					"ISBN": "978-2-7234-8938-6",
+					"ReleaseDate": "2013-05-15",
+					"Authors": [
+						{
+							"idAuthor": "a37",
+							"Lastname": "Richelle",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a41",
+							"Lastname": "Ravard",
+							"Firstname": "François",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a39",
+							"Lastname": "Boccato",
+							"Firstname": "Claudia",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "Octobre noir",
+					"ISBN": "978-2-7234-9665-0",
+					"ReleaseDate": "2014-05-28",
+					"Authors": [
+						{
+							"idAuthor": "a37",
+							"Lastname": "Richelle",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a41",
+							"Lastname": "Ravard",
+							"Firstname": "François",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a39",
+							"Lastname": "Boccato",
+							"Firstname": "Claudia",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "Les larmes d'Alger",
+					"ISBN": "978-2-3440-0270-4",
+					"ReleaseDate": "2015-05-06",
+					"Authors": [
+						{
+							"idAuthor": "a37",
+							"Lastname": "Richelle",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a41",
+							"Lastname": "Ravard",
+							"Firstname": "François",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a39",
+							"Lastname": "Boccato",
+							"Firstname": "Claudia",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "L'ombre du SAC",
+					"ISBN": "978-2-3440-0964-2",
+					"ReleaseDate": "2016-05-25",
+					"Authors": [
+						{
+							"idAuthor": "a37",
+							"Lastname": "Richelle",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a41",
+							"Lastname": "Ravard",
+							"Firstname": "François",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a39",
+							"Lastname": "Boccato",
+							"Firstname": "Claudia",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "Au nom de la France",
+					"ISBN": "978-2-3440-0965-9",
+					"ReleaseDate": "2017-06-14",
+					"Authors": [
+						{
+							"idAuthor": "a37",
+							"Lastname": "Richelle",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a41",
+							"Lastname": "Ravard",
+							"Firstname": "François",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a39",
+							"Lastname": "Boccato",
+							"Firstname": "Claudia",
+							"Roles": [
+								"Colourist"
+							]
+						},
+						{
+							"idAuthor": "a42",
+							"Lastname": "Pradelle",
+							"Firstname": "Bruno",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"Title": "Mystères de la Quatrième République (Les)",
+			"SerieDescription": "Paris, 1956, le commissaire Serge Coste, qui réprouve le meurtre, s'apprête pourtant à abattre un homme de sang froid. Afin de découvrir ses motivations, l'histoire revient en arrière, en 1946, dans le Lubéron, lorsqu'un agriculteur découvre un cadavre enterré dans son champ. À Marseille, Serge Coste investigue sur l'affaire et découvre que ce fait divers est lié à une complexe affaire de résistants et de collaborationnistes.",
+			"NrOfVolumes": "5",
+			"Comics": [
+				{
+					"Title": "Les résistants de septembre",
+					"ISBN": "978-2-7234-8937-9",
+					"ReleaseDate": "2013-05-15",
+					"Authors": [
+						{
+							"idAuthor": "a37",
+							"Lastname": "Richelle",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a40",
+							"Lastname": "Buscaglia",
+							"Firstname": "Alfio",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a39",
+							"Lastname": "Boccato",
+							"Firstname": "Claudia",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "Marseille la rouge",
+					"ISBN": "978-2-7234-9664-3",
+					"ReleaseDate": "2014-01-15",
+					"Authors": [
+						{
+							"idAuthor": "a37",
+							"Lastname": "Richelle",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a40",
+							"Lastname": "Buscaglia",
+							"Firstname": "Alfio",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a39",
+							"Lastname": "Boccato",
+							"Firstname": "Claudia",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "Le bel automne des collabos",
+					"ISBN": "978-2-3440-0385-5",
+					"ReleaseDate": "2015-01-07",
+					"Authors": [
+						{
+							"idAuthor": "a37",
+							"Lastname": "Richelle",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a40",
+							"Lastname": "Buscaglia",
+							"Firstname": "Alfio",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a39",
+							"Lastname": "Boccato",
+							"Firstname": "Claudia",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "La main rouge",
+					"ISBN": "978-2-3440-0962-8",
+					"ReleaseDate": "2016-05-25",
+					"Authors": [
+						{
+							"idAuthor": "a37",
+							"Lastname": "Richelle",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a40",
+							"Lastname": "Buscaglia",
+							"Firstname": "Alfio",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a39",
+							"Lastname": "Boccato",
+							"Firstname": "Claudia",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "Opération résurrection",
+					"ISBN": "978-2-3440-0963-5",
+					"ReleaseDate": "2017-06-14",
+					"Authors": [
+						{
+							"idAuthor": "a37",
+							"Lastname": "Richelle",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a40",
+							"Lastname": "Buscaglia",
+							"Firstname": "Alfio",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a39",
+							"Lastname": "Boccato",
+							"Firstname": "Claudia",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"Title": "Mystères de la Troisième République (Les)",
+			"SerieDescription": "Paris, 1944, le commissaire Peretti s'apprête à passer à la guillotine. Pour comprendre comment il en est arrivé là, l'histoire remonte à 1937, toujours dans la capitale, lorsque le directeur du journal anti-républicain La Vérité, Lucien Fabre, est assassiné. Le Peretti mène l'enquête sur le meurtre, qui la conduit à infiltrer des ligues d’extrême-droite.",
+			"NrOfVolumes": "5",
+			"Comics": [
+				{
+					"Title": "Les Démons des années 30",
+					"ISBN": "978-2-7234-8936-2",
+					"ReleaseDate": "2013-05-15",
+					"Authors": [
+						{
+							"idAuthor": "a37",
+							"Lastname": "Richelle",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a38",
+							"Lastname": "Wachs",
+							"Firstname": "Pierre",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a39",
+							"Lastname": "Boccato",
+							"Firstname": "Claudia",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "Le Tueur dévot",
+					"ISBN": "978-2-7234-9559-2",
+					"ReleaseDate": "2013-09-25",
+					"Authors": [
+						{
+							"idAuthor": "a37",
+							"Lastname": "Richelle",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a38",
+							"Lastname": "Wachs",
+							"Firstname": "Pierre",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a39",
+							"Lastname": "Boccato",
+							"Firstname": "Claudia",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "Complot fasciste",
+					"ISBN": "978-2-3440-0064-9",
+					"ReleaseDate": "2014-09-17",
+					"Authors": [
+						{
+							"idAuthor": "a37",
+							"Lastname": "Richelle",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a38",
+							"Lastname": "Wachs",
+							"Firstname": "Pierre",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a39",
+							"Lastname": "Boccato",
+							"Firstname": "Claudia",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "Le Sang d'un ami",
+					"ISBN": "978-2-3440-0390-9",
+					"ReleaseDate": "2016-05-25",
+					"Authors": [
+						{
+							"idAuthor": "a37",
+							"Lastname": "Richelle",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a38",
+							"Lastname": "Wachs",
+							"Firstname": "Pierre",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a39",
+							"Lastname": "Boccato",
+							"Firstname": "Claudia",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				},
+				{
+					"Title": "Mort d'un collabo",
+					"ISBN": "978-2-3440-0866-9",
+					"ReleaseDate": "2017-06-14",
+					"Authors": [
+						{
+							"idAuthor": "a37",
+							"Lastname": "Richelle",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a38",
+							"Lastname": "Wachs",
+							"Firstname": "Pierre",
+							"Roles": [
+								"Illustrator"
+							]
+						},
+						{
+							"idAuthor": "a39",
+							"Lastname": "Boccato",
+							"Firstname": "Claudia",
+							"Roles": [
+								"Colourist"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"Title": "Patrie des frères Werner (La)",
+			"SerieDescription": "",
+			"NrOfVolumes": "1",
+			"Comics": [
+				{
+					"Title": "La patrie des frères Werner",
+					"ISBN": "978-2-7548-2824-6",
+					"ReleaseDate": "2020-08-26",
+					"Authors": [
+						{
+							"idAuthor": "a31",
+							"Lastname": "Collin",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a32",
+							"Lastname": "Goethals",
+							"Firstname": "Sébastien",
+							"Roles": [
+								"Illustrator"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"Title": "Voyage de Marcel Grob (Le)",
+			"SerieDescription": "",
+			"NrOfVolumes": "1",
+			"Comics": [
+				{
+					"Title": "Le voyage de Marcel Grob",
+					"ISBN": "978-2-2981-5549-5",
+					"ReleaseDate": "2019-09-01",
+					"Authors": [
+						{
+							"idAuthor": "a31",
+							"Lastname": "Collin",
+							"Firstname": "Philippe",
+							"Roles": [
+								"Scriptwriter"
+							]
+						},
+						{
+							"idAuthor": "a32",
+							"Lastname": "Goethals",
+							"Firstname": "Sébastien",
+							"Roles": [
+								"Illustrator"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
